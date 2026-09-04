@@ -1,0 +1,15 @@
+# Usage (from this emulator/ directory):
+#   docker compose build              # first time: ~20-40+ min, compiles KOReader + vendored deps
+#   docker compose run --rm inkrpg-emulator
+# Screenshots land in ./screenshots/. Re-running after editing the
+# plugin does NOT need a rebuild -- inkrpg.koplugin is bind-mounted.
+
+services:
+  inkrpg-emulator:
+    build: .
+    volumes:
+      - ../inkrpg.koplugin:/home/ko/koreader/plugins/inkrpg.koplugin
+      - ./screenshots:/home/ko/screenshots
+    environment:
+      - DISPLAY=:99
+    shm_size: "1gb"

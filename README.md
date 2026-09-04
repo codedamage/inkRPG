@@ -10,9 +10,14 @@ A single-player, AI-narrated tabletop RPG framework for KOReader.
 
 ## Status
 
-Phase 0/1 scaffold: engine skeleton plus one playable non-AI demo game.
-**Not yet run against a real KOReader emulator or device** -- see
-"Known gaps" below before trusting any of this.
+Phase 0/1 scaffold: engine skeleton plus one playable non-AI demo game,
+plus a `emulator/` Docker Compose harness for the real KOReader desktop
+emulator. The engine code itself is still **not yet run against a real
+KOReader emulator or device** -- see `emulator/README.md` for exactly
+how far that attempt got (build toolchain confirmed working, one real
+`wget` cert bug found and fixed, blocked at the dependency-download step
+by my own sandbox's network policy -- should build fine on a normal
+connection) and "Known gaps" below before trusting any of this.
 
 ## Try it
 
@@ -35,6 +40,7 @@ Phase 0/1 scaffold: engine skeleton plus one playable non-AI demo game.
 inkRPG/
   PLAN.md
   README.md
+  emulator/                     -- Docker Compose harness to run the real KOReader emulator (see emulator/README.md)
   inkrpg.koplugin/
     _meta.lua
     main.lua                    -- entry point, menu registration, game picker
