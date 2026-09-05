@@ -10,18 +10,27 @@ A single-player, AI-narrated tabletop RPG framework for KOReader.
 
 ## Status
 
-Phase 0/1 scaffold (engine skeleton + one playable non-AI demo game) plus
-Phase 2 (structured AI responses wired into the main play loop, not just
-the free-text side path), plus an `emulator/` Docker Compose harness for
-the real KOReader desktop emulator.
+Phase 0/1 (engine skeleton + one playable non-AI demo game) is now
+**fully confirmed working end to end in real KOReader, on screen, via the
+emulator, start to finish**: Tools -> More tools -> inkRPG opens the game
+picker ("The Whispering Cave"); selecting it plays through the entire
+authored scene graph -- `cave_mouth` -> `entrance_hall` -> `crawl_space`
+-> `locked_door` -> the `ending_key` ending, one screenshot per tap -- with
+every narration line and choice button matching
+`games/demo-cave/scenes.lua` verbatim, an ending correctly showing "THE
+END" text with a "Play again" button instead of more choices, and a
+completely clean log the entire way (zero Lua errors, only ordinary
+first-run cache warnings) across four full runs. See `emulator/README.md`
+for all the screenshots and the confirmed navigation path.
 
-The emulator build succeeded on your machine and the plugin **loads
-cleanly in real KOReader with zero Lua errors** (confirmed from
-`emulator/screenshots/koreader-stdout.log`: "Plugin loaded inkrpg" / "RD
-loaded plugin inkrpg at plugins/inkrpg.koplugin"). What's *not* yet
-confirmed on screen is the actual play loop (menu navigation, scene
-rendering, the AI turn loop) -- see `emulator/README.md` for where that
-stands. See "Known gaps" below before trusting any of this.
+The structured-JSON half of Phase 2 is implemented but not yet exercised
+this way. Not yet confirmed on screen: the "Play again" button actually
+restarting; closing and reopening to confirm save/resume reloads the
+right scene (KOReader's own settings dir isn't bind-mounted, so this
+needs a different test setup -- see `emulator/README.md`); the
+"...Something else" free-text path; and anything AI-driven (Phase 2's
+`requestStructured` loop is only tested against canned fixtures via
+`lupa`, not a live model or KOReader UI). See "Known gaps" below.
 
 ## Try it
 
@@ -30,7 +39,10 @@ stands. See "Known gaps" below before trusting any of this.
    Phase 0 for the WSL2 route on Windows, or grab a build for
    Linux/macOS/Windows from https://github.com/koreader/koreader.
 2. Copy `inkrpg.koplugin/` into your KOReader install's `plugins/` folder.
-3. Launch KOReader -> Tools -> inkRPG -> The Whispering Cave.
+3. Launch KOReader -> Tools (wrench icon) -> More tools -> inkRPG ->
+   The Whispering Cave. (Confirmed navigation path, from the emulator --
+   inkRPG is grouped under KOReader's own "More tools" submenu, not a
+   top-level Tools entry.)
 4. To try the AI hook: `cp inkrpg.koplugin/configuration.sample.lua
    inkrpg.koplugin/configuration.lua`, fill in an API key, then pick
    "...Something else" during play. (You already have Ollama installed
@@ -71,15 +83,17 @@ pattern that's proven to work rather than the original diagram.
 
 ## Known gaps (read before assuming this works)
 
-- **Loads, but the play loop itself is unconfirmed on screen.** The
-  plugin registers and loads with zero Lua errors in real KOReader (see
-  Status above), which was cross-checked line-by-line against real
-  plugins on GitHub before that. What's still unconfirmed is the actual
-  UI: menu navigation, scene rendering, and the AI turn loop have only
-  been exercised with `lupa` (a Python<->Lua binding) against stubbed
-  KOReader widget modules, not against KOReader's real widget toolkit on
-  screen. `emulator/README.md` has the current state of getting a
-  screenshot of that.
+- **The entire non-AI game loop is confirmed on screen, start to
+  finish.** Menu navigation, the picker, every scene transition down to
+  an ending, and the ending's "Play again" button all render correctly
+  in real KOReader via the emulator, log clean throughout -- see Status
+  above and `emulator/README.md` for every screenshot. Not yet clicked
+  through: "Play again" actually restarting; closing/reopening KOReader
+  to confirm save/resume reloads mid-game state (needs the settings dir
+  bind-mounted, or an in-run restart -- not just re-running the
+  container, which starts a fresh KOReader install every time); or the
+  "...Something else" free-text path. Those are the obvious next things
+  to confirm, same screenshot-driven approach.
 - `inkrpg_ai_provider.lua` only implements the OpenAI-compatible request
   shape (works for OpenAI itself, Ollama, DeepSeek, Groq, OpenRouter,
   and similar). Native Claude Messages API / Gemini endpoints use a

@@ -5,6 +5,16 @@
 # plugin does NOT need a rebuild -- inkrpg.koplugin is bind-mounted.
 # screenshot.sh is ALSO bind-mounted, so iterating on the tap
 # sequence/coordinates doesn't need a rebuild either -- just re-run.
+#
+# ./saves is ALSO bind-mounted, onto inkRPG's real save-file directory
+# (found via a diagnostic `find` in screenshot.sh -- it's nested under
+# the emulator's build output dir, NOT a simple top-level path). This
+# means a save now persists ACROSS separate `docker compose run`
+# invocations, not just within one: run it once to reach some point in
+# the story, run it again, and selecting "The Whispering Cave" from the
+# picker should resume at the LAST saved scene instead of restarting at
+# cave_mouth. Delete the contents of ./saves to reset back to a fresh
+# save state.
 
 services:
   inkrpg-emulator:
@@ -13,6 +23,7 @@ services:
       - ../inkrpg.koplugin:/home/ko/koreader/plugins/inkrpg.koplugin
       - ./screenshot.sh:/home/ko/screenshot.sh
       - ./screenshots:/home/ko/screenshots
+      - ./saves:/home/ko/koreader/koreader-emulator-x86_64-linux-gnu-debug/koreader/settings/inkrpg
     environment:
       - DISPLAY=:99
     shm_size: "1gb"
