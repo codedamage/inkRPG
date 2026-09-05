@@ -27,13 +27,17 @@ function State.open(game_slug, slot)
     return LuaSettings:open(path)
 end
 
--- Convenience: read the whole state table (scene id, stats, flags).
+-- Convenience: read the whole state table (scene id, stats, flags, and
+-- ai_scene -- the current AI-improvised node, if the player was mid
+-- freeform-AI play rather than in the authored scene graph when they
+-- last saved; nil in the common case).
 function State.read(game_slug, slot)
     local settings = State.open(game_slug, slot)
     local data = {
         scene = settings:readSetting("scene"),
         stats = settings:readSetting("stats", {}),
         flags = settings:readSetting("flags", {}),
+        ai_scene = settings:readSetting("ai_scene"),
     }
     settings:close()
     return data
@@ -46,6 +50,7 @@ function State.write(game_slug, slot, data)
     settings:saveSetting("scene", data.scene)
     settings:saveSetting("stats", data.stats or {})
     settings:saveSetting("flags", data.flags or {})
+    settings:saveSetting("ai_scene", data.ai_scene)
     settings:flush()
     settings:close()
 end

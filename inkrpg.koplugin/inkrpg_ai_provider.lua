@@ -24,10 +24,8 @@ configuration.lua (copy from configuration.sample.lua, keep out of git):
 Native Claude (Messages API) and Gemini endpoints use a different
 request/response shape than OpenAI's chat-completions -- they'd need
 their own small handler function, not covered here yet. See PLAN.md
-Phase 2. This module is wired up but not yet exercised by the Phase 1
-demo game (demo-cave is fully hand-authored, zero API calls by design)
--- it's here so Phase 2 is "call AIProvider.request(...) from the play
-loop" rather than "invent the HTTP layer from scratch".
+Phase 2 (the rest of it: this module's `request` is the raw chat call;
+`requestStructured` below is what the play loop actually uses).
 --]]--
 
 local socket = require("socket")
@@ -108,6 +106,75 @@ function AIProvider.request(messages)
     end
 
     return true, message.content
+end
+
+-- Structured mode: the play loop's actual entry point (Phase 2). Wraps
+-- `request` with instructions that constrain the model to a fixed JSON
+-- shape, so narration and game-mechanical state changes (HP, flags,
+-- inventory) come back as data the engine can apply deterministically
+-- instead of free text it would have to guess at parsing. Returns
+-- (true, { narration = "...", choices = {...}, state_changes = {...} })
+-- or (false, error_string).
+local STRUCTURED_INSTRUCTIONS = [[
+Respond with ONLY a single JSON object -- no prose outside it, no
+markdown code fences -- matching exactly this shape:
+{
+  "narration": "1-3 short paragraphs of DM narration, plain text",
+  "choices": [
+    {"label": "short button text", "id": "short_snake_case_id"}
+  ],
+  "state_changes": {
+    "hp_delta": 0,
+    "flags_set": [],
+    "items_add": [],
+    "items_remove": []
+  }
+}
+Include 2-4 choices unless the story has clearly ended, in which case
+use an empty choices array. hp_delta is a signed integer (negative for
+damage, positive for healing, 0 for no change). flags_set/items_add/
+items_remove are arrays of short strings ([] if nothing changes). Do
+not include any keys other than the ones shown above.
+]]
+
+-- Some models add a ```json fence or a sentence of preamble despite
+-- being told not to. Rather than trust the whole reply is bare JSON,
+-- slice from the first '{' to the matching last '}'. This assumes a
+-- single top-level JSON object with no stray braces in surrounding
+-- prose, which holds in practice for this prompt -- it is not a real
+-- JSON-aware scan.
+local function extract_json(text)
+    local first = text:find("{")
+    if not first then
+        return text
+    end
+    local last = text:reverse():find("}")
+    if not last then
+        return text
+    end
+    last = #text - last + 1
+    return text:sub(first, last)
+end
+
+function AIProvider.requestStructured(messages)
+    local wrapped = { { role = "system", content = STRUCTURED_INSTRUCTIONS } }
+    for _, m in ipairs(messages) do
+        table.insert(wrapped, m)
+    end
+
+    local ok, reply = AIProvider.request(wrapped)
+    if not ok then
+        return false, reply
+    end
+
+    local json_text = extract_json(reply)
+    local ok2, parsed = pcall(JSON.decode, json_text)
+    if not ok2 or type(parsed) ~= "table" or type(parsed.narration) ~= "string" then
+        return false, "AI reply wasn't valid structured JSON:\n" .. tostring(reply)
+    end
+    parsed.choices = parsed.choices or {}
+    parsed.state_changes = parsed.state_changes or {}
+    return true, parsed
 end
 
 return AIProvider

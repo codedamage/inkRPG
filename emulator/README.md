@@ -40,6 +40,51 @@ inkrpg.koplugin loaded or seen a real screenshot yet. `screenshot.sh`
 says so again at the point that matters (the xdotool tap coordinates
 for reaching the Tools menu are a best guess, not confirmed on screen).
 
+## Update: you ran it, and hit (and I fixed) a real bug
+
+You ran `docker compose build` for real and got much further than my
+sandbox could -- past zlib, libpng, freetype, and dozens of other
+github.com-hosted dependencies -- before failing here:
+
+```
++ clone_git_repo .../lua-Spore/build/downloads/source https://framagit.org/fperrad/lua-Spore 0.4.2
+fatal: unable to access 'https://framagit.org/fperrad/lua-Spore/': Failed to connect to framagit.org port 443
+```
+
+One dependency, `lua-Spore`, is fetched via `git clone` straight from
+`framagit.org` (a GitLab instance) instead of a github.com tarball like
+everything else. I confirmed framagit.org *is* reachable from my own
+sandbox (`git ls-remote` succeeded), so it isn't a framagit outage --
+something about your specific network/Docker path is refusing that one
+host (a firewall or antivirus product treating an unfamiliar GitLab
+instance differently than github.com, or a Docker Desktop/WSL2 network
+quirk -- framagit.org's IPv6 reachability is a plausible suspect if
+your setup prefers IPv6 and that path is the one that's broken).
+
+Rather than have you chase that down, I:
+1. Cloned `lua-Spore` at the exact tag KOReader needs (0.4.2) from my
+   side, where framagit.org is reachable, and repackaged it as a plain
+   tarball: `vendor/lua-Spore-0.4.2.tar.gz`.
+2. Patched the Dockerfile to serve that tarball from a throwaway local
+   HTTP server during the build and point koreader-base's
+   `lua-Spore/CMakeLists.txt` at `http://127.0.0.1:8765/...` instead of
+   framagit.org (plain HTTP to localhost, not `file://` -- wget in this
+   build doesn't support the `file://` scheme, I checked).
+3. **Verified this in isolation** by invoking koreader-base's actual
+   `download_archive` and `extract_archive` shell functions (from the
+   real, generated `koenv.sh` in a from-scratch build tree) against the
+   local server and the vendored tarball -- both succeeded, and the
+   extracted tree matches what the real git-clone path would have
+   produced (correct top-level dir stripped, `src/`, `Makefile`, etc.
+   all present).
+
+What I *can't* verify from my side: whether your build gets all the way
+through the remaining ~35 dependencies after this fix, since my own
+sandbox is blocked on a different, unrelated set of hosts (see above).
+Given you'd already gotten past most of them before hitting lua-Spore,
+I'd expect this to be the last blocker, but if you hit another one,
+send me the log the same way and I'll debug it the same way.
+
 ## Try it
 
 ```

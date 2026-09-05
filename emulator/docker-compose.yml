@@ -3,12 +3,15 @@
 #   docker compose run --rm inkrpg-emulator
 # Screenshots land in ./screenshots/. Re-running after editing the
 # plugin does NOT need a rebuild -- inkrpg.koplugin is bind-mounted.
+# screenshot.sh is ALSO bind-mounted, so iterating on the tap
+# sequence/coordinates doesn't need a rebuild either -- just re-run.
 
 services:
   inkrpg-emulator:
     build: .
     volumes:
       - ../inkrpg.koplugin:/home/ko/koreader/plugins/inkrpg.koplugin
+      - ./screenshot.sh:/home/ko/screenshot.sh
       - ./screenshots:/home/ko/screenshots
     environment:
       - DISPLAY=:99

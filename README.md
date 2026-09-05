@@ -10,14 +10,18 @@ A single-player, AI-narrated tabletop RPG framework for KOReader.
 
 ## Status
 
-Phase 0/1 scaffold: engine skeleton plus one playable non-AI demo game,
-plus a `emulator/` Docker Compose harness for the real KOReader desktop
-emulator. The engine code itself is still **not yet run against a real
-KOReader emulator or device** -- see `emulator/README.md` for exactly
-how far that attempt got (build toolchain confirmed working, one real
-`wget` cert bug found and fixed, blocked at the dependency-download step
-by my own sandbox's network policy -- should build fine on a normal
-connection) and "Known gaps" below before trusting any of this.
+Phase 0/1 scaffold (engine skeleton + one playable non-AI demo game) plus
+Phase 2 (structured AI responses wired into the main play loop, not just
+the free-text side path), plus an `emulator/` Docker Compose harness for
+the real KOReader desktop emulator.
+
+The emulator build succeeded on your machine and the plugin **loads
+cleanly in real KOReader with zero Lua errors** (confirmed from
+`emulator/screenshots/koreader-stdout.log`: "Plugin loaded inkrpg" / "RD
+loaded plugin inkrpg at plugins/inkrpg.koplugin"). What's *not* yet
+confirmed on screen is the actual play loop (menu navigation, scene
+rendering, the AI turn loop) -- see `emulator/README.md` for where that
+stands. See "Known gaps" below before trusting any of this.
 
 ## Try it
 
@@ -67,18 +71,29 @@ pattern that's proven to work rather than the original diagram.
 
 ## Known gaps (read before assuming this works)
 
-- **Never executed.** This was written against KOReader's documented
-  APIs and cross-checked line-by-line against real plugins on GitHub,
-  but I have no way to run KOReader myself. Treat it as
-  reviewed-against-source code, not tested code. The very next step
-  should be getting it to load in the emulator and fixing whatever
-  disagrees with the real widget toolkit.
+- **Loads, but the play loop itself is unconfirmed on screen.** The
+  plugin registers and loads with zero Lua errors in real KOReader (see
+  Status above), which was cross-checked line-by-line against real
+  plugins on GitHub before that. What's still unconfirmed is the actual
+  UI: menu navigation, scene rendering, and the AI turn loop have only
+  been exercised with `lupa` (a Python<->Lua binding) against stubbed
+  KOReader widget modules, not against KOReader's real widget toolkit on
+  screen. `emulator/README.md` has the current state of getting a
+  screenshot of that.
 - `inkrpg_ai_provider.lua` only implements the OpenAI-compatible request
   shape (works for OpenAI itself, Ollama, DeepSeek, Groq, OpenRouter,
   and similar). Native Claude Messages API / Gemini endpoints use a
   different request and response shape and need their own small handler
-  -- that's a Phase 2 task, not started here.
-- Free-text AI replies are shown raw, not parsed into structured state
-  changes (HP/inventory/flags). That parsing is the rest of Phase 2.
+  -- not started.
+- **Phase 2 is done in code, not yet confirmed against a live model.**
+  `AIProvider.requestStructured()` asks the model for narration + choices
+  + state changes (HP/flags/inventory) as JSON and `PlayScreen` applies
+  them and continues the story from there (`ai_scene` in the save file
+  tracks being mid-AI-improvised-scene vs. on the authored graph). Tested
+  with `lupa` against canned AI replies (fence-stripping, hp clamping,
+  flag/inventory adds & removes, save/resume of an in-progress AI scene,
+  the AI-unavailable fallback) -- not yet tried against a real model's
+  actual output, which may not follow the JSON shape as reliably as the
+  canned test fixtures do.
 - No in-app settings screen for provider/model/API key yet (Phase 4) --
   hand-edit `configuration.lua` for now.

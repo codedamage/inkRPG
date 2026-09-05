@@ -1,0 +1,482 @@
+make TARGET= KODEBUG=1 VERBOSE= RWRAP=EMULATE_READER_W=540\ EMULATE_READER_H=720\ EMULATE_READER_DPI= RARGS=-d run
+   0% | Building 'crengine'
+ninja: no work to do.
+  50% | Installing 'crengine'
+  50% | Building 'koreader'
+ninja: no work to do.
+ 100% | Installing 'koreader'
+make[1]: warning: -j12 forced in submake: resetting jobserver mode.
+[*] Install front spec only for the emulator
+[*] Install launcher for the emulator
+[*] Install update once marker
+[*] Install plugins
+[*] Install resources
+[*] Install data files
+---------------------------------------------
+                launching...
+  _  _____  ____                _
+ | |/ / _ \|  _ \ ___  __ _  __| | ___ _ __
+ | ' / | | | |_) / _ \/ _` |/ _` |/ _ \ '__|
+ | . \ |_| |  _ <  __/ (_| | (_| |  __/ |
+ |_|\_\___/|_| \_\___|\__,_|\__,_|\___|_|
+
+ It's a scroll... It's a codex... It's KOReader!
+
+ [*] Current time: 09/05/26-14:04:46
+has monolibtic? no (libs/libkoreader-monolibtic.so: cannot open shared object file: No such file or directory)
+lib_search_path: libs/?
+lib_basic_format: lib%s.so
+lib_version_format: lib%s.so.%s
+ [*] Version: v2026.07.2-127-ge33266915_2026-09-03_emulator
+
+ffi.load: rt.so.1 (RTLD_GLOBAL)
+ffi.findlib: utf8proc [3]
+ffi.load: libs/libutf8proc.so.3
+ffi.findlib: blitbuffer
+ffi.load: libs/libblitbuffer.so
+ffi.findlib: SDL3 [0]
+ffi.load: libSDL3.so.0
+09/05/26-14:04:47 DEBUG fts: Preferred MONOTONIC clock source is CLOCK_MONOTONIC 
+09/05/26-14:04:47 DEBUG fts: Preferred REALTIME clock source is CLOCK_REALTIME 
+09/05/26-14:04:47 DEBUG fts: BOOTTIME clock source is supported 
+error: XDG_RUNTIME_DIR not set in the environment.
+Started SDL in /home/ko/koreader/base/build/x86_64-linux-gnu-debug/ using x11 video driver
+09/05/26-14:04:47 DEBUG refresh on logical rectangle 540x720+0+0 
+ffi.findlib: lodepng
+ffi.load: libs/liblodepng.so
+09/05/26-14:04:47 INFO  initializing for device Emulator 
+09/05/26-14:04:47 INFO  framebuffer resolution: {
+  h = 720,
+  w = 540
+} --[[table: 0x75d42401aa38]] 
+ffi.findlib: wrap-mupdf
+ffi.load: libs/libwrap-mupdf.so
+ffi.findlib: sqlite3 [0]
+ffi.load: libs/libsqlite3.so.0
+09/05/26-14:04:47 INFO  Performing one-time migration for 20200421 
+09/05/26-14:04:47 WARN  os.remove: ./cache/fontlist/fontinfo.dat: No such file or directory 
+ffi.findlib: freetype [6]
+ffi.load: libs/libfreetype.so.6
+ffi.findlib: harfbuzz [0]
+ffi.load: libs/libharfbuzz.so.0
+ffi.findlib: zstd [1]
+ffi.load: libs/libzstd.so.1
+09/05/26-14:04:47 INFO  ./cache/fontlist/fontinfo.dat fopen: No such file or directory -> initializing it 
+09/05/26-14:04:47 DEBUG FontList registered: Noto Sans Bengali UI 
+09/05/26-14:04:47 DEBUG FontList registered: FreeSerif 
+09/05/26-14:04:47 DEBUG FontList registered: Nimbus Roman No9 L 
+09/05/26-14:04:47 DEBUG FontList registered: Noto Serif 
+09/05/26-14:04:47 DEBUG FontList registered: Nimbus Mono 
+09/05/26-14:04:47 DEBUG FontList registered: Droid Sans Mono 
+09/05/26-14:04:47 DEBUG FontList registered: Noto Sans CJK SC 
+09/05/26-14:04:47 DEBUG FontList registered: Noto Sans 
+09/05/26-14:04:47 DEBUG FontList registered: Nimbus Sans L 
+09/05/26-14:04:47 DEBUG FontList registered: Noto Sans Arabic UI 
+09/05/26-14:04:47 DEBUG FontList registered: FreeSans 
+09/05/26-14:04:47 DEBUG FontList registered: NotoSans Nerd Font 
+09/05/26-14:04:47 DEBUG FontList registered: Dingbats 
+09/05/26-14:04:47 DEBUG FontList registered: Noto Naskh Arabic 
+09/05/26-14:04:47 DEBUG FontList registered: Noto Sans Devanagari UI 
+09/05/26-14:04:47 DEBUG FontList registered: Standard Symbols L 
+09/05/26-14:04:47 DEBUG Found font: NotoSans-Regular.ttf in ./fonts/noto/NotoSans-Regular.ttf 
+09/05/26-14:04:47 DEBUG Found font: NotoSans-Bold.ttf in ./fonts/noto/NotoSans-Bold.ttf 
+09/05/26-14:04:47 DEBUG Found font: NotoSans-Bold.ttf in ./fonts/noto/NotoSans-Bold.ttf 
+09/05/26-14:04:47 DEBUG Found font: NotoSans-Regular.ttf in ./fonts/noto/NotoSans-Regular.ttf 
+09/05/26-14:04:47 DEBUG Found font: NotoSans-Regular.ttf in ./fonts/noto/NotoSans-Regular.ttf 
+09/05/26-14:04:47 DEBUG Allocating a 512MB budget for the global document cache 
+09/05/26-14:04:47 DEBUG Found font: NotoSans-Regular.ttf in ./fonts/noto/NotoSans-Regular.ttf 
+09/05/26-14:04:47 DEBUG Found font: DroidSansMono.ttf in ./fonts/droid/DroidSansMono.ttf 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20210306 (1/2) 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20210306 (2/2) 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20210330 
+ffi.findlib: leptonica [6]
+ffi.load: libs/libleptonica.so.6
+ffi.findlib: k2pdfopt [2]
+ffi.load: libs/libk2pdfopt.so.2
+09/05/26-14:04:47 DEBUG ReadCollection: reading from collection file 
+ffi.findlib: archive [13]
+ffi.load: libs/libarchive.so.13
+09/05/26-14:04:47 INFO  Performing one-time migration for 20210404 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20210409 
+09/05/26-14:04:47 WARN  os.rename: ./cache/fontinfo.dat: No such file or directory 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20210412 
+09/05/26-14:04:47 WARN  os.rename: ./cache/calibre-libraries.lua: No such file or directory 
+09/05/26-14:04:47 WARN  os.rename: ./cache/calibre-books.dat: No such file or directory 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20210414 
+09/05/26-14:04:47 WARN  os.remove: ./cache/calibre/books.dat: No such file or directory 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20210503 & 20210508 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20210518 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20210521 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20210531 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20210622 
+09/05/26-14:04:47 WARN  os.remove: ./cache/fontlist/fontinfo.dat: No such file or directory 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20210629 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20210715 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20210720 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20210831 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20210925 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20220116 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20220205 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20220819 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20220914 
+09/05/26-14:04:47 WARN  os.remove: ./cache/fontlist/fontinfo.dat: No such file or directory 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20220930 
+09/05/26-14:04:47 WARN  loadfile: cannot open ./defaults.persistent.lua: No such file or directory 
+09/05/26-14:04:47 WARN  os.rename: ./defaults.persistent.lua: No such file or directory 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20221027 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20230531 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20230703 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20230707 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20230710 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20230731 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20230802 
+09/05/26-14:04:47 INFO  statistics.sqlite3 not found. 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20230901 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20231217 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20240408 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20240616 
+09/05/26-14:04:47 WARN  os.remove: ./cache/fontlist/fontinfo.dat: No such file or directory 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20240731 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20240911 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20240914 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20240915 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20240928 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20241123 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20241207 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20241208 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20241228 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20250207 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20250302 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20250318 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20250405 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20250601 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20250914 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20250929 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20260306 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20260428 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20260512 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20260517 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20260623 
+09/05/26-14:04:47 INFO  Performing one-time migration for 20260804 
+09/05/26-14:04:47 DEBUG Found font: NotoSansCJKsc-Regular.otf in ./fonts/noto/NotoSansCJKsc-Regular.otf 
+09/05/26-14:04:47 DEBUG ImageWidget: _render'ing resources/icons/mdlight/notice-info.svg 36 36 
+09/05/26-14:04:47 DEBUG renderSVG resources/icons/mdlight/notice-info.svg 0.75 48 48 > 36 36 0 0 
+09/05/26-14:04:47 DEBUG cache image|resources/icons/mdlight/notice-info.svg|36|36|alpha 
+09/05/26-14:04:47 DEBUG ImageWidget: initial offsets 0 0 
+09/05/26-14:04:47 DEBUG show widget: table: 0x75d3cc526568 
+09/05/26-14:04:47 DEBUG setDirty nil from widget table: 0x75d3cc526568 w/ NO region; dithering: nil 
+09/05/26-14:04:47 DEBUG setDirty via a func from widget table: 0x75d3cc526568 
+09/05/26-14:04:47 DEBUG show reader ui 
+09/05/26-14:04:48 DEBUG ImageWidget: _render'ing resources/icons/mdlight/notice-info.svg 36 36 
+09/05/26-14:04:48 DEBUG ImageWidget: initial offsets 0 0 
+09/05/26-14:04:48 DEBUG show widget: table: 0x75d3b6bcd980 
+09/05/26-14:04:48 DEBUG setDirty nil from widget table: 0x75d3b6bcd980 w/ NO region; dithering: nil 
+09/05/26-14:04:48 DEBUG setDirty via a func from widget table: 0x75d3b6bcd980 
+09/05/26-14:04:48 DEBUG painting widget: table: 0x75d3cc526568 
+09/05/26-14:04:48 DEBUG blitFrom 67 341 0 0 36 36 
+09/05/26-14:04:48 DEBUG painting widget: table: 0x75d3b6bcd980 
+09/05/26-14:04:48 DEBUG blitFrom 67 341 0 0 36 36 
+09/05/26-14:04:48 DEBUG _refresh: Enqueued ui update for region 60 265 419 189 dithering: false 
+09/05/26-14:04:48 DEBUG _refresh: Enqueued ui update for region 60 265 419 189 dithering: false 
+09/05/26-14:04:48 DEBUG refresh on logical rectangle 419x189+60+265 
+09/05/26-14:04:48 DEBUG close widget: table: 0x75d3b6bcd980 
+09/05/26-14:04:48 DEBUG setDirty via a func from widget nil 
+09/05/26-14:04:48 DEBUG setDirty nil from widget table: 0x75d3cc526568 w/ NO region; dithering: nil 
+09/05/26-14:04:48 DEBUG creating coroutine for showing reader 
+09/05/26-14:04:48 INFO  opening file ./help/quickstart-en-v2026.07.2-127-ge33266915_2026-09-03_emulator.html 
+09/05/26-14:04:48 DEBUG CreDocument: using cre call cache 
+09/05/26-14:04:48 INFO  Inhibiting user input 
+09/05/26-14:04:48 DEBUG ImageWidget: _render'ing resources/icons/mdlight/book.opened.svg 29 29 
+09/05/26-14:04:48 DEBUG renderSVG resources/icons/mdlight/book.opened.svg 0.60416666666667 48 48 > 29 29 0 0 
+09/05/26-14:04:48 DEBUG cache image|resources/icons/mdlight/book.opened.svg|29|29|flat 
+09/05/26-14:04:48 DEBUG ImageWidget: initial offsets 0 0 
+09/05/26-14:04:48 DEBUG Getting list of dictionaries 
+09/05/26-14:04:48 DEBUG found 0 dictionaries 
+09/05/26-14:04:48 DEBUG CreDocument: applied cr3.ini default settings. 
+09/05/26-14:04:48 DEBUG CreDocument: set fallback font faces: Noto Sans CJK SC|Noto Naskh Arabic|Noto Sans Devanagari UI|Noto Sans Bengali UI|FreeSans|FreeSerif|Noto Serif|Noto Sans 
+09/05/26-14:04:48 DEBUG CreDocument: set adjusted fallback font sizes true 
+09/05/26-14:04:48 DEBUG CreDocument: set monospace font scaling 100 
+09/05/26-14:04:48 INFO  Looking for plugins in directory: plugins 
+09/05/26-14:04:48 DEBUG Plugin loaded archiveviewer 
+09/05/26-14:04:48 DEBUG Plugin loaded autodim 
+09/05/26-14:04:48 DEBUG Plugin loaded autosuspend 
+09/05/26-14:04:48 DEBUG Plugin loaded autoturn 
+09/05/26-14:04:48 DEBUG Plugin loaded autowarmth 
+09/05/26-14:04:48 DEBUG Plugin loaded batterystat 
+09/05/26-14:04:48 DEBUG Plugin loaded bookshortcuts 
+09/05/26-14:04:48 DEBUG Plugin loaded calibre 
+09/05/26-14:04:48 DEBUG Plugin loaded cloudstorage 
+09/05/26-14:04:48 DEBUG Plugin loaded coverbrowser 
+09/05/26-14:04:48 DEBUG Plugin loaded coverimage 
+09/05/26-14:04:48 DEBUG Plugin loaded docsettingtweak 
+09/05/26-14:04:48 DEBUG Plugin loaded exporter 
+09/05/26-14:04:48 DEBUG ExternalKeyboard: Cannot mount debugfs (unprivileged user) 
+09/05/26-14:04:48 DEBUG Plugin loaded gestures 
+09/05/26-14:04:48 DEBUG Plugin loaded hotkeys 
+09/05/26-14:04:48 DEBUG Plugin loaded httpinspector 
+09/05/26-14:04:48 DEBUG Plugin loaded inkrpg 
+09/05/26-14:04:48 DEBUG japanese.koplugin deinflector: loaded inflection table with 36 rules and 569 variants 
+09/05/26-14:04:48 DEBUG Plugin loaded japanese 
+09/05/26-14:04:48 DEBUG Plugin loaded keepalive 
+09/05/26-14:04:48 DEBUG Plugin loaded kosync 
+09/05/26-14:04:48 DEBUG Plugin loaded movetoarchive 
+09/05/26-14:04:48 DEBUG CacheSQLite: ./cache/newsdownloader.sqlite current size: 16384 
+09/05/26-14:04:48 DEBUG Plugin loaded newsdownloader 
+09/05/26-14:04:48 DEBUG Plugin loaded opds 
+09/05/26-14:04:48 DEBUG Plugin loaded perceptionexpander 
+09/05/26-14:04:48 DEBUG Plugin loaded profiles 
+09/05/26-14:04:48 DEBUG Plugin loaded qrclipboard 
+09/05/26-14:04:48 DEBUG Plugin loaded readtimer 
+09/05/26-14:04:48 DEBUG Plugin loaded statistics 
+09/05/26-14:04:48 DEBUG Plugin loaded systemstat 
+09/05/26-14:04:48 DEBUG Plugin loaded terminal 
+09/05/26-14:04:48 DEBUG Plugin loaded texteditor 
+09/05/26-14:04:48 DEBUG Found font: NotoSans-Regular.ttf in ./fonts/noto/NotoSans-Regular.ttf 
+09/05/26-14:04:48 DEBUG Found font: NotoSans-Italic.ttf in ./fonts/noto/NotoSans-Italic.ttf 
+09/05/26-14:04:48 DEBUG Plugin loaded vocabbuilder 
+09/05/26-14:04:48 DEBUG Plugin loaded wallabag 
+09/05/26-14:04:48 DEBUG RD loaded plugin archiveviewer at plugins/archiveviewer.koplugin 
+09/05/26-14:04:48 DEBUG RD loaded plugin autodim at plugins/autodim.koplugin 
+09/05/26-14:04:48 DEBUG AutoSuspend: init 
+09/05/26-14:04:48 DEBUG AutoSuspend: start suspend/shutdown timer at 2521.124769 
+09/05/26-14:04:48 DEBUG AutoSuspend: scheduling next suspend check in 900 
+09/05/26-14:04:48 DEBUG AutoSuspend: scheduling next shutdown check in 259200 
+09/05/26-14:04:48 DEBUG RD loaded plugin autosuspend at plugins/autosuspend.koplugin 
+09/05/26-14:04:48 DEBUG RD loaded plugin autoturn at plugins/autoturn.koplugin 
+09/05/26-14:04:48 DEBUG AutoWarmth: scheduleMidnightUpdate 
+09/05/26-14:04:48 DEBUG RD loaded plugin autowarmth at plugins/autowarmth.koplugin 
+09/05/26-14:04:48 DEBUG RD loaded plugin batterystat at plugins/batterystat.koplugin 
+09/05/26-14:04:48 DEBUG RD loaded plugin bookshortcuts at plugins/bookshortcuts.koplugin 
+09/05/26-14:04:48 DEBUG RD loaded plugin calibre at plugins/calibre.koplugin 
+09/05/26-14:04:48 DEBUG RD loaded plugin cloudstorage at plugins/cloudstorage.koplugin 
+09/05/26-14:04:48 INFO  CoverBrowser: setting default display modes 
+09/05/26-14:04:48 WARN  BookInfo cache DB schema updated from version 0 to version 20201210 
+09/05/26-14:04:48 WARN  Deleting existing ./settings/bookinfo_cache.sqlite3 to recreate it 
+09/05/26-14:04:48 DEBUG ImageWidget: _render'ing resources/icons/mdlight/notice-info.svg 36 36 
+09/05/26-14:04:48 DEBUG ImageWidget: initial offsets 0 0 
+09/05/26-14:04:48 DEBUG show widget: table: 0x75d3b5ed7ec8 
+09/05/26-14:04:48 DEBUG setDirty nil from widget table: 0x75d3b5ed7ec8 w/ NO region; dithering: nil 
+09/05/26-14:04:48 DEBUG setDirty via a func from widget table: 0x75d3b5ed7ec8 
+09/05/26-14:04:48 DEBUG CoverBrowser: setting FileManager display mode to: list_image_meta 
+09/05/26-14:04:48 DEBUG CoverBrowser: setting display mode: history mosaic_image 
+09/05/26-14:04:48 DEBUG CoverBrowser: setting display mode: collections mosaic_image 
+09/05/26-14:04:48 DEBUG RD loaded plugin coverbrowser at plugins/coverbrowser.koplugin 
+09/05/26-14:04:48 DEBUG RD loaded plugin coverimage at plugins/coverimage.koplugin 
+09/05/26-14:04:48 DEBUG RD loaded plugin docsettingtweak at plugins/docsettingtweak.koplugin 
+09/05/26-14:04:48 DEBUG RD loaded plugin exporter at plugins/exporter.koplugin 
+09/05/26-14:04:48 WARN  No gestures file or invalid gestures file found, copying defaults 
+09/05/26-14:04:48 DEBUG RD loaded plugin gestures at plugins/gestures.koplugin 
+09/05/26-14:04:48 WARN  No hotkeys file or invalid hotkeys file found, building defaults 
+09/05/26-14:04:48 DEBUG Total number of hotkey events registered successfully:  76 
+09/05/26-14:04:48 DEBUG RD loaded plugin hotkeys at plugins/hotkeys.koplugin 
+09/05/26-14:04:48 DEBUG RD loaded plugin httpinspector at plugins/httpinspector.koplugin 
+09/05/26-14:04:48 DEBUG RD loaded plugin inkrpg at plugins/inkrpg.koplugin 
+09/05/26-14:04:48 DEBUG language support: registering japanese plugin 
+09/05/26-14:04:48 DEBUG RD loaded plugin japanese at plugins/japanese.koplugin 
+09/05/26-14:04:48 DEBUG RD loaded plugin keepalive at plugins/keepalive.koplugin 
+09/05/26-14:04:48 DEBUG RD loaded plugin kosync at plugins/kosync.koplugin 
+09/05/26-14:04:48 DEBUG RD loaded plugin movetoarchive at plugins/movetoarchive.koplugin 
+09/05/26-14:04:48 DEBUG RD loaded plugin newsdownloader at plugins/newsdownloader.koplugin 
+09/05/26-14:04:48 DEBUG RD loaded plugin opds at plugins/opds.koplugin 
+09/05/26-14:04:48 DEBUG RD loaded plugin perceptionexpander at plugins/perceptionexpander.koplugin 
+09/05/26-14:04:48 DEBUG RD loaded plugin profiles at plugins/profiles.koplugin 
+09/05/26-14:04:48 DEBUG RD loaded plugin qrclipboard at plugins/qrclipboard.koplugin 
+09/05/26-14:04:48 DEBUG RD loaded plugin readtimer at plugins/readtimer.koplugin 
+09/05/26-14:04:48 DEBUG RD loaded plugin statistics at plugins/statistics.koplugin 
+09/05/26-14:04:48 DEBUG RD loaded plugin systemstat at plugins/systemstat.koplugin 
+09/05/26-14:04:48 DEBUG Terminal: default shell is bash 
+09/05/26-14:04:48 DEBUG RD loaded plugin terminal at plugins/terminal.koplugin 
+09/05/26-14:04:48 DEBUG RD loaded plugin texteditor at plugins/texteditor.koplugin 
+09/05/26-14:04:48 DEBUG RD loaded plugin vocabbuilder at plugins/vocabbuilder.koplugin 
+09/05/26-14:04:48 DEBUG RD loaded plugin wallabag at plugins/wallabag.koplugin 
+09/05/26-14:04:48 DEBUG CreDocument: set view mode page 
+09/05/26-14:04:48 DEBUG CreDocument: set page info  
+09/05/26-14:04:48 DEBUG CreDocument: set status line property 1 
+09/05/26-14:04:48 DEBUG made tweak css:
+*[type~="note"],
+*[type~="endnote"],
+*[type~="footnote"],
+*[type~="rearnote"],
+*[role~="doc-note"],
+*[role~="doc-endnote"],
+*[role~="doc-footnote"],
+*[role~="doc-rearnote"]
+{
+    -cr-only-if: -fb2-document;
+        -cr-hint: footnote-inpage;
+        margin: 0 !important;
+}
+body[name="notes"] section {
+    -cr-only-if: fb2-document;
+        -cr-hint: footnote-inpage;
+        margin: 0 !important;
+}
+body[name="notes"] > section {
+    -cr-only-if: fb2-document;
+        font-size: 0.75urem;
+}
+body[name="notes"] > title {
+    -cr-only-if: fb2-document;
+        margin-bottom: 0;
+        padding-bottom: 0.5em;
+}
+*, autoBoxing {
+    -cr-hint: late;
+    -cr-only-if: -fb2-document inpage-footnote;
+        font-size: 0.8urem !important;
+}[END] 
+09/05/26-14:04:48 DEBUG CreDocument: set style sheet: ./data/epub.css and appended content (737 bytes) 
+09/05/26-14:04:48 DEBUG CreDocument: set embedded fonts 1 
+09/05/26-14:04:48 DEBUG CreDocument: set embedded style sheet 1 
+09/05/26-14:04:48 DEBUG CreDocument: set block rendering flags 0x7fffffff 
+09/05/26-14:04:48 DEBUG CreDocument: set render dpi 96 
+09/05/26-14:04:48 DEBUG CreDocument: set page margins 9 14 9 28 
+09/05/26-14:04:48 DEBUG CreDocument: set txt preformatted 1 
+09/05/26-14:04:48 DEBUG CreDocument: set smooth scaling false 
+09/05/26-14:04:48 DEBUG CreDocument: set nightmode images true 
+09/05/26-14:04:48 DEBUG CreDocument: set font face Noto Serif 
+09/05/26-14:04:48 DEBUG CreDocument: set header font Noto Sans 
+09/05/26-14:04:48 DEBUG CreDocument: set font size 20 
+09/05/26-14:04:48 DEBUG CreDocument: set font base weight 0 = 400 
+09/05/26-14:04:48 DEBUG CreDocument: set font hinting mode 2 
+09/05/26-14:04:48 DEBUG CreDocument: set font kerning mode 3 
+09/05/26-14:04:48 DEBUG CreDocument: set space width scale 95 
+09/05/26-14:04:48 DEBUG CreDocument: set space condensing 75 
+09/05/26-14:04:48 DEBUG CreDocument: set word expansion 0 
+09/05/26-14:04:48 DEBUG CreDocument: set cjk width scaling 100 
+09/05/26-14:04:48 DEBUG CreDocument: set interline space 100 
+09/05/26-14:04:48 DEBUG CreDocument: set gamma index 15 
+09/05/26-14:04:48 DEBUG CreDocument: set font fractionalbpositioning 2 
+09/05/26-14:04:49 DEBUG CreDocument: set font-family font faces: ||||||FreeSerif|| 
+09/05/26-14:04:49 DEBUG building font face menu table 
+09/05/26-14:04:49 DEBUG CreDocument: set textlang embedded langs true 
+09/05/26-14:04:49 DEBUG CreDocument: set textlang hyphenation enabled true 
+09/05/26-14:04:49 DEBUG CreDocument: set hyphenation trust soft hyphens 0 
+09/05/26-14:04:49 DEBUG CreDocument: set textlang hyphenation soft hyphens only false 
+09/05/26-14:04:49 DEBUG CreDocument: set textlang hyphenation force algorithmic false 
+09/05/26-14:04:49 DEBUG CreDocument: set hyphenation left hyphen min 0 
+09/05/26-14:04:49 DEBUG CreDocument: set hyphenation right hyphen min 0 
+09/05/26-14:04:49 DEBUG CreDocument: set floating punctuation 0 
+09/05/26-14:04:49 DEBUG Typography lang: using fallback  en-US , might be overridden by doc language 
+09/05/26-14:04:49 DEBUG CreDocument: set textlang main lang en-US 
+09/05/26-14:04:49 DEBUG UserHyph: reset user hyphenation dict 
+09/05/26-14:04:49 DEBUG CreDocument: requesting DOM version: 20260812 
+09/05/26-14:04:49 DEBUG CreDocument: set visible page count 1 
+09/05/26-14:04:49 DEBUG CreDocument: loading document... 
+09/05/26-14:04:49 DEBUG CreDocument: loading done. 
+09/05/26-14:04:49 DEBUG   loading took 0.014 seconds 
+09/05/26-14:04:49 DEBUG Typography lang: no doc language, keeping en-US 
+09/05/26-14:04:49 DEBUG CreDocument: rendering document... 
+09/05/26-14:04:49 DEBUG CreDocument: rendering done. 
+09/05/26-14:04:49 DEBUG   rendering took 0.029 seconds 
+09/05/26-14:04:49 DEBUG validateAndFixToc(): quick scan 
+09/05/26-14:04:49 DEBUG validateAndFixToc(): TOC is fine 
+09/05/26-14:04:49 DEBUG CreDocument: set alt document prop title KOReader Quickstart Guide 
+09/05/26-14:04:49 DEBUG _refresh: Enqueued partial update for region 0 0 540 720 dithering: false 
+09/05/26-14:04:49 DEBUG setDirty partial from widget ReaderUI w/ NO region; dithering: nil 
+09/05/26-14:04:49 DEBUG CreDocument: set page info  
+09/05/26-14:04:49 DEBUG CoverImage: onReaderReady 
+09/05/26-14:04:49 DEBUG ReaderStatistics: Initializing average time per page at 50% of the max value, i.e., 60 
+09/05/26-14:04:49 DEBUG setDirty via a func from widget ReaderUI 
+09/05/26-14:04:49 DEBUG _refresh: Enqueued partial update for region 0 0 540 720 dithering: false 
+09/05/26-14:04:49 DEBUG setDirty partial from widget ReaderUI w/ NO region; dithering: nil 
+09/05/26-14:04:49 DEBUG CreDocument: set bookmarks highlight and internal history false 
+09/05/26-14:04:49 DEBUG _refresh: Enqueued partial update for region 0 0 540 720 dithering: false 
+09/05/26-14:04:49 DEBUG setDirty partial from widget ReaderUI w/ NO region; dithering: nil 
+09/05/26-14:04:49 DEBUG CreDocument: set page info  
+09/05/26-14:04:49 DEBUG ReaderStatistics: No timestamp for previous page 0 
+09/05/26-14:04:49 DEBUG Spinning up new ReaderUI instance table: 0x75d3cc267f20 
+09/05/26-14:04:49 DEBUG show widget: ReaderUI 
+09/05/26-14:04:49 DEBUG update_mode: Update refresh mode partial to full 
+09/05/26-14:04:49 DEBUG _refresh: Enqueued full update for region 0 0 540 720 dithering: false 
+09/05/26-14:04:49 DEBUG setDirty full from widget ReaderUI w/ NO region; dithering: nil 
+09/05/26-14:04:49 DEBUG painting widget: ReaderUI 
+09/05/26-14:04:49 DEBUG CreDocument: goto page 1 flow 0 
+09/05/26-14:04:49 DEBUG Found font: NotoSans-Regular.ttf in ./fonts/noto/NotoSans-Regular.ttf 
+09/05/26-14:04:49 DEBUG painting widget: table: 0x75d3cc526568 
+09/05/26-14:04:49 DEBUG blitFrom 67 341 0 0 36 36 
+09/05/26-14:04:49 DEBUG painting widget: table: 0x75d3b5ed7ec8 
+09/05/26-14:04:49 DEBUG blitFrom 67 341 0 0 36 36 
+09/05/26-14:04:49 DEBUG _refresh: Enqueued full update for region 0 0 540 720 dithering: false 
+09/05/26-14:04:49 DEBUG _refresh: Enqueued full update for region 0 0 540 720 dithering: false 
+09/05/26-14:04:49 DEBUG _refresh: Enqueued full update for region 0 0 540 720 dithering: false 
+09/05/26-14:04:49 DEBUG refresh on logical rectangle 540x720+0+0 
+09/05/26-14:04:49 DEBUG input event => type: 83 (EV_SDL), code: 519, value: cdata<struct SDL_WindowEvent &>: 0x75d3b6d99dc8, time: 2522.205284 
+09/05/26-14:04:49 INFO  Restoring user input handling 
+09/05/26-14:04:51 DEBUG close widget: table: 0x75d3b5ed7ec8 
+09/05/26-14:04:51 DEBUG setDirty via a func from widget nil 
+09/05/26-14:04:51 DEBUG Lower widget ReaderUI covers the full screen 
+09/05/26-14:04:51 DEBUG setDirty nil from widget ReaderUI w/ NO region; dithering: nil 
+09/05/26-14:04:51 DEBUG setDirty nil from widget table: 0x75d3cc526568 w/ NO region; dithering: nil 
+09/05/26-14:04:51 DEBUG painting widget: ReaderUI 
+09/05/26-14:04:51 DEBUG CreDocument: goto page 1 flow 0 
+09/05/26-14:04:51 DEBUG painting widget: table: 0x75d3cc526568 
+09/05/26-14:04:51 DEBUG blitFrom 67 341 0 0 36 36 
+09/05/26-14:04:51 DEBUG _refresh: Enqueued ui update for region 60 323 419 73 dithering: false 
+09/05/26-14:04:51 DEBUG refresh on logical rectangle 419x73+60+323 
+09/05/26-14:05:07 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 2540.296096 
+09/05/26-14:05:07 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: 0, time: 2540.296096 
+09/05/26-14:05:07 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 486, time: 2540.296096 
+09/05/26-14:05:07 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 248, time: 2540.296096 
+09/05/26-14:05:07 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 2540.296096 
+09/05/26-14:05:07 DEBUG GestureDetector:probeClockSource: Touch event timestamps appear to use CLOCK_MONOTONIC 
+09/05/26-14:05:07 DEBUG slot 0 in tap state... 
+09/05/26-14:05:07 DEBUG set up hold timer 
+09/05/26-14:05:07 DEBUG AutoSuspend: onInputEvent 
+09/05/26-14:05:07 DEBUG AutoTurn: onInputEvent 
+09/05/26-14:05:07 DEBUG MovableContainer:onMovableTouch {
+  ges = "touch",
+  pos = "0x0+486+248",
+  time = 2540296096
+} --[[table: 0x75d3cc179930]] 
+09/05/26-14:05:07 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 2540.300096 
+09/05/26-14:05:07 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: -1, time: 2540.300096 
+09/05/26-14:05:07 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 486, time: 2540.300096 
+09/05/26-14:05:07 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 248, time: 2540.300096 
+09/05/26-14:05:07 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 2540.300096 
+09/05/26-14:05:07 DEBUG slot 0 in tap state... 
+09/05/26-14:05:07 DEBUG Contact:handleDoubleTap: single tap detected @ 486 248 
+09/05/26-14:05:07 DEBUG AutoSuspend: onInputEvent 
+09/05/26-14:05:07 DEBUG AutoTurn: onInputEvent 
+09/05/26-14:05:07 DEBUG close widget: table: 0x75d3cc526568 
+09/05/26-14:05:07 DEBUG setDirty via a func from widget nil 
+09/05/26-14:05:07 DEBUG Lower widget ReaderUI covers the full screen 
+09/05/26-14:05:07 DEBUG setDirty nil from widget ReaderUI w/ NO region; dithering: nil 
+09/05/26-14:05:07 DEBUG painting widget: ReaderUI 
+09/05/26-14:05:07 DEBUG CreDocument: goto page 1 flow 0 
+09/05/26-14:05:07 DEBUG _refresh: Enqueued ui update for region 60 265 419 189 dithering: false 
+09/05/26-14:05:07 DEBUG refresh on logical rectangle 419x189+60+265 
+09/05/26-14:05:08 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 2541.484144 
+09/05/26-14:05:08 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: 0, time: 2541.484144 
+09/05/26-14:05:08 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 286, time: 2541.484144 
+09/05/26-14:05:08 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 148, time: 2541.484144 
+09/05/26-14:05:08 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 2541.484144 
+09/05/26-14:05:08 DEBUG slot 0 in tap state... 
+09/05/26-14:05:08 DEBUG set up hold timer 
+09/05/26-14:05:08 DEBUG AutoSuspend: onInputEvent 
+09/05/26-14:05:08 DEBUG AutoTurn: onInputEvent 
+09/05/26-14:05:08 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 2541.488144 
+09/05/26-14:05:08 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: -1, time: 2541.488144 
+09/05/26-14:05:08 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 286, time: 2541.488144 
+09/05/26-14:05:08 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 148, time: 2541.488144 
+09/05/26-14:05:08 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 2541.488144 
+09/05/26-14:05:08 DEBUG slot 0 in tap state... 
+09/05/26-14:05:08 DEBUG Contact:handleDoubleTap: single tap detected @ 286 148 
+09/05/26-14:05:08 DEBUG AutoSuspend: onInputEvent 
+09/05/26-14:05:08 DEBUG AutoTurn: onInputEvent 
+09/05/26-14:05:08 DEBUG ReaderLink:getLinkFromPosition @ 286 148 from a_xpointer: nil to link_xpointer:  
+09/05/26-14:05:08 DEBUG goto relative screen: 1 in mode: page 
+09/05/26-14:05:08 DEBUG CreDocument: goto page 2 flow 0 
+09/05/26-14:05:08 DEBUG _refresh: Enqueued partial update for region 0 0 540 720 dithering: false 
+09/05/26-14:05:08 DEBUG setDirty partial from widget ReaderUI w/ NO region; dithering: nil 
+09/05/26-14:05:08 DEBUG CreDocument: set page info  
+09/05/26-14:05:08 DEBUG painting widget: ReaderUI 
+09/05/26-14:05:08 DEBUG CreDocument: goto page 2 flow 0 
+09/05/26-14:05:08 DEBUG setDirty full on no specific widget: found a dithered widget, infecting the refresh queue 
+09/05/26-14:05:08 DEBUG update_mode: Update refresh mode partial to full 
+09/05/26-14:05:08 DEBUG update_dither: Update dither hint false to true 
+09/05/26-14:05:08 DEBUG _refresh: Enqueued full update for region 0 0 540 720 dithering: true 
+09/05/26-14:05:08 DEBUG setDirty full from widget nil w/ NO region; dithering: true 
+09/05/26-14:05:08 DEBUG _repaint: it was dithered, infecting the refresh queue 
+09/05/26-14:05:08 DEBUG refresh on logical rectangle 540x720+0+0 
+X connection to :99 broken (explicit kill or server shutdown).
