@@ -243,6 +243,42 @@
 #      --network=host to actually reach it) -- but the POINT of this
 #      round is confirming the button/flow renders and completes
 #      without a Lua error, not that the live HTTP call succeeds.
+#
+# ROUND 12 (07 Sep 2026) -- based on real output from round 11:
+#   - Everything through the provider-picker round-trip confirmed exactly
+#     as coded: 06-inkrpg-submenu.png showed the new "Play"/"AI provider
+#     settings" submenu (rendered as KOReader's own inline touch-menu
+#     dropdown, not a full popup -- different chrome than the other
+#     Menu:new{} screens in this plugin, but functionally the same), 07
+#     showed inkrpg_settings_screen.lua's menu with all rows "not set",
+#     08 showed the 6-entry provider picker verbatim, and 09 confirmed
+#     picking "Local Ollama" returns to the settings menu with "Provider:
+#     Local Ollama" / "Model: llama3.1" auto-filled by pickProvider()'s
+#     default_model logic. Log stayed completely clean (zero Lua errors,
+#     zero "cantopen" -- the Dockerfile fix from the previous round is
+#     confirmed working now too).
+#   - SETTINGS_ROW3_Y's guess (290) landed one row short, on "API key"
+#     instead of "Test connection" -- which incidentally confirmed that
+#     row's InputDialog too (10/11 both show the "API key" InputDialog,
+#     password field + Show password checkbox + Cancel/Save, exactly as
+#     editApiKey() builds it). Corrected above from a real crop
+#     measurement (346, not 290).
+#   - Caveat worth flagging, not yet acted on: inkrpg_settings.lua saves
+#     to DataStorage:getSettingsDir().."/inkrpg_settings.lua", a flat
+#     file in the settings dir root -- NOT inside the "settings/inkrpg"
+#     subfolder that docker-compose.yml bind-mounts for save-game
+#     persistence. So unlike game saves, AI provider settings picked in
+#     one `docker compose run` do NOT persist into the next one; this
+#     run's "Local Ollama" pick will be gone on the next fresh run. Not a
+#     bug in the plugin itself (real installs keep one persistent
+#     settings dir), just a gap in this emulator harness -- worth a
+#     dedicated volume mount later if testing settings persistence
+#     across runs matters, not addressed this round.
+#
+# This round only changes the SETTINGS_ROW3_Y constant above -- the step
+# sequence is unchanged, so this run should reach "Test connection" for
+# real this time and show its actual result (success or a clean failure
+# message) in 10/11 instead of the API key dialog again.
 set -e
 
 mkdir -p /home/ko/screenshots
@@ -289,7 +325,15 @@ ROW3_Y=838
 SUBMENU_ROW1_Y=$((CONTENT_TOP + 60))
 SUBMENU_ROW2_Y=$((SUBMENU_ROW1_Y + 40))
 SETTINGS_ROW1_Y=$((CONTENT_TOP + 60))
-SETTINGS_ROW3_Y=$((SETTINGS_ROW1_Y + 80))
+# Round 11 result: the SETTINGS_ROW3_Y guess (SETTINGS_ROW1_Y+80=290) was
+# one row short -- it landed on "API key" (which still usefully confirmed
+# that row's InputDialog renders correctly, password field and all) not
+# "Test connection". Measured directly from a 2x crop of round 11's
+# 07-ai-settings.png: the 4 rows (Provider/Model/API key/Test connection)
+# run from y~210 with separators at 190/232/280/325/368 (crop-local before
+# the +190 offset, i.e. absolute), putting "Test connection"'s row center
+# at 346, not 290 -- corrected below.
+SETTINGS_ROW3_Y=346
 PICKER_ROW2_Y=$((CONTENT_TOP + 60 + 40))
 
 echo "Starting Xvfb..."

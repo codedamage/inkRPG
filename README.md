@@ -115,12 +115,14 @@ pattern that's proven to work rather than the original diagram.
   restarting, and a save persisting across two independent
   `docker compose run` invocations all render correctly in real KOReader
   via the emulator, log clean throughout -- see Status above and
-  `emulator/README.md` for every screenshot. Not yet clicked through:
-  the "...Something else" free-text path, or the new AI provider
-  settings screen (written and `lupa`-tested, not yet confirmed on
-  screen in the emulator -- see the settings-screen entry below). Once
-  that's confirmed, an API key can be set through the UI and this path
-  can finally be exercised too.
+  `emulator/README.md` for every screenshot. The AI provider settings
+  screen is now confirmed on screen too (see the settings-screen entry
+  below). Not yet clicked through: the "...Something else" free-text
+  path itself, which needs a real, reachable AI endpoint -- the emulator
+  container's "localhost" isn't the Windows host running Ollama, so
+  that's the next environment wrinkle to sort out before this can be
+  exercised end-to-end in the emulator (a real device wouldn't have this
+  problem).
 - `inkrpg_ai_provider.lua` only implements the OpenAI-compatible request
   shape (works for OpenAI itself, Ollama, DeepSeek, Groq, OpenRouter,
   and similar). Native Claude Messages API / Gemini endpoints use a
@@ -136,13 +138,23 @@ pattern that's proven to work rather than the original diagram.
   the AI-unavailable fallback) -- not yet tried against a real model's
   actual output, which may not follow the JSON shape as reliably as the
   canned test fixtures do.
-- **In-app settings screen for provider/model/API key is implemented**
-  (Phase 4 item, done ahead of schedule): Tools -> More tools -> inkRPG
-  -> AI provider settings, with a provider-preset picker, model/base-URL/
-  API-key editors, a masked key display, and a "Test connection" button.
-  Stored via KOReader's own `LuaSettings` in its settings directory, not
-  in this repo -- see `inkrpg_settings.lua` / `inkrpg_settings_screen.lua`.
-  Written and `lupa`-tested (syntax + logic, canned scenarios for every
-  screen and callback) but **not yet visually confirmed in the real
-  emulator** -- next thing to screenshot-test, same as everything else in
-  this list.
+- **In-app settings screen for provider/model/API key is implemented
+  and confirmed on screen** (Phase 4 item, done ahead of schedule):
+  Tools -> More tools -> inkRPG -> AI provider settings, with a
+  provider-preset picker, model/base-URL/API-key editors, a masked key
+  display, and a "Test connection" button. Stored via KOReader's own
+  `LuaSettings` in its settings directory, not in this repo -- see
+  `inkrpg_settings.lua` / `inkrpg_settings_screen.lua`. Confirmed in the
+  real emulator: the submenu, the settings menu, the 6-entry provider
+  picker, picking a preset and having model/base_url auto-fill, the API
+  key entry dialog, and "Test connection" all render and behave exactly
+  as coded, including a clean (non-crashing) failure message when
+  nothing's fully configured yet -- log stayed error-free throughout.
+  One real UX rough edge this surfaced: Ollama's OpenAI-compat endpoint
+  ignores the API key but the settings screen still treats an empty key
+  as "not configured" and falls through to the `configuration.lua`
+  check, so picking "Local Ollama" alone isn't enough -- something
+  (even a throwaway value like `ollama`) has to go in the API key field
+  too. Not yet fixed; worth a small UX tweak later (e.g. skip the
+  empty-key requirement for presets that don't need one, or prefill a
+  placeholder).
