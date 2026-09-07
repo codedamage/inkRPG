@@ -137,7 +137,7 @@ Port the provider/handler pattern from `assistant.koplugin` for API-key config a
 Write and document the `manifest.yaml`/scene schema properly. Optionally build a small validator (a Node or Python script run on your dev machine, not on the device) to lint game packs before copying them over. Author a short real one-shot DnD adventure as the reference/example game pack.
 
 **Phase 4 — polish**
-In-app settings screen for provider/model/API key (instead of hand-editing a Lua file), multiple save slots with a picker, graceful handling of dropped Wi-Fi mid-turn, a rough token/cost estimate shown to the player, respecting KOReader's global font-size settings automatically (comes free from using its native widgets).
+~~In-app settings screen for provider/model/API key (instead of hand-editing a Lua file)~~ -- **done ahead of schedule**: `inkrpg_settings.lua` + `inkrpg_settings_screen.lua`, reached from Tools > More tools > inkRPG > AI provider settings, storing per-user config via KOReader's own `LuaSettings` (not in this repo); `configuration.lua` remains as a power-user override. Written and `lupa`-tested, not yet visually confirmed in the emulator. Remaining: multiple save slots with a picker, graceful handling of dropped Wi-Fi mid-turn, a rough token/cost estimate shown to the player, respecting KOReader's global font-size settings automatically (comes free from using its native widgets).
 
 **Phase 5 — stretch goals**
 Local-LLM support via Ollama on the same network for zero-cost play (the provider layer already supports this shape); a small reusable combat/skill-check resolver module shared across game packs; a "game pack" sharing/install flow modeled on `appstore.koplugin`'s community-plugin browser.

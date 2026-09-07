@@ -1,5 +1,14 @@
--- Copy this file to configuration.lua (same folder) and fill in your key.
--- configuration.lua is gitignored -- never commit real API keys.
+-- This is the power-user/scripting override, not the primary setup path --
+-- most people should use Tools > More tools > inkRPG > AI provider
+-- settings in-app instead (provider picker, API key field, test-connection
+-- button; stored via KOReader's own settings dir, not this repo). This
+-- file is only consulted when nothing has been saved through that screen
+-- yet -- see inkrpg_settings.lua / inkrpg_settings_screen.lua / the
+-- loadConfig() comment atop inkrpg_ai_provider.lua.
+--
+-- To use it anyway: copy this file to configuration.lua (same folder) and
+-- fill in your key. configuration.lua is gitignored -- never commit real
+-- API keys.
 --
 -- `provider` selects which entry under provider_settings is active. Any
 -- OpenAI-compatible chat-completions endpoint works here: OpenAI itself,

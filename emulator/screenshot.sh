@@ -187,6 +187,62 @@
 # show entrance_hall's text directly (since PlayScreen:start() reads
 # the persisted scene_id), not cave_mouth's opening text, even though
 # nothing in the script changed to request that.
+#
+# ROUND 11 (07 Sep 2026) -- main.lua changed since round 10: the flat
+# "inkRPG" entry inside "More tools" (confirmed with NO ▸ arrow in round
+# 6 -- a direct action) is now a submenu (sub_item_table with "Play" and
+# "AI provider settings"), added to build the new in-app AI provider
+# settings screen (inkrpg_settings.lua / inkrpg_settings_screen.lua) the
+# user asked for, so credentials are a per-user runtime setting instead
+# of a hand-edited configuration.lua in the codebase. That means
+# tapping INKRPG_X/INKRPG_Y (still the same row inside "More tools" --
+# that part of the tree is unchanged) now opens a small 2-item submenu
+# instead of the game picker directly, and everything downstream of
+# that tap in rounds 6-10 no longer applies as written.
+#
+# The already-recorded rounds above fully confirmed the non-AI game
+# loop end-to-end under the OLD flat-menu shape, so this round does not
+# repeat that walk -- it focuses on the new, not-yet-confirmed-on-screen
+# part: the inkRPG submenu itself, and the AI provider settings screen
+# reached from it. Steps, chained same as previous rounds (screenshot
+# after each so a wrong guess is caught immediately rather than
+# compounding):
+#   1. Tap INKRPG_X/INKRPG_Y (unchanged from round 6) -- should now
+#      reveal the 2-item "Play" / "AI provider settings" submenu instead
+#      of the old game picker.
+#   2. Tap the second row of that submenu ("AI provider settings").
+#      Position is an informed guess, not yet measured: the one other
+#      small Menu seen so far (the 1-item game picker) had its first row
+#      at CONTENT_TOP+60 -- reused here as SUBMENU_ROW1_Y, with
+#      SUBMENU_ROW2_Y one row-height (~40px, the smallest spacing seen
+#      between adjacent list rows elsewhere in this script) below that.
+#      Should open inkrpg_settings_screen.lua's menu: "Provider: not
+#      set", "Model: not set", "API key: not set", "Test connection"
+#      (no "Base URL" row yet -- that only appears once a "custom"
+#      preset is chosen, per the screen's own logic).
+#   3. Tap that settings menu's first row ("Provider: not set") --
+#      SETTINGS_ROW1_Y, same CONTENT_TOP+60 guess as any first row.
+#      Should open the provider picker (openai / ollama / deepseek /
+#      groq / openrouter / custom).
+#   4. Tap the picker's second entry ("Local Ollama") -- picking Ollama
+#      specifically because it's already installed and running locally,
+#      so "Test connection" afterward has a real chance of succeeding
+#      without spending API credits on a hosted provider. Position:
+#      SETTINGS_ROW1_Y (first row) + one row height for the 2nd entry =
+#      PICKER_ROW2_Y. Should return to the settings menu, now showing
+#      "Provider: Local Ollama" and "Model: llama3.1" (pickProvider()
+#      fills in the preset's default_model automatically).
+#   5. Tap "Test connection", now the 3rd row of the settings menu since
+#      picking a provider didn't add a Base URL row (only "custom"
+#      does) -- SETTINGS_ROW3_Y, one more row-height down from
+#      SETTINGS_ROW1_Y+SETTINGS_ROW2_Y spacing. Expect an "InfoMessage"
+#      overlay first reading "Testing connection...", then either a
+#      success or failure message -- likely failure, since the
+#      container's "localhost" is its own network namespace, not the
+#      Windows host running Ollama (would need host.docker.internal or
+#      --network=host to actually reach it) -- but the POINT of this
+#      round is confirming the button/flow renders and completes
+#      without a Lua error, not that the live HTTP call succeeds.
 set -e
 
 mkdir -p /home/ko/screenshots
@@ -219,10 +275,22 @@ INKRPG_Y=543
 # Button-row y positions, measured/inferred from rounds 6-7 (cave_mouth
 # and entrance_hall both laid out 2 choices + "...Something else" at
 # these same three rows). Buttons span the full content width, so x can
-# always be the content box's center.
+# always be the content box's center. Not used by round 11's new steps
+# below (those stop before reaching the play screen) -- kept here since
+# they document confirmed geometry other rounds may reuse later.
 ROW1_Y=752
 ROW2_Y=795
 ROW3_Y=838
+
+# Round 11: the inkRPG submenu / settings-screen rows haven't been
+# measured from a real screenshot yet -- these are the informed guesses
+# described in the ROUND 11 comment above, kept as named constants so a
+# wrong guess is easy to correct in one place next round.
+SUBMENU_ROW1_Y=$((CONTENT_TOP + 60))
+SUBMENU_ROW2_Y=$((SUBMENU_ROW1_Y + 40))
+SETTINGS_ROW1_Y=$((CONTENT_TOP + 60))
+SETTINGS_ROW3_Y=$((SETTINGS_ROW1_Y + 80))
+PICKER_ROW2_Y=$((CONTENT_TOP + 60 + 40))
 
 echo "Starting Xvfb..."
 Xvfb :99 -screen 0 768x1024x24 &
@@ -271,64 +339,55 @@ sleep 1
 import -window root /home/ko/screenshots/05-more-tools.png
 echo "Wrote 05-more-tools.png"
 
-# The payoff: tap "inkRPG" itself. Should open the game-picker Menu.
+# Tap "inkRPG" itself -- as of round 11 this is now a submenu (Play /
+# AI provider settings), not a direct action.
 xdotool mousemove "$INKRPG_X" "$INKRPG_Y" click 1
 sleep 1
-import -window root /home/ko/screenshots/06-inkrpg-picker.png
-echo "Wrote 06-inkrpg-picker.png (tapped $INKRPG_X,$INKRPG_Y -- should show the game picker with 'The Whispering Cave')"
+import -window root /home/ko/screenshots/06-inkrpg-submenu.png
+echo "Wrote 06-inkrpg-submenu.png (tapped $INKRPG_X,$INKRPG_Y -- should now show a 2-item 'Play' / 'AI provider settings' submenu, not the old game picker)"
 
-# If the picker showed up, try selecting the one demo game too, in the
-# same run -- worst case this screenshot just repeats 06 unchanged and
-# tells us the picker didn't render where expected.
-GAME_ENTRY_Y=$((CONTENT_TOP + 60))
-xdotool mousemove "$CONTENT_CENTER_X" "$GAME_ENTRY_Y" click 1
+# Tap the submenu's 2nd row ("AI provider settings") -- SUBMENU_ROW2_Y
+# is an unmeasured guess, see ROUND 11 comment above.
+xdotool mousemove "$CONTENT_CENTER_X" "$SUBMENU_ROW2_Y" click 1
 sleep 1
-import -window root /home/ko/screenshots/07-game-selected.png
-echo "Wrote 07-game-selected.png"
+import -window root /home/ko/screenshots/07-ai-settings.png
+echo "Wrote 07-ai-settings.png (tapped submenu row 2 at y=$SUBMENU_ROW2_Y -- should show inkrpg_settings_screen.lua's menu: Provider/Model/API key rows not set, plus Test connection)"
 
-# Advance the story: tap the first choice button ("Light a torch and go
-# in"). Per scenes.lua this should move to entrance_hall.
-xdotool mousemove "$CONTENT_CENTER_X" "$ROW1_Y" click 1
+# Tap the settings menu's 1st row ("Provider: not set") to open the
+# provider picker.
+xdotool mousemove "$CONTENT_CENTER_X" "$SETTINGS_ROW1_Y" click 1
 sleep 1
-import -window root /home/ko/screenshots/08-entrance-hall.png
-echo "Wrote 08-entrance-hall.png"
+import -window root /home/ko/screenshots/08-provider-picker.png
+echo "Wrote 08-provider-picker.png (tapped settings row 1 at y=$SETTINGS_ROW1_Y -- should show the provider picker: OpenAI / Local Ollama / DeepSeek / Groq / OpenRouter / Custom)"
 
-# entrance_hall also has a 2-choice + "...Something else" layout, so its
-# first choice ("Take the narrow crawl") is at the same row-1 position.
-xdotool mousemove "$CONTENT_CENTER_X" "$ROW1_Y" click 1
+# Pick "Local Ollama" (picker's 2nd entry) -- chosen specifically
+# because Ollama is already running locally, so Test connection below
+# has a real chance of succeeding without spending API credits.
+xdotool mousemove "$CONTENT_CENTER_X" "$PICKER_ROW2_Y" click 1
 sleep 1
-import -window root /home/ko/screenshots/09-crawl-space.png
-echo "Wrote 09-crawl-space.png (tapped row 1 -- should show crawl_space, which has only ONE choice + Something else -- a 2-row layout, untested until now)"
+import -window root /home/ko/screenshots/09-provider-picked.png
+echo "Wrote 09-provider-picked.png (tapped picker row 2 at y=$PICKER_ROW2_Y -- should return to the settings menu now showing 'Provider: Local Ollama' and 'Model: llama3.1')"
 
-# crawl_space has only 1 choice + "...Something else" (2 rows, not 3).
-# If bottom-anchoring holds, its one choice sits at the row-2 position
-# (the last non-"Something else" row), not row 1. Unverified guess.
-xdotool mousemove "$CONTENT_CENTER_X" "$ROW2_Y" click 1
+# Tap "Test connection" -- 3rd row of the settings menu (no Base URL
+# row appears for a non-custom preset). Expect a blocking HTTP call to
+# http://localhost:11434/... from INSIDE the container, which almost
+# certainly can't reach the Windows host's Ollama as-is (container
+# localhost != host localhost) -- a clean failure InfoMessage is an
+# acceptable, even expected, outcome here. What actually matters is
+# confirming the screen and the button's flow render without a Lua
+# error, and that KOReader's UI thread isn't left stuck.
+xdotool mousemove "$CONTENT_CENTER_X" "$SETTINGS_ROW3_Y" click 1
 sleep 1
-import -window root /home/ko/screenshots/10-locked-door.png
-echo "Wrote 10-locked-door.png (tapped row 2 -- should show locked_door if the bottom-anchoring guess was right; inspect regardless)"
+import -window root /home/ko/screenshots/10-test-connection-waiting.png
+echo "Wrote 10-test-connection-waiting.png (tapped settings row 3 at y=$SETTINGS_ROW3_Y -- may still show the blocking request in flight)"
 
-# locked_door has 2 choices again (3-row layout) -- "Try the iron key"
-# back at row 1, should lead to the ending_key ending.
-xdotool mousemove "$CONTENT_CENTER_X" "$ROW1_Y" click 1
-sleep 1
-import -window root /home/ko/screenshots/11-ending.png
-echo "Wrote 11-ending.png"
-
-# Confirm restart: tap "Play again" (row 3). Should reset back to
-# cave_mouth's opening text and its two choices, not error or hang.
-xdotool mousemove "$CONTENT_CENTER_X" "$ROW3_Y" click 1
-sleep 1
-import -window root /home/ko/screenshots/12-play-again.png
-echo "Wrote 12-play-again.png"
-
-# Move forward once more so the save left on disk when this run ends is
-# clearly NOT a fresh start (scene="entrance_hall", not "cave_mouth") --
-# see ROUND 10 notes above for why this matters for the resume test.
-xdotool mousemove "$CONTENT_CENTER_X" "$ROW1_Y" click 1
-sleep 1
-import -window root /home/ko/screenshots/13-final-state.png
-echo "Wrote 13-final-state.png (should show entrance_hall again -- this is the state that should now persist to ./saves on the host)"
+# The HTTP request itself has its own ~10s block / 60s total timeout
+# (see REQUEST_BLOCK_TIMEOUT/REQUEST_TOTAL_TIMEOUT in
+# inkrpg_ai_provider.lua) -- give it real time to resolve one way or
+# another before the final screenshot.
+sleep 8
+import -window root /home/ko/screenshots/11-test-connection-result.png
+echo "Wrote 11-test-connection-result.png (should show either a 'Connection OK' or 'Connection failed' InfoMessage, then back to the settings menu)"
 
 kill "$KO_PID" 2>/dev/null || true
 kill "$XVFB_PID" 2>/dev/null || true

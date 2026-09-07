@@ -22,7 +22,7 @@ make[1]: warning: -j12 forced in submake: resetting jobserver mode.
 
  It's a scroll... It's a codex... It's KOReader!
 
- [*] Current time: 09/05/26-18:37:56
+ [*] Current time: 09/07/26-08:14:06
 has monolibtic? no (libs/libkoreader-monolibtic.so: cannot open shared object file: No such file or directory)
 lib_search_path: libs/?
 lib_basic_format: lib%s.so
@@ -36,263 +36,263 @@ ffi.findlib: blitbuffer
 ffi.load: libs/libblitbuffer.so
 ffi.findlib: SDL3 [0]
 ffi.load: libSDL3.so.0
-09/05/26-18:37:57 DEBUG fts: Preferred MONOTONIC clock source is CLOCK_MONOTONIC 
-09/05/26-18:37:57 DEBUG fts: Preferred REALTIME clock source is CLOCK_REALTIME 
-09/05/26-18:37:57 DEBUG fts: BOOTTIME clock source is supported 
+09/07/26-08:14:06 DEBUG fts: Preferred MONOTONIC clock source is CLOCK_MONOTONIC 
+09/07/26-08:14:06 DEBUG fts: Preferred REALTIME clock source is CLOCK_REALTIME 
+09/07/26-08:14:06 DEBUG fts: BOOTTIME clock source is supported 
 error: XDG_RUNTIME_DIR not set in the environment.
 Started SDL in /home/ko/koreader/base/build/x86_64-linux-gnu-debug/ using x11 video driver
-09/05/26-18:37:57 DEBUG refresh on logical rectangle 540x720+0+0 
+09/07/26-08:14:06 DEBUG refresh on logical rectangle 540x720+0+0 
 ffi.findlib: lodepng
 ffi.load: libs/liblodepng.so
-09/05/26-18:37:57 INFO  initializing for device Emulator 
-09/05/26-18:37:57 INFO  framebuffer resolution: {
+09/07/26-08:14:07 INFO  initializing for device Emulator 
+09/07/26-08:14:07 INFO  framebuffer resolution: {
   h = 720,
   w = 540
-} --[[table: 0x75d4883de7a0]] 
+} --[[table: 0x7c90ce7553a0]] 
 ffi.findlib: wrap-mupdf
 ffi.load: libs/libwrap-mupdf.so
 ffi.findlib: sqlite3 [0]
 ffi.load: libs/libsqlite3.so.0
-09/05/26-18:37:57 INFO  Performing one-time migration for 20200421 
-09/05/26-18:37:57 WARN  os.remove: ./cache/fontlist/fontinfo.dat: No such file or directory 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20200421 
+09/07/26-08:14:07 WARN  os.remove: ./cache/fontlist/fontinfo.dat: No such file or directory 
 ffi.findlib: freetype [6]
 ffi.load: libs/libfreetype.so.6
 ffi.findlib: harfbuzz [0]
 ffi.load: libs/libharfbuzz.so.0
 ffi.findlib: zstd [1]
 ffi.load: libs/libzstd.so.1
-09/05/26-18:37:57 INFO  ./cache/fontlist/fontinfo.dat fopen: No such file or directory -> initializing it 
-09/05/26-18:37:57 DEBUG FontList registered: Nimbus Roman No9 L 
-09/05/26-18:37:57 DEBUG FontList registered: Noto Naskh Arabic 
-09/05/26-18:37:57 DEBUG FontList registered: Noto Sans CJK SC 
-09/05/26-18:37:57 DEBUG FontList registered: Nimbus Mono 
-09/05/26-18:37:57 DEBUG FontList registered: Noto Sans Bengali UI 
-09/05/26-18:37:57 DEBUG FontList registered: Noto Serif 
-09/05/26-18:37:57 DEBUG FontList registered: Noto Sans Arabic UI 
-09/05/26-18:37:57 DEBUG FontList registered: NotoSans Nerd Font 
-09/05/26-18:37:57 DEBUG FontList registered: Noto Sans 
-09/05/26-18:37:57 DEBUG FontList registered: FreeSerif 
-09/05/26-18:37:57 DEBUG FontList registered: Nimbus Sans L 
-09/05/26-18:37:57 DEBUG FontList registered: Dingbats 
-09/05/26-18:37:57 DEBUG FontList registered: FreeSans 
-09/05/26-18:37:57 DEBUG FontList registered: Noto Sans Devanagari UI 
-09/05/26-18:37:57 DEBUG FontList registered: Droid Sans Mono 
-09/05/26-18:37:57 DEBUG FontList registered: Standard Symbols L 
-09/05/26-18:37:57 DEBUG Found font: NotoSans-Regular.ttf in ./fonts/noto/NotoSans-Regular.ttf 
-09/05/26-18:37:57 DEBUG Found font: NotoSans-Bold.ttf in ./fonts/noto/NotoSans-Bold.ttf 
-09/05/26-18:37:57 DEBUG Found font: NotoSans-Bold.ttf in ./fonts/noto/NotoSans-Bold.ttf 
-09/05/26-18:37:57 DEBUG Found font: NotoSans-Regular.ttf in ./fonts/noto/NotoSans-Regular.ttf 
-09/05/26-18:37:57 DEBUG Found font: NotoSans-Regular.ttf in ./fonts/noto/NotoSans-Regular.ttf 
-09/05/26-18:37:57 DEBUG Allocating a 512MB budget for the global document cache 
-09/05/26-18:37:57 DEBUG Found font: NotoSans-Regular.ttf in ./fonts/noto/NotoSans-Regular.ttf 
-09/05/26-18:37:57 DEBUG Found font: DroidSansMono.ttf in ./fonts/droid/DroidSansMono.ttf 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20210306 (1/2) 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20210306 (2/2) 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20210330 
+09/07/26-08:14:07 INFO  ./cache/fontlist/fontinfo.dat fopen: No such file or directory -> initializing it 
+09/07/26-08:14:07 DEBUG FontList registered: Noto Sans 
+09/07/26-08:14:07 DEBUG FontList registered: NotoSans Nerd Font 
+09/07/26-08:14:07 DEBUG FontList registered: Nimbus Roman No9 L 
+09/07/26-08:14:07 DEBUG FontList registered: Noto Sans Bengali UI 
+09/07/26-08:14:07 DEBUG FontList registered: Nimbus Sans L 
+09/07/26-08:14:07 DEBUG FontList registered: Noto Sans Arabic UI 
+09/07/26-08:14:07 DEBUG FontList registered: Dingbats 
+09/07/26-08:14:07 DEBUG FontList registered: Nimbus Mono 
+09/07/26-08:14:07 DEBUG FontList registered: Droid Sans Mono 
+09/07/26-08:14:07 DEBUG FontList registered: Noto Serif 
+09/07/26-08:14:07 DEBUG FontList registered: Noto Naskh Arabic 
+09/07/26-08:14:07 DEBUG FontList registered: FreeSerif 
+09/07/26-08:14:07 DEBUG FontList registered: Noto Sans Devanagari UI 
+09/07/26-08:14:07 DEBUG FontList registered: Noto Sans CJK SC 
+09/07/26-08:14:07 DEBUG FontList registered: FreeSans 
+09/07/26-08:14:07 DEBUG FontList registered: Standard Symbols L 
+09/07/26-08:14:07 DEBUG Found font: NotoSans-Regular.ttf in ./fonts/noto/NotoSans-Regular.ttf 
+09/07/26-08:14:07 DEBUG Found font: NotoSans-Bold.ttf in ./fonts/noto/NotoSans-Bold.ttf 
+09/07/26-08:14:07 DEBUG Found font: NotoSans-Bold.ttf in ./fonts/noto/NotoSans-Bold.ttf 
+09/07/26-08:14:07 DEBUG Found font: NotoSans-Regular.ttf in ./fonts/noto/NotoSans-Regular.ttf 
+09/07/26-08:14:07 DEBUG Found font: NotoSans-Regular.ttf in ./fonts/noto/NotoSans-Regular.ttf 
+09/07/26-08:14:07 DEBUG Allocating a 512MB budget for the global document cache 
+09/07/26-08:14:07 DEBUG Found font: NotoSans-Regular.ttf in ./fonts/noto/NotoSans-Regular.ttf 
+09/07/26-08:14:07 DEBUG Found font: DroidSansMono.ttf in ./fonts/droid/DroidSansMono.ttf 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20210306 (1/2) 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20210306 (2/2) 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20210330 
 ffi.findlib: leptonica [6]
 ffi.load: libs/libleptonica.so.6
 ffi.findlib: k2pdfopt [2]
 ffi.load: libs/libk2pdfopt.so.2
-09/05/26-18:37:57 DEBUG ReadCollection: reading from collection file 
+09/07/26-08:14:07 DEBUG ReadCollection: reading from collection file 
 ffi.findlib: archive [13]
 ffi.load: libs/libarchive.so.13
-09/05/26-18:37:57 INFO  Performing one-time migration for 20210404 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20210409 
-09/05/26-18:37:57 WARN  os.rename: ./cache/fontinfo.dat: No such file or directory 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20210412 
-09/05/26-18:37:57 WARN  os.rename: ./cache/calibre-libraries.lua: No such file or directory 
-09/05/26-18:37:57 WARN  os.rename: ./cache/calibre-books.dat: No such file or directory 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20210414 
-09/05/26-18:37:57 WARN  os.remove: ./cache/calibre/books.dat: No such file or directory 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20210503 & 20210508 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20210518 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20210521 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20210531 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20210622 
-09/05/26-18:37:57 WARN  os.remove: ./cache/fontlist/fontinfo.dat: No such file or directory 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20210629 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20210715 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20210720 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20210831 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20210925 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20220116 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20220205 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20220819 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20220914 
-09/05/26-18:37:57 WARN  os.remove: ./cache/fontlist/fontinfo.dat: No such file or directory 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20220930 
-09/05/26-18:37:57 WARN  loadfile: cannot open ./defaults.persistent.lua: No such file or directory 
-09/05/26-18:37:57 WARN  os.rename: ./defaults.persistent.lua: No such file or directory 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20221027 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20230531 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20230703 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20230707 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20230710 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20230731 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20230802 
-09/05/26-18:37:57 INFO  statistics.sqlite3 not found. 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20230901 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20231217 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20240408 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20240616 
-09/05/26-18:37:57 WARN  os.remove: ./cache/fontlist/fontinfo.dat: No such file or directory 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20240731 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20240911 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20240914 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20240915 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20240928 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20241123 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20241207 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20241208 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20241228 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20250207 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20250302 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20250318 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20250405 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20250601 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20250914 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20250929 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20260306 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20260428 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20260512 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20260517 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20260623 
-09/05/26-18:37:57 INFO  Performing one-time migration for 20260804 
-09/05/26-18:37:57 DEBUG Found font: NotoSansCJKsc-Regular.otf in ./fonts/noto/NotoSansCJKsc-Regular.otf 
-09/05/26-18:37:57 DEBUG ImageWidget: _render'ing resources/icons/mdlight/notice-info.svg 36 36 
-09/05/26-18:37:57 DEBUG renderSVG resources/icons/mdlight/notice-info.svg 0.75 48 48 > 36 36 0 0 
-09/05/26-18:37:57 DEBUG cache image|resources/icons/mdlight/notice-info.svg|36|36|alpha 
-09/05/26-18:37:57 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:37:57 DEBUG show widget: table: 0x75d444eb7f18 
-09/05/26-18:37:57 DEBUG setDirty nil from widget table: 0x75d444eb7f18 w/ NO region; dithering: nil 
-09/05/26-18:37:57 DEBUG setDirty via a func from widget table: 0x75d444eb7f18 
-09/05/26-18:37:57 DEBUG show reader ui 
-09/05/26-18:37:57 DEBUG ImageWidget: _render'ing resources/icons/mdlight/notice-info.svg 36 36 
-09/05/26-18:37:57 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:37:57 DEBUG show widget: table: 0x75d44481f828 
-09/05/26-18:37:57 DEBUG setDirty nil from widget table: 0x75d44481f828 w/ NO region; dithering: nil 
-09/05/26-18:37:57 DEBUG setDirty via a func from widget table: 0x75d44481f828 
-09/05/26-18:37:57 DEBUG painting widget: table: 0x75d444eb7f18 
-09/05/26-18:37:57 DEBUG blitFrom 67 341 0 0 36 36 
-09/05/26-18:37:57 DEBUG painting widget: table: 0x75d44481f828 
-09/05/26-18:37:57 DEBUG blitFrom 67 341 0 0 36 36 
-09/05/26-18:37:57 DEBUG _refresh: Enqueued ui update for region 60 265 419 189 dithering: false 
-09/05/26-18:37:57 DEBUG _refresh: Enqueued ui update for region 60 265 419 189 dithering: false 
-09/05/26-18:37:57 DEBUG refresh on logical rectangle 419x189+60+265 
-09/05/26-18:37:57 DEBUG close widget: table: 0x75d44481f828 
-09/05/26-18:37:57 DEBUG setDirty via a func from widget nil 
-09/05/26-18:37:57 DEBUG setDirty nil from widget table: 0x75d444eb7f18 w/ NO region; dithering: nil 
-09/05/26-18:37:57 DEBUG creating coroutine for showing reader 
-09/05/26-18:37:57 INFO  opening file ./help/quickstart-en-v2026.07.2-127-ge33266915_2026-09-03_emulator.html 
-09/05/26-18:37:57 DEBUG CreDocument: using cre call cache 
-09/05/26-18:37:57 INFO  Inhibiting user input 
-09/05/26-18:37:57 DEBUG ImageWidget: _render'ing resources/icons/mdlight/book.opened.svg 29 29 
-09/05/26-18:37:57 DEBUG renderSVG resources/icons/mdlight/book.opened.svg 0.60416666666667 48 48 > 29 29 0 0 
-09/05/26-18:37:57 DEBUG cache image|resources/icons/mdlight/book.opened.svg|29|29|flat 
-09/05/26-18:37:57 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:37:57 DEBUG Getting list of dictionaries 
-09/05/26-18:37:57 DEBUG found 0 dictionaries 
-09/05/26-18:37:57 DEBUG CreDocument: applied cr3.ini default settings. 
-09/05/26-18:37:57 DEBUG CreDocument: set fallback font faces: Noto Sans CJK SC|Noto Naskh Arabic|Noto Sans Devanagari UI|Noto Sans Bengali UI|FreeSans|FreeSerif|Noto Serif|Noto Sans 
-09/05/26-18:37:57 DEBUG CreDocument: set adjusted fallback font sizes true 
-09/05/26-18:37:57 DEBUG CreDocument: set monospace font scaling 100 
-09/05/26-18:37:57 INFO  Looking for plugins in directory: plugins 
-09/05/26-18:37:57 DEBUG Plugin loaded archiveviewer 
-09/05/26-18:37:57 DEBUG Plugin loaded autodim 
-09/05/26-18:37:57 DEBUG Plugin loaded autosuspend 
-09/05/26-18:37:57 DEBUG Plugin loaded autoturn 
-09/05/26-18:37:57 DEBUG Plugin loaded autowarmth 
-09/05/26-18:37:57 DEBUG Plugin loaded batterystat 
-09/05/26-18:37:57 DEBUG Plugin loaded bookshortcuts 
-09/05/26-18:37:57 DEBUG Plugin loaded calibre 
-09/05/26-18:37:57 DEBUG Plugin loaded cloudstorage 
-09/05/26-18:37:57 DEBUG Plugin loaded coverbrowser 
-09/05/26-18:37:57 DEBUG Plugin loaded coverimage 
-09/05/26-18:37:57 DEBUG Plugin loaded docsettingtweak 
-09/05/26-18:37:57 DEBUG Plugin loaded exporter 
-09/05/26-18:37:57 DEBUG ExternalKeyboard: Cannot mount debugfs (unprivileged user) 
-09/05/26-18:37:57 DEBUG Plugin loaded gestures 
-09/05/26-18:37:57 DEBUG Plugin loaded hotkeys 
-09/05/26-18:37:57 DEBUG Plugin loaded httpinspector 
-09/05/26-18:37:57 DEBUG Plugin loaded inkrpg 
-09/05/26-18:37:57 DEBUG japanese.koplugin deinflector: loaded inflection table with 36 rules and 569 variants 
-09/05/26-18:37:57 DEBUG Plugin loaded japanese 
-09/05/26-18:37:57 DEBUG Plugin loaded keepalive 
-09/05/26-18:37:57 DEBUG Plugin loaded kosync 
-09/05/26-18:37:57 DEBUG Plugin loaded movetoarchive 
-09/05/26-18:37:57 DEBUG CacheSQLite: ./cache/newsdownloader.sqlite current size: 16384 
-09/05/26-18:37:57 DEBUG Plugin loaded newsdownloader 
-09/05/26-18:37:57 DEBUG Plugin loaded opds 
-09/05/26-18:37:57 DEBUG Plugin loaded perceptionexpander 
-09/05/26-18:37:57 DEBUG Plugin loaded profiles 
-09/05/26-18:37:57 DEBUG Plugin loaded qrclipboard 
-09/05/26-18:37:57 DEBUG Plugin loaded readtimer 
-09/05/26-18:37:57 DEBUG Plugin loaded statistics 
-09/05/26-18:37:57 DEBUG Plugin loaded systemstat 
-09/05/26-18:37:57 DEBUG Plugin loaded terminal 
-09/05/26-18:37:57 DEBUG Plugin loaded texteditor 
-09/05/26-18:37:57 DEBUG Found font: NotoSans-Regular.ttf in ./fonts/noto/NotoSans-Regular.ttf 
-09/05/26-18:37:57 DEBUG Found font: NotoSans-Italic.ttf in ./fonts/noto/NotoSans-Italic.ttf 
-09/05/26-18:37:57 DEBUG Plugin loaded vocabbuilder 
-09/05/26-18:37:57 DEBUG Plugin loaded wallabag 
-09/05/26-18:37:57 DEBUG RD loaded plugin archiveviewer at plugins/archiveviewer.koplugin 
-09/05/26-18:37:57 DEBUG RD loaded plugin autodim at plugins/autodim.koplugin 
-09/05/26-18:37:57 DEBUG AutoSuspend: init 
-09/05/26-18:37:57 DEBUG AutoSuspend: start suspend/shutdown timer at 18911.491818 
-09/05/26-18:37:57 DEBUG AutoSuspend: scheduling next suspend check in 900 
-09/05/26-18:37:57 DEBUG AutoSuspend: scheduling next shutdown check in 259200 
-09/05/26-18:37:57 DEBUG RD loaded plugin autosuspend at plugins/autosuspend.koplugin 
-09/05/26-18:37:57 DEBUG RD loaded plugin autoturn at plugins/autoturn.koplugin 
-09/05/26-18:37:57 DEBUG AutoWarmth: scheduleMidnightUpdate 
-09/05/26-18:37:57 DEBUG RD loaded plugin autowarmth at plugins/autowarmth.koplugin 
-09/05/26-18:37:57 DEBUG RD loaded plugin batterystat at plugins/batterystat.koplugin 
-09/05/26-18:37:57 DEBUG RD loaded plugin bookshortcuts at plugins/bookshortcuts.koplugin 
-09/05/26-18:37:57 DEBUG RD loaded plugin calibre at plugins/calibre.koplugin 
-09/05/26-18:37:57 DEBUG RD loaded plugin cloudstorage at plugins/cloudstorage.koplugin 
-09/05/26-18:37:57 INFO  CoverBrowser: setting default display modes 
-09/05/26-18:37:57 WARN  BookInfo cache DB schema updated from version 0 to version 20201210 
-09/05/26-18:37:57 WARN  Deleting existing ./settings/bookinfo_cache.sqlite3 to recreate it 
-09/05/26-18:37:57 DEBUG ImageWidget: _render'ing resources/icons/mdlight/notice-info.svg 36 36 
-09/05/26-18:37:57 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:37:57 DEBUG show widget: table: 0x75d42e8c76a8 
-09/05/26-18:37:57 DEBUG setDirty nil from widget table: 0x75d42e8c76a8 w/ NO region; dithering: nil 
-09/05/26-18:37:57 DEBUG setDirty via a func from widget table: 0x75d42e8c76a8 
-09/05/26-18:37:57 DEBUG CoverBrowser: setting FileManager display mode to: list_image_meta 
-09/05/26-18:37:57 DEBUG CoverBrowser: setting display mode: history mosaic_image 
-09/05/26-18:37:57 DEBUG CoverBrowser: setting display mode: collections mosaic_image 
-09/05/26-18:37:57 DEBUG RD loaded plugin coverbrowser at plugins/coverbrowser.koplugin 
-09/05/26-18:37:57 DEBUG RD loaded plugin coverimage at plugins/coverimage.koplugin 
-09/05/26-18:37:57 DEBUG RD loaded plugin docsettingtweak at plugins/docsettingtweak.koplugin 
-09/05/26-18:37:57 DEBUG RD loaded plugin exporter at plugins/exporter.koplugin 
-09/05/26-18:37:57 WARN  No gestures file or invalid gestures file found, copying defaults 
-09/05/26-18:37:58 DEBUG RD loaded plugin gestures at plugins/gestures.koplugin 
-09/05/26-18:37:58 WARN  No hotkeys file or invalid hotkeys file found, building defaults 
-09/05/26-18:37:58 DEBUG Total number of hotkey events registered successfully:  76 
-09/05/26-18:37:58 DEBUG RD loaded plugin hotkeys at plugins/hotkeys.koplugin 
-09/05/26-18:37:58 DEBUG RD loaded plugin httpinspector at plugins/httpinspector.koplugin 
-09/05/26-18:37:58 DEBUG RD loaded plugin inkrpg at plugins/inkrpg.koplugin 
-09/05/26-18:37:58 DEBUG language support: registering japanese plugin 
-09/05/26-18:37:58 DEBUG RD loaded plugin japanese at plugins/japanese.koplugin 
-09/05/26-18:37:58 DEBUG RD loaded plugin keepalive at plugins/keepalive.koplugin 
-09/05/26-18:37:58 DEBUG RD loaded plugin kosync at plugins/kosync.koplugin 
-09/05/26-18:37:58 DEBUG RD loaded plugin movetoarchive at plugins/movetoarchive.koplugin 
-09/05/26-18:37:58 DEBUG RD loaded plugin newsdownloader at plugins/newsdownloader.koplugin 
-09/05/26-18:37:58 DEBUG RD loaded plugin opds at plugins/opds.koplugin 
-09/05/26-18:37:58 DEBUG RD loaded plugin perceptionexpander at plugins/perceptionexpander.koplugin 
-09/05/26-18:37:58 DEBUG RD loaded plugin profiles at plugins/profiles.koplugin 
-09/05/26-18:37:58 DEBUG RD loaded plugin qrclipboard at plugins/qrclipboard.koplugin 
-09/05/26-18:37:58 DEBUG RD loaded plugin readtimer at plugins/readtimer.koplugin 
-09/05/26-18:37:58 DEBUG RD loaded plugin statistics at plugins/statistics.koplugin 
-09/05/26-18:37:58 DEBUG RD loaded plugin systemstat at plugins/systemstat.koplugin 
-09/05/26-18:37:58 DEBUG Terminal: default shell is bash 
-09/05/26-18:37:58 DEBUG RD loaded plugin terminal at plugins/terminal.koplugin 
-09/05/26-18:37:58 DEBUG RD loaded plugin texteditor at plugins/texteditor.koplugin 
-09/05/26-18:37:58 DEBUG RD loaded plugin vocabbuilder at plugins/vocabbuilder.koplugin 
-09/05/26-18:37:58 DEBUG RD loaded plugin wallabag at plugins/wallabag.koplugin 
-09/05/26-18:37:58 DEBUG CreDocument: set view mode page 
-09/05/26-18:37:58 DEBUG CreDocument: set page info  
-09/05/26-18:37:58 DEBUG CreDocument: set status line property 1 
-09/05/26-18:37:58 DEBUG made tweak css:
+09/07/26-08:14:07 INFO  Performing one-time migration for 20210404 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20210409 
+09/07/26-08:14:07 WARN  os.rename: ./cache/fontinfo.dat: No such file or directory 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20210412 
+09/07/26-08:14:07 WARN  os.rename: ./cache/calibre-libraries.lua: No such file or directory 
+09/07/26-08:14:07 WARN  os.rename: ./cache/calibre-books.dat: No such file or directory 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20210414 
+09/07/26-08:14:07 WARN  os.remove: ./cache/calibre/books.dat: No such file or directory 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20210503 & 20210508 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20210518 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20210521 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20210531 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20210622 
+09/07/26-08:14:07 WARN  os.remove: ./cache/fontlist/fontinfo.dat: No such file or directory 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20210629 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20210715 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20210720 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20210831 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20210925 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20220116 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20220205 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20220819 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20220914 
+09/07/26-08:14:07 WARN  os.remove: ./cache/fontlist/fontinfo.dat: No such file or directory 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20220930 
+09/07/26-08:14:07 WARN  loadfile: cannot open ./defaults.persistent.lua: No such file or directory 
+09/07/26-08:14:07 WARN  os.rename: ./defaults.persistent.lua: No such file or directory 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20221027 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20230531 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20230703 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20230707 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20230710 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20230731 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20230802 
+09/07/26-08:14:07 INFO  statistics.sqlite3 not found. 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20230901 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20231217 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20240408 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20240616 
+09/07/26-08:14:07 WARN  os.remove: ./cache/fontlist/fontinfo.dat: No such file or directory 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20240731 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20240911 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20240914 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20240915 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20240928 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20241123 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20241207 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20241208 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20241228 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20250207 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20250302 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20250318 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20250405 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20250601 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20250914 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20250929 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20260306 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20260428 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20260512 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20260517 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20260623 
+09/07/26-08:14:07 INFO  Performing one-time migration for 20260804 
+09/07/26-08:14:07 DEBUG Found font: NotoSansCJKsc-Regular.otf in ./fonts/noto/NotoSansCJKsc-Regular.otf 
+09/07/26-08:14:07 DEBUG ImageWidget: _render'ing resources/icons/mdlight/notice-info.svg 36 36 
+09/07/26-08:14:07 DEBUG renderSVG resources/icons/mdlight/notice-info.svg 0.75 48 48 > 36 36 0 0 
+09/07/26-08:14:07 DEBUG cache image|resources/icons/mdlight/notice-info.svg|36|36|alpha 
+09/07/26-08:14:07 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:07 DEBUG show widget: table: 0x7c9053369e70 
+09/07/26-08:14:07 DEBUG setDirty nil from widget table: 0x7c9053369e70 w/ NO region; dithering: nil 
+09/07/26-08:14:07 DEBUG setDirty via a func from widget table: 0x7c9053369e70 
+09/07/26-08:14:07 DEBUG show reader ui 
+09/07/26-08:14:07 DEBUG ImageWidget: _render'ing resources/icons/mdlight/notice-info.svg 36 36 
+09/07/26-08:14:07 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:07 DEBUG show widget: table: 0x7c9052fb08d8 
+09/07/26-08:14:07 DEBUG setDirty nil from widget table: 0x7c9052fb08d8 w/ NO region; dithering: nil 
+09/07/26-08:14:07 DEBUG setDirty via a func from widget table: 0x7c9052fb08d8 
+09/07/26-08:14:07 DEBUG painting widget: table: 0x7c9053369e70 
+09/07/26-08:14:07 DEBUG blitFrom 67 341 0 0 36 36 
+09/07/26-08:14:07 DEBUG painting widget: table: 0x7c9052fb08d8 
+09/07/26-08:14:07 DEBUG blitFrom 67 341 0 0 36 36 
+09/07/26-08:14:07 DEBUG _refresh: Enqueued ui update for region 60 265 419 189 dithering: false 
+09/07/26-08:14:07 DEBUG _refresh: Enqueued ui update for region 60 265 419 189 dithering: false 
+09/07/26-08:14:07 DEBUG refresh on logical rectangle 419x189+60+265 
+09/07/26-08:14:07 DEBUG close widget: table: 0x7c9052fb08d8 
+09/07/26-08:14:07 DEBUG setDirty via a func from widget nil 
+09/07/26-08:14:07 DEBUG setDirty nil from widget table: 0x7c9053369e70 w/ NO region; dithering: nil 
+09/07/26-08:14:07 DEBUG creating coroutine for showing reader 
+09/07/26-08:14:07 INFO  opening file ./help/quickstart-en-v2026.07.2-127-ge33266915_2026-09-03_emulator.html 
+09/07/26-08:14:07 DEBUG CreDocument: using cre call cache 
+09/07/26-08:14:07 INFO  Inhibiting user input 
+09/07/26-08:14:07 DEBUG ImageWidget: _render'ing resources/icons/mdlight/book.opened.svg 29 29 
+09/07/26-08:14:07 DEBUG renderSVG resources/icons/mdlight/book.opened.svg 0.60416666666667 48 48 > 29 29 0 0 
+09/07/26-08:14:07 DEBUG cache image|resources/icons/mdlight/book.opened.svg|29|29|flat 
+09/07/26-08:14:07 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:07 DEBUG Getting list of dictionaries 
+09/07/26-08:14:07 DEBUG found 0 dictionaries 
+09/07/26-08:14:07 DEBUG CreDocument: applied cr3.ini default settings. 
+09/07/26-08:14:07 DEBUG CreDocument: set fallback font faces: Noto Sans CJK SC|Noto Naskh Arabic|Noto Sans Devanagari UI|Noto Sans Bengali UI|FreeSans|FreeSerif|Noto Serif|Noto Sans 
+09/07/26-08:14:07 DEBUG CreDocument: set adjusted fallback font sizes true 
+09/07/26-08:14:07 DEBUG CreDocument: set monospace font scaling 100 
+09/07/26-08:14:07 INFO  Looking for plugins in directory: plugins 
+09/07/26-08:14:07 DEBUG Plugin loaded archiveviewer 
+09/07/26-08:14:07 DEBUG Plugin loaded autodim 
+09/07/26-08:14:07 DEBUG Plugin loaded autosuspend 
+09/07/26-08:14:07 DEBUG Plugin loaded autoturn 
+09/07/26-08:14:07 DEBUG Plugin loaded autowarmth 
+09/07/26-08:14:07 DEBUG Plugin loaded batterystat 
+09/07/26-08:14:07 DEBUG Plugin loaded bookshortcuts 
+09/07/26-08:14:07 DEBUG Plugin loaded calibre 
+09/07/26-08:14:07 DEBUG Plugin loaded cloudstorage 
+09/07/26-08:14:07 DEBUG Plugin loaded coverbrowser 
+09/07/26-08:14:07 DEBUG Plugin loaded coverimage 
+09/07/26-08:14:07 DEBUG Plugin loaded docsettingtweak 
+09/07/26-08:14:07 DEBUG Plugin loaded exporter 
+09/07/26-08:14:07 DEBUG ExternalKeyboard: Cannot mount debugfs (unprivileged user) 
+09/07/26-08:14:07 DEBUG Plugin loaded gestures 
+09/07/26-08:14:07 DEBUG Plugin loaded hotkeys 
+09/07/26-08:14:07 DEBUG Plugin loaded httpinspector 
+09/07/26-08:14:07 DEBUG Plugin loaded inkrpg 
+09/07/26-08:14:07 DEBUG japanese.koplugin deinflector: loaded inflection table with 36 rules and 569 variants 
+09/07/26-08:14:07 DEBUG Plugin loaded japanese 
+09/07/26-08:14:07 DEBUG Plugin loaded keepalive 
+09/07/26-08:14:07 DEBUG Plugin loaded kosync 
+09/07/26-08:14:07 DEBUG Plugin loaded movetoarchive 
+09/07/26-08:14:07 DEBUG CacheSQLite: ./cache/newsdownloader.sqlite current size: 16384 
+09/07/26-08:14:07 DEBUG Plugin loaded newsdownloader 
+09/07/26-08:14:07 DEBUG Plugin loaded opds 
+09/07/26-08:14:07 DEBUG Plugin loaded perceptionexpander 
+09/07/26-08:14:07 DEBUG Plugin loaded profiles 
+09/07/26-08:14:07 DEBUG Plugin loaded qrclipboard 
+09/07/26-08:14:07 DEBUG Plugin loaded readtimer 
+09/07/26-08:14:07 DEBUG Plugin loaded statistics 
+09/07/26-08:14:07 DEBUG Plugin loaded systemstat 
+09/07/26-08:14:07 DEBUG Plugin loaded terminal 
+09/07/26-08:14:07 DEBUG Plugin loaded texteditor 
+09/07/26-08:14:07 DEBUG Found font: NotoSans-Regular.ttf in ./fonts/noto/NotoSans-Regular.ttf 
+09/07/26-08:14:07 DEBUG Found font: NotoSans-Italic.ttf in ./fonts/noto/NotoSans-Italic.ttf 
+09/07/26-08:14:07 DEBUG Plugin loaded vocabbuilder 
+09/07/26-08:14:07 DEBUG Plugin loaded wallabag 
+09/07/26-08:14:07 DEBUG RD loaded plugin archiveviewer at plugins/archiveviewer.koplugin 
+09/07/26-08:14:07 DEBUG RD loaded plugin autodim at plugins/autodim.koplugin 
+09/07/26-08:14:07 DEBUG AutoSuspend: init 
+09/07/26-08:14:07 DEBUG AutoSuspend: start suspend/shutdown timer at 26.686400 
+09/07/26-08:14:07 DEBUG AutoSuspend: scheduling next suspend check in 900 
+09/07/26-08:14:07 DEBUG AutoSuspend: scheduling next shutdown check in 259200 
+09/07/26-08:14:07 DEBUG RD loaded plugin autosuspend at plugins/autosuspend.koplugin 
+09/07/26-08:14:07 DEBUG RD loaded plugin autoturn at plugins/autoturn.koplugin 
+09/07/26-08:14:07 DEBUG AutoWarmth: scheduleMidnightUpdate 
+09/07/26-08:14:07 DEBUG RD loaded plugin autowarmth at plugins/autowarmth.koplugin 
+09/07/26-08:14:07 DEBUG RD loaded plugin batterystat at plugins/batterystat.koplugin 
+09/07/26-08:14:07 DEBUG RD loaded plugin bookshortcuts at plugins/bookshortcuts.koplugin 
+09/07/26-08:14:07 DEBUG RD loaded plugin calibre at plugins/calibre.koplugin 
+09/07/26-08:14:07 DEBUG RD loaded plugin cloudstorage at plugins/cloudstorage.koplugin 
+09/07/26-08:14:07 INFO  CoverBrowser: setting default display modes 
+09/07/26-08:14:07 WARN  BookInfo cache DB schema updated from version 0 to version 20201210 
+09/07/26-08:14:07 WARN  Deleting existing ./settings/bookinfo_cache.sqlite3 to recreate it 
+09/07/26-08:14:07 DEBUG ImageWidget: _render'ing resources/icons/mdlight/notice-info.svg 36 36 
+09/07/26-08:14:07 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:07 DEBUG show widget: table: 0x7c905109e330 
+09/07/26-08:14:07 DEBUG setDirty nil from widget table: 0x7c905109e330 w/ NO region; dithering: nil 
+09/07/26-08:14:07 DEBUG setDirty via a func from widget table: 0x7c905109e330 
+09/07/26-08:14:07 DEBUG CoverBrowser: setting FileManager display mode to: list_image_meta 
+09/07/26-08:14:07 DEBUG CoverBrowser: setting display mode: history mosaic_image 
+09/07/26-08:14:07 DEBUG CoverBrowser: setting display mode: collections mosaic_image 
+09/07/26-08:14:07 DEBUG RD loaded plugin coverbrowser at plugins/coverbrowser.koplugin 
+09/07/26-08:14:07 DEBUG RD loaded plugin coverimage at plugins/coverimage.koplugin 
+09/07/26-08:14:07 DEBUG RD loaded plugin docsettingtweak at plugins/docsettingtweak.koplugin 
+09/07/26-08:14:07 DEBUG RD loaded plugin exporter at plugins/exporter.koplugin 
+09/07/26-08:14:07 WARN  No gestures file or invalid gestures file found, copying defaults 
+09/07/26-08:14:07 DEBUG RD loaded plugin gestures at plugins/gestures.koplugin 
+09/07/26-08:14:07 WARN  No hotkeys file or invalid hotkeys file found, building defaults 
+09/07/26-08:14:07 DEBUG Total number of hotkey events registered successfully:  76 
+09/07/26-08:14:07 DEBUG RD loaded plugin hotkeys at plugins/hotkeys.koplugin 
+09/07/26-08:14:07 DEBUG RD loaded plugin httpinspector at plugins/httpinspector.koplugin 
+09/07/26-08:14:07 DEBUG RD loaded plugin inkrpg at plugins/inkrpg.koplugin 
+09/07/26-08:14:07 DEBUG language support: registering japanese plugin 
+09/07/26-08:14:07 DEBUG RD loaded plugin japanese at plugins/japanese.koplugin 
+09/07/26-08:14:07 DEBUG RD loaded plugin keepalive at plugins/keepalive.koplugin 
+09/07/26-08:14:07 DEBUG RD loaded plugin kosync at plugins/kosync.koplugin 
+09/07/26-08:14:07 DEBUG RD loaded plugin movetoarchive at plugins/movetoarchive.koplugin 
+09/07/26-08:14:07 DEBUG RD loaded plugin newsdownloader at plugins/newsdownloader.koplugin 
+09/07/26-08:14:07 DEBUG RD loaded plugin opds at plugins/opds.koplugin 
+09/07/26-08:14:07 DEBUG RD loaded plugin perceptionexpander at plugins/perceptionexpander.koplugin 
+09/07/26-08:14:07 DEBUG RD loaded plugin profiles at plugins/profiles.koplugin 
+09/07/26-08:14:07 DEBUG RD loaded plugin qrclipboard at plugins/qrclipboard.koplugin 
+09/07/26-08:14:07 DEBUG RD loaded plugin readtimer at plugins/readtimer.koplugin 
+09/07/26-08:14:07 DEBUG RD loaded plugin statistics at plugins/statistics.koplugin 
+09/07/26-08:14:07 DEBUG RD loaded plugin systemstat at plugins/systemstat.koplugin 
+09/07/26-08:14:07 DEBUG Terminal: default shell is bash 
+09/07/26-08:14:07 DEBUG RD loaded plugin terminal at plugins/terminal.koplugin 
+09/07/26-08:14:07 DEBUG RD loaded plugin texteditor at plugins/texteditor.koplugin 
+09/07/26-08:14:07 DEBUG RD loaded plugin vocabbuilder at plugins/vocabbuilder.koplugin 
+09/07/26-08:14:07 DEBUG RD loaded plugin wallabag at plugins/wallabag.koplugin 
+09/07/26-08:14:07 DEBUG CreDocument: set view mode page 
+09/07/26-08:14:07 DEBUG CreDocument: set page info  
+09/07/26-08:14:07 DEBUG CreDocument: set status line property 1 
+09/07/26-08:14:07 DEBUG made tweak css:
 *[type~="note"],
 *[type~="endnote"],
 *[type~="footnote"],
@@ -325,861 +325,757 @@ body[name="notes"] > title {
     -cr-only-if: -fb2-document inpage-footnote;
         font-size: 0.8urem !important;
 }[END] 
-09/05/26-18:37:58 DEBUG CreDocument: set style sheet: ./data/epub.css and appended content (737 bytes) 
-09/05/26-18:37:58 DEBUG CreDocument: set embedded fonts 1 
-09/05/26-18:37:58 DEBUG CreDocument: set embedded style sheet 1 
-09/05/26-18:37:58 DEBUG CreDocument: set block rendering flags 0x7fffffff 
-09/05/26-18:37:58 DEBUG CreDocument: set render dpi 96 
-09/05/26-18:37:58 DEBUG CreDocument: set page margins 9 14 9 28 
-09/05/26-18:37:58 DEBUG CreDocument: set txt preformatted 1 
-09/05/26-18:37:58 DEBUG CreDocument: set smooth scaling false 
-09/05/26-18:37:58 DEBUG CreDocument: set nightmode images true 
-09/05/26-18:37:58 DEBUG CreDocument: set font face Noto Serif 
-09/05/26-18:37:58 DEBUG CreDocument: set header font Noto Sans 
-09/05/26-18:37:58 DEBUG CreDocument: set font size 20 
-09/05/26-18:37:58 DEBUG CreDocument: set font base weight 0 = 400 
-09/05/26-18:37:58 DEBUG CreDocument: set font hinting mode 2 
-09/05/26-18:37:58 DEBUG CreDocument: set font kerning mode 3 
-09/05/26-18:37:58 DEBUG CreDocument: set space width scale 95 
-09/05/26-18:37:58 DEBUG CreDocument: set space condensing 75 
-09/05/26-18:37:58 DEBUG CreDocument: set word expansion 0 
-09/05/26-18:37:58 DEBUG CreDocument: set cjk width scaling 100 
-09/05/26-18:37:58 DEBUG CreDocument: set interline space 100 
-09/05/26-18:37:58 DEBUG CreDocument: set gamma index 15 
-09/05/26-18:37:58 DEBUG CreDocument: set font fractionalbpositioning 2 
-09/05/26-18:37:58 DEBUG CreDocument: set font-family font faces: ||||||FreeSerif|| 
-09/05/26-18:37:58 DEBUG building font face menu table 
-09/05/26-18:37:58 DEBUG CreDocument: set textlang embedded langs true 
-09/05/26-18:37:58 DEBUG CreDocument: set textlang hyphenation enabled true 
-09/05/26-18:37:58 DEBUG CreDocument: set hyphenation trust soft hyphens 0 
-09/05/26-18:37:58 DEBUG CreDocument: set textlang hyphenation soft hyphens only false 
-09/05/26-18:37:58 DEBUG CreDocument: set textlang hyphenation force algorithmic false 
-09/05/26-18:37:58 DEBUG CreDocument: set hyphenation left hyphen min 0 
-09/05/26-18:37:58 DEBUG CreDocument: set hyphenation right hyphen min 0 
-09/05/26-18:37:58 DEBUG CreDocument: set floating punctuation 0 
-09/05/26-18:37:58 DEBUG Typography lang: using fallback  en-US , might be overridden by doc language 
-09/05/26-18:37:58 DEBUG CreDocument: set textlang main lang en-US 
-09/05/26-18:37:58 DEBUG UserHyph: reset user hyphenation dict 
-09/05/26-18:37:58 DEBUG CreDocument: requesting DOM version: 20260812 
-09/05/26-18:37:58 DEBUG CreDocument: set visible page count 1 
-09/05/26-18:37:58 DEBUG CreDocument: loading document... 
-09/05/26-18:37:58 DEBUG CreDocument: loading done. 
-09/05/26-18:37:58 DEBUG   loading took 0.004 seconds 
-09/05/26-18:37:58 DEBUG Typography lang: no doc language, keeping en-US 
-09/05/26-18:37:58 DEBUG CreDocument: rendering document... 
-09/05/26-18:37:58 DEBUG CreDocument: rendering done. 
-09/05/26-18:37:58 DEBUG   rendering took 0.036 seconds 
-09/05/26-18:37:58 DEBUG validateAndFixToc(): quick scan 
-09/05/26-18:37:58 DEBUG validateAndFixToc(): TOC is fine 
-09/05/26-18:37:58 DEBUG CreDocument: set alt document prop title KOReader Quickstart Guide 
-09/05/26-18:37:58 DEBUG _refresh: Enqueued partial update for region 0 0 540 720 dithering: false 
-09/05/26-18:37:58 DEBUG setDirty partial from widget ReaderUI w/ NO region; dithering: nil 
-09/05/26-18:37:58 DEBUG CreDocument: set page info  
-09/05/26-18:37:58 DEBUG CoverImage: onReaderReady 
-09/05/26-18:37:58 DEBUG ReaderStatistics: Initializing average time per page at 50% of the max value, i.e., 60 
-09/05/26-18:37:58 DEBUG setDirty via a func from widget ReaderUI 
-09/05/26-18:37:58 DEBUG _refresh: Enqueued partial update for region 0 0 540 720 dithering: false 
-09/05/26-18:37:58 DEBUG setDirty partial from widget ReaderUI w/ NO region; dithering: nil 
-09/05/26-18:37:58 DEBUG CreDocument: set bookmarks highlight and internal history false 
-09/05/26-18:37:58 DEBUG _refresh: Enqueued partial update for region 0 0 540 720 dithering: false 
-09/05/26-18:37:58 DEBUG setDirty partial from widget ReaderUI w/ NO region; dithering: nil 
-09/05/26-18:37:58 DEBUG CreDocument: set page info  
-09/05/26-18:37:58 DEBUG ReaderStatistics: No timestamp for previous page 0 
-09/05/26-18:37:58 DEBUG Spinning up new ReaderUI instance table: 0x75d42fbdd0d8 
-09/05/26-18:37:58 DEBUG show widget: ReaderUI 
-09/05/26-18:37:58 DEBUG update_mode: Update refresh mode partial to full 
-09/05/26-18:37:58 DEBUG _refresh: Enqueued full update for region 0 0 540 720 dithering: false 
-09/05/26-18:37:58 DEBUG setDirty full from widget ReaderUI w/ NO region; dithering: nil 
-09/05/26-18:37:58 DEBUG painting widget: ReaderUI 
-09/05/26-18:37:58 DEBUG CreDocument: goto page 1 flow 0 
-09/05/26-18:37:58 DEBUG Found font: NotoSans-Regular.ttf in ./fonts/noto/NotoSans-Regular.ttf 
-09/05/26-18:37:58 DEBUG painting widget: table: 0x75d444eb7f18 
-09/05/26-18:37:58 DEBUG blitFrom 67 341 0 0 36 36 
-09/05/26-18:37:58 DEBUG painting widget: table: 0x75d42e8c76a8 
-09/05/26-18:37:58 DEBUG blitFrom 67 341 0 0 36 36 
-09/05/26-18:37:58 DEBUG _refresh: Enqueued full update for region 0 0 540 720 dithering: false 
-09/05/26-18:37:58 DEBUG _refresh: Enqueued full update for region 0 0 540 720 dithering: false 
-09/05/26-18:37:58 DEBUG _refresh: Enqueued full update for region 0 0 540 720 dithering: false 
-09/05/26-18:37:58 DEBUG refresh on logical rectangle 540x720+0+0 
-09/05/26-18:37:58 DEBUG input event => type: 83 (EV_SDL), code: 519, value: cdata<struct SDL_WindowEvent &>: 0x75d42e8e5c38, time: 18911.930446 
-09/05/26-18:37:58 INFO  Restoring user input handling 
-09/05/26-18:38:00 DEBUG close widget: table: 0x75d42e8c76a8 
-09/05/26-18:38:00 DEBUG setDirty via a func from widget nil 
-09/05/26-18:38:00 DEBUG Lower widget ReaderUI covers the full screen 
-09/05/26-18:38:00 DEBUG setDirty nil from widget ReaderUI w/ NO region; dithering: nil 
-09/05/26-18:38:00 DEBUG setDirty nil from widget table: 0x75d444eb7f18 w/ NO region; dithering: nil 
-09/05/26-18:38:00 DEBUG painting widget: ReaderUI 
-09/05/26-18:38:00 DEBUG CreDocument: goto page 1 flow 0 
-09/05/26-18:38:00 DEBUG painting widget: table: 0x75d444eb7f18 
-09/05/26-18:38:00 DEBUG blitFrom 67 341 0 0 36 36 
-09/05/26-18:38:00 DEBUG _refresh: Enqueued ui update for region 60 323 419 73 dithering: false 
-09/05/26-18:38:00 DEBUG refresh on logical rectangle 419x73+60+323 
-09/05/26-18:38:15 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 18929.572158 
-09/05/26-18:38:15 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: 0, time: 18929.572158 
-09/05/26-18:38:15 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 486, time: 18929.572158 
-09/05/26-18:38:15 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 248, time: 18929.572158 
-09/05/26-18:38:15 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 18929.572158 
-09/05/26-18:38:15 DEBUG GestureDetector:probeClockSource: Touch event timestamps appear to use CLOCK_MONOTONIC 
-09/05/26-18:38:15 DEBUG slot 0 in tap state... 
-09/05/26-18:38:15 DEBUG set up hold timer 
-09/05/26-18:38:15 DEBUG AutoSuspend: onInputEvent 
-09/05/26-18:38:15 DEBUG AutoTurn: onInputEvent 
-09/05/26-18:38:15 DEBUG MovableContainer:onMovableTouch {
+09/07/26-08:14:07 DEBUG CreDocument: set style sheet: ./data/epub.css and appended content (737 bytes) 
+09/07/26-08:14:07 DEBUG CreDocument: set embedded fonts 1 
+09/07/26-08:14:07 DEBUG CreDocument: set embedded style sheet 1 
+09/07/26-08:14:07 DEBUG CreDocument: set block rendering flags 0x7fffffff 
+09/07/26-08:14:07 DEBUG CreDocument: set render dpi 96 
+09/07/26-08:14:07 DEBUG CreDocument: set page margins 9 14 9 28 
+09/07/26-08:14:07 DEBUG CreDocument: set txt preformatted 1 
+09/07/26-08:14:07 DEBUG CreDocument: set smooth scaling false 
+09/07/26-08:14:07 DEBUG CreDocument: set nightmode images true 
+09/07/26-08:14:07 DEBUG CreDocument: set font face Noto Serif 
+09/07/26-08:14:07 DEBUG CreDocument: set header font Noto Sans 
+09/07/26-08:14:07 DEBUG CreDocument: set font size 20 
+09/07/26-08:14:07 DEBUG CreDocument: set font base weight 0 = 400 
+09/07/26-08:14:07 DEBUG CreDocument: set font hinting mode 2 
+09/07/26-08:14:07 DEBUG CreDocument: set font kerning mode 3 
+09/07/26-08:14:07 DEBUG CreDocument: set space width scale 95 
+09/07/26-08:14:07 DEBUG CreDocument: set space condensing 75 
+09/07/26-08:14:07 DEBUG CreDocument: set word expansion 0 
+09/07/26-08:14:07 DEBUG CreDocument: set cjk width scaling 100 
+09/07/26-08:14:07 DEBUG CreDocument: set interline space 100 
+09/07/26-08:14:07 DEBUG CreDocument: set gamma index 15 
+09/07/26-08:14:07 DEBUG CreDocument: set font fractionalbpositioning 2 
+09/07/26-08:14:07 DEBUG CreDocument: set font-family font faces: ||||||FreeSerif|| 
+09/07/26-08:14:07 DEBUG building font face menu table 
+09/07/26-08:14:07 DEBUG CreDocument: set textlang embedded langs true 
+09/07/26-08:14:07 DEBUG CreDocument: set textlang hyphenation enabled true 
+09/07/26-08:14:07 DEBUG CreDocument: set hyphenation trust soft hyphens 0 
+09/07/26-08:14:07 DEBUG CreDocument: set textlang hyphenation soft hyphens only false 
+09/07/26-08:14:07 DEBUG CreDocument: set textlang hyphenation force algorithmic false 
+09/07/26-08:14:07 DEBUG CreDocument: set hyphenation left hyphen min 0 
+09/07/26-08:14:07 DEBUG CreDocument: set hyphenation right hyphen min 0 
+09/07/26-08:14:07 DEBUG CreDocument: set floating punctuation 0 
+09/07/26-08:14:07 DEBUG Typography lang: using fallback  en-US , might be overridden by doc language 
+09/07/26-08:14:07 DEBUG CreDocument: set textlang main lang en-US 
+09/07/26-08:14:07 DEBUG UserHyph: reset user hyphenation dict 
+09/07/26-08:14:07 DEBUG CreDocument: requesting DOM version: 20260812 
+09/07/26-08:14:07 DEBUG CreDocument: set visible page count 1 
+09/07/26-08:14:07 DEBUG CreDocument: loading document... 
+09/07/26-08:14:07 DEBUG CreDocument: loading done. 
+09/07/26-08:14:07 DEBUG   loading took 0.004 seconds 
+09/07/26-08:14:07 DEBUG Typography lang: no doc language, keeping en-US 
+09/07/26-08:14:07 DEBUG CreDocument: rendering document... 
+09/07/26-08:14:07 DEBUG CreDocument: rendering done. 
+09/07/26-08:14:07 DEBUG   rendering took 0.037 seconds 
+09/07/26-08:14:07 DEBUG validateAndFixToc(): quick scan 
+09/07/26-08:14:07 DEBUG validateAndFixToc(): TOC is fine 
+09/07/26-08:14:07 DEBUG CreDocument: set alt document prop title KOReader Quickstart Guide 
+09/07/26-08:14:07 DEBUG _refresh: Enqueued partial update for region 0 0 540 720 dithering: false 
+09/07/26-08:14:07 DEBUG setDirty partial from widget ReaderUI w/ NO region; dithering: nil 
+09/07/26-08:14:07 DEBUG CreDocument: set page info  
+09/07/26-08:14:07 DEBUG CoverImage: onReaderReady 
+09/07/26-08:14:07 DEBUG ReaderStatistics: Initializing average time per page at 50% of the max value, i.e., 60 
+09/07/26-08:14:07 DEBUG setDirty via a func from widget ReaderUI 
+09/07/26-08:14:07 DEBUG _refresh: Enqueued partial update for region 0 0 540 720 dithering: false 
+09/07/26-08:14:07 DEBUG setDirty partial from widget ReaderUI w/ NO region; dithering: nil 
+09/07/26-08:14:07 DEBUG CreDocument: set bookmarks highlight and internal history false 
+09/07/26-08:14:07 DEBUG _refresh: Enqueued partial update for region 0 0 540 720 dithering: false 
+09/07/26-08:14:07 DEBUG setDirty partial from widget ReaderUI w/ NO region; dithering: nil 
+09/07/26-08:14:07 DEBUG CreDocument: set page info  
+09/07/26-08:14:07 DEBUG ReaderStatistics: No timestamp for previous page 0 
+09/07/26-08:14:07 DEBUG Spinning up new ReaderUI instance table: 0x7c905246dba0 
+09/07/26-08:14:07 DEBUG show widget: ReaderUI 
+09/07/26-08:14:07 DEBUG update_mode: Update refresh mode partial to full 
+09/07/26-08:14:07 DEBUG _refresh: Enqueued full update for region 0 0 540 720 dithering: false 
+09/07/26-08:14:07 DEBUG setDirty full from widget ReaderUI w/ NO region; dithering: nil 
+09/07/26-08:14:07 DEBUG painting widget: ReaderUI 
+09/07/26-08:14:07 DEBUG CreDocument: goto page 1 flow 0 
+09/07/26-08:14:07 DEBUG Found font: NotoSans-Regular.ttf in ./fonts/noto/NotoSans-Regular.ttf 
+09/07/26-08:14:07 DEBUG painting widget: table: 0x7c9053369e70 
+09/07/26-08:14:07 DEBUG blitFrom 67 341 0 0 36 36 
+09/07/26-08:14:07 DEBUG painting widget: table: 0x7c905109e330 
+09/07/26-08:14:07 DEBUG blitFrom 67 341 0 0 36 36 
+09/07/26-08:14:07 DEBUG _refresh: Enqueued full update for region 0 0 540 720 dithering: false 
+09/07/26-08:14:07 DEBUG _refresh: Enqueued full update for region 0 0 540 720 dithering: false 
+09/07/26-08:14:07 DEBUG _refresh: Enqueued full update for region 0 0 540 720 dithering: false 
+09/07/26-08:14:07 DEBUG refresh on logical rectangle 540x720+0+0 
+09/07/26-08:14:07 DEBUG input event => type: 83 (EV_SDL), code: 519, value: cdata<struct SDL_WindowEvent &>: 0x7c9053114288, time: 27.149924 
+09/07/26-08:14:08 INFO  Restoring user input handling 
+09/07/26-08:14:10 DEBUG close widget: table: 0x7c905109e330 
+09/07/26-08:14:10 DEBUG setDirty via a func from widget nil 
+09/07/26-08:14:10 DEBUG Lower widget ReaderUI covers the full screen 
+09/07/26-08:14:10 DEBUG setDirty nil from widget ReaderUI w/ NO region; dithering: nil 
+09/07/26-08:14:10 DEBUG setDirty nil from widget table: 0x7c9053369e70 w/ NO region; dithering: nil 
+09/07/26-08:14:10 DEBUG painting widget: ReaderUI 
+09/07/26-08:14:10 DEBUG CreDocument: goto page 1 flow 0 
+09/07/26-08:14:10 DEBUG painting widget: table: 0x7c9053369e70 
+09/07/26-08:14:10 DEBUG blitFrom 67 341 0 0 36 36 
+09/07/26-08:14:10 DEBUG _refresh: Enqueued ui update for region 60 323 419 73 dithering: false 
+09/07/26-08:14:10 DEBUG refresh on logical rectangle 419x73+60+323 
+09/07/26-08:14:24 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 44.123444 
+09/07/26-08:14:24 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: 0, time: 44.123444 
+09/07/26-08:14:24 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 486, time: 44.123444 
+09/07/26-08:14:24 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 248, time: 44.123444 
+09/07/26-08:14:24 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 44.123444 
+09/07/26-08:14:24 DEBUG GestureDetector:probeClockSource: Touch event timestamps appear to use CLOCK_MONOTONIC 
+09/07/26-08:14:24 DEBUG slot 0 in tap state... 
+09/07/26-08:14:24 DEBUG set up hold timer 
+09/07/26-08:14:24 DEBUG AutoSuspend: onInputEvent 
+09/07/26-08:14:24 DEBUG AutoTurn: onInputEvent 
+09/07/26-08:14:24 DEBUG MovableContainer:onMovableTouch {
   ges = "touch",
   pos = "0x0+486+248",
-  time = 18929572158
-} --[[table: 0x75d42ea02418]] 
-09/05/26-18:38:15 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 18929.580158 
-09/05/26-18:38:15 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: -1, time: 18929.580158 
-09/05/26-18:38:15 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 486, time: 18929.580158 
-09/05/26-18:38:15 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 248, time: 18929.580158 
-09/05/26-18:38:15 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 18929.580158 
-09/05/26-18:38:15 DEBUG slot 0 in tap state... 
-09/05/26-18:38:15 DEBUG Contact:handleDoubleTap: single tap detected @ 486 248 
-09/05/26-18:38:15 DEBUG AutoSuspend: onInputEvent 
-09/05/26-18:38:15 DEBUG AutoTurn: onInputEvent 
-09/05/26-18:38:15 DEBUG close widget: table: 0x75d444eb7f18 
-09/05/26-18:38:15 DEBUG setDirty via a func from widget nil 
-09/05/26-18:38:15 DEBUG Lower widget ReaderUI covers the full screen 
-09/05/26-18:38:15 DEBUG setDirty nil from widget ReaderUI w/ NO region; dithering: nil 
-09/05/26-18:38:15 DEBUG painting widget: ReaderUI 
-09/05/26-18:38:15 DEBUG CreDocument: goto page 1 flow 0 
-09/05/26-18:38:15 DEBUG _refresh: Enqueued ui update for region 60 265 419 189 dithering: false 
-09/05/26-18:38:15 DEBUG refresh on logical rectangle 419x189+60+265 
-09/05/26-18:38:16 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 18930.760225 
-09/05/26-18:38:16 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: 0, time: 18930.760225 
-09/05/26-18:38:16 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 271, time: 18930.760225 
-09/05/26-18:38:16 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 38, time: 18930.760225 
-09/05/26-18:38:16 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 18930.760225 
-09/05/26-18:38:16 DEBUG slot 0 in tap state... 
-09/05/26-18:38:16 DEBUG set up hold timer 
-09/05/26-18:38:16 DEBUG AutoSuspend: onInputEvent 
-09/05/26-18:38:16 DEBUG AutoTurn: onInputEvent 
-09/05/26-18:38:16 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 18930.768225 
-09/05/26-18:38:16 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: -1, time: 18930.768225 
-09/05/26-18:38:16 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 271, time: 18930.768225 
-09/05/26-18:38:16 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 38, time: 18930.768225 
-09/05/26-18:38:16 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 18930.768225 
-09/05/26-18:38:16 DEBUG slot 0 in tap state... 
-09/05/26-18:38:16 DEBUG Contact:handleDoubleTap: single tap detected @ 271 38 
-09/05/26-18:38:16 DEBUG AutoSuspend: onInputEvent 
-09/05/26-18:38:16 DEBUG AutoTurn: onInputEvent 
-09/05/26-18:38:16 DEBUG ReaderLink:getLinkFromPosition @ 271 38 from a_xpointer: nil to link_xpointer:  
-09/05/26-18:38:16 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.rotation.svg 36 36 
-09/05/26-18:38:16 DEBUG renderSVG resources/icons/mdlight/appbar.rotation.svg 0.75 48 48 > 36 36 0 0 
-09/05/26-18:38:16 DEBUG cache image|resources/icons/mdlight/appbar.rotation.svg|36|36|flat 
-09/05/26-18:38:16 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:16 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.crop.svg 36 36 
-09/05/26-18:38:16 DEBUG renderSVG resources/icons/mdlight/appbar.crop.svg 0.75 48 48 > 36 36 0 0 
-09/05/26-18:38:16 DEBUG cache image|resources/icons/mdlight/appbar.crop.svg|36|36|flat 
-09/05/26-18:38:16 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:16 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.pageview.svg 36 36 
-09/05/26-18:38:16 DEBUG renderSVG resources/icons/mdlight/appbar.pageview.svg 0.75 48 48 > 36 36 0 0 
-09/05/26-18:38:16 DEBUG cache image|resources/icons/mdlight/appbar.pageview.svg|36|36|flat 
-09/05/26-18:38:16 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:16 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.textsize.svg 36 36 
-09/05/26-18:38:17 DEBUG renderSVG resources/icons/mdlight/appbar.textsize.svg 0.75 48 48 > 36 36 0 0 
-09/05/26-18:38:17 DEBUG cache image|resources/icons/mdlight/appbar.textsize.svg|36|36|flat 
-09/05/26-18:38:17 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:17 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.contrast.svg 36 36 
-09/05/26-18:38:17 DEBUG renderSVG resources/icons/mdlight/appbar.contrast.svg 0.75 48 48 > 36 36 0 0 
-09/05/26-18:38:17 DEBUG cache image|resources/icons/mdlight/appbar.contrast.svg|36|36|flat 
-09/05/26-18:38:17 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:17 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.settings.svg 36 36 
-09/05/26-18:38:17 DEBUG renderSVG resources/icons/mdlight/appbar.settings.svg 0.75 48 48 > 36 36 0 0 
-09/05/26-18:38:17 DEBUG cache image|resources/icons/mdlight/appbar.settings.svg|36|36|flat 
-09/05/26-18:38:17 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:17 DEBUG ImageWidget: _render'ing resources/icons/mdlight/rotation.P.90CCW.svg 36 36 
-09/05/26-18:38:17 DEBUG renderSVG resources/icons/mdlight/rotation.P.90CCW.svg 0.75 48 48 > 36 36 0 0 
-09/05/26-18:38:17 DEBUG cache image|resources/icons/mdlight/rotation.P.90CCW.svg|36|36|flat 
-09/05/26-18:38:17 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:17 DEBUG ImageWidget: _render'ing resources/icons/mdlight/rotation.P.0UR.svg 36 36 
-09/05/26-18:38:17 DEBUG renderSVG resources/icons/mdlight/rotation.P.0UR.svg 0.75 48 48 > 36 36 0 0 
-09/05/26-18:38:17 DEBUG cache image|resources/icons/mdlight/rotation.P.0UR.svg|36|36|flat 
-09/05/26-18:38:17 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:17 DEBUG ImageWidget: _render'ing resources/icons/mdlight/rotation.P.90CW.svg 36 36 
-09/05/26-18:38:17 DEBUG renderSVG resources/icons/mdlight/rotation.P.90CW.svg 0.75 48 48 > 36 36 0 0 
-09/05/26-18:38:17 DEBUG cache image|resources/icons/mdlight/rotation.P.90CW.svg|36|36|flat 
-09/05/26-18:38:17 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:17 DEBUG ImageWidget: _render'ing resources/icons/mdlight/rotation.P.180UD.svg 36 36 
-09/05/26-18:38:17 DEBUG renderSVG resources/icons/mdlight/rotation.P.180UD.svg 0.75 48 48 > 36 36 0 0 
-09/05/26-18:38:17 DEBUG cache image|resources/icons/mdlight/rotation.P.180UD.svg|36|36|flat 
-09/05/26-18:38:17 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:17 DEBUG Found font: NotoSans-Regular.ttf in ./fonts/noto/NotoSans-Regular.ttf 
-09/05/26-18:38:17 DEBUG FocusManager: Move focus position to: 1 , 3 
-09/05/26-18:38:17 DEBUG FocusManager: Move focus position to: 1 , 1 
-09/05/26-18:38:17 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.rotation.svg 36 36 
-09/05/26-18:38:17 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:17 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.crop.svg 36 36 
-09/05/26-18:38:17 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:17 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.pageview.svg 36 36 
-09/05/26-18:38:17 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:17 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.textsize.svg 36 36 
-09/05/26-18:38:17 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:17 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.contrast.svg 36 36 
-09/05/26-18:38:17 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:17 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.settings.svg 36 36 
-09/05/26-18:38:17 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:17 DEBUG ImageWidget: _render'ing resources/icons/mdlight/rotation.P.90CCW.svg 36 36 
-09/05/26-18:38:17 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:17 DEBUG ImageWidget: _render'ing resources/icons/mdlight/rotation.P.0UR.svg 36 36 
-09/05/26-18:38:17 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:17 DEBUG ImageWidget: _render'ing resources/icons/mdlight/rotation.P.90CW.svg 36 36 
-09/05/26-18:38:17 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:17 DEBUG ImageWidget: _render'ing resources/icons/mdlight/rotation.P.180UD.svg 36 36 
-09/05/26-18:38:17 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:17 DEBUG FocusManager: Move focus position to: 1 , 3 
-09/05/26-18:38:17 DEBUG setDirty via a func from widget ConfigDialog 
-09/05/26-18:38:17 DEBUG show widget: ConfigDialog 
-09/05/26-18:38:17 DEBUG setDirty nil from widget ConfigDialog w/ NO region; dithering: nil 
-09/05/26-18:38:17 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.navigation.svg 36 36 
-09/05/26-18:38:17 DEBUG renderSVG resources/icons/mdlight/appbar.navigation.svg 0.75 48 48 > 36 36 0 0 
-09/05/26-18:38:17 DEBUG cache image|resources/icons/mdlight/appbar.navigation.svg|36|36|flat 
-09/05/26-18:38:17 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:17 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.typeset.svg 36 36 
-09/05/26-18:38:17 DEBUG renderSVG resources/icons/mdlight/appbar.typeset.svg 0.75 48 48 > 36 36 0 0 
-09/05/26-18:38:17 DEBUG cache image|resources/icons/mdlight/appbar.typeset.svg|36|36|flat 
-09/05/26-18:38:17 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:17 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.settings.svg 36 36 
-09/05/26-18:38:17 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:17 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.tools.svg 36 36 
-09/05/26-18:38:17 DEBUG renderSVG resources/icons/mdlight/appbar.tools.svg 0.75 48 48 > 36 36 0 0 
-09/05/26-18:38:17 DEBUG cache image|resources/icons/mdlight/appbar.tools.svg|36|36|flat 
-09/05/26-18:38:17 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:17 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.search.svg 36 36 
-09/05/26-18:38:17 DEBUG renderSVG resources/icons/mdlight/appbar.search.svg 0.75 48 48 > 36 36 0 0 
-09/05/26-18:38:17 DEBUG cache image|resources/icons/mdlight/appbar.search.svg|36|36|flat 
-09/05/26-18:38:17 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:17 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.filebrowser.svg 36 36 
-09/05/26-18:38:17 DEBUG renderSVG resources/icons/mdlight/appbar.filebrowser.svg 0.75 48 48 > 36 36 0 0 
-09/05/26-18:38:17 DEBUG cache image|resources/icons/mdlight/appbar.filebrowser.svg|36|36|flat 
-09/05/26-18:38:17 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:17 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.menu.svg 36 36 
-09/05/26-18:38:17 DEBUG renderSVG resources/icons/mdlight/appbar.menu.svg 0.75 48 48 > 36 36 0 0 
-09/05/26-18:38:17 DEBUG cache image|resources/icons/mdlight/appbar.menu.svg|36|36|flat 
-09/05/26-18:38:17 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:17 DEBUG ImageWidget: _render'ing resources/icons/mdlight/chevron.left.svg 36 36 
-09/05/26-18:38:17 DEBUG renderSVG resources/icons/mdlight/chevron.left.svg 0.75 48 48 > 36 36 0 0 
-09/05/26-18:38:17 DEBUG cache image|resources/icons/mdlight/chevron.left.svg|36|36|flat 
-09/05/26-18:38:17 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:17 DEBUG ImageWidget: _render'ing resources/icons/mdlight/chevron.right.svg 36 36 
-09/05/26-18:38:17 DEBUG renderSVG resources/icons/mdlight/chevron.right.svg 0.75 48 48 > 36 36 0 0 
-09/05/26-18:38:17 DEBUG cache image|resources/icons/mdlight/chevron.right.svg|36|36|flat 
-09/05/26-18:38:17 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:17 DEBUG ImageWidget: _render'ing resources/icons/mdlight/chevron.up.svg 36 36 
-09/05/26-18:38:17 DEBUG renderSVG resources/icons/mdlight/chevron.up.svg 0.75 48 48 > 36 36 0 0 
-09/05/26-18:38:17 DEBUG cache image|resources/icons/mdlight/chevron.up.svg|36|36|flat 
-09/05/26-18:38:17 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:17 DEBUG Found font: NotoSansCJKsc-Regular.otf in ./fonts/noto/NotoSansCJKsc-Regular.otf 
-09/05/26-18:38:17 DEBUG Found font: NotoSansArabicUI-Regular.ttf in ./fonts/noto/NotoSansArabicUI-Regular.ttf 
-09/05/26-18:38:17 DEBUG Found font: NotoSansDevanagariUI-Regular.ttf in ./fonts/noto/NotoSansDevanagariUI-Regular.ttf 
-09/05/26-18:38:17 DEBUG Found font: NotoSansBengaliUI-Regular.ttf in ./fonts/noto/NotoSansBengaliUI-Regular.ttf 
-09/05/26-18:38:17 DEBUG Found font: NotoSansCJKsc-Regular.otf in ./fonts/noto/NotoSansCJKsc-Regular.otf 
-09/05/26-18:38:17 DEBUG Found font: NotoSansArabicUI-Regular.ttf in ./fonts/noto/NotoSansArabicUI-Regular.ttf 
-09/05/26-18:38:17 DEBUG Found font: NotoSansDevanagariUI-Regular.ttf in ./fonts/noto/NotoSansDevanagariUI-Regular.ttf 
-09/05/26-18:38:17 DEBUG Found font: NotoSansBengaliUI-Regular.ttf in ./fonts/noto/NotoSansBengaliUI-Regular.ttf 
-09/05/26-18:38:17 DEBUG FocusManager: Move focus position to: 1 , 1 
-09/05/26-18:38:17 DEBUG setDirty via a func from widget table: 0x75d42eaa1300 
-09/05/26-18:38:17 DEBUG show widget: table: 0x75d42eaa1300 
-09/05/26-18:38:17 DEBUG setDirty nil from widget table: 0x75d42eaa1300 w/ NO region; dithering: nil 
-09/05/26-18:38:17 DEBUG painting widget: ConfigDialog 
-09/05/26-18:38:17 DEBUG blitFrom 211 570 0 0 36 36 
-09/05/26-18:38:17 DEBUG blitFrom 283 570 0 0 36 36 
-09/05/26-18:38:17 DEBUG blitFrom 355 570 0 0 36 36 
-09/05/26-18:38:17 DEBUG blitFrom 427 570 0 0 36 36 
-09/05/26-18:38:17 DEBUG Found font: NotoSans-Bold.ttf in ./fonts/noto/NotoSans-Bold.ttf 
-09/05/26-18:38:17 DEBUG Found font: NotoSansCJKsc-Regular.otf in ./fonts/noto/NotoSansCJKsc-Regular.otf 
-09/05/26-18:38:17 DEBUG blitFrom 32 677 0 0 36 36 
-09/05/26-18:38:17 DEBUG blitFrom 120 677 0 0 36 36 
-09/05/26-18:38:17 DEBUG blitFrom 208 677 0 0 36 36 
-09/05/26-18:38:17 DEBUG blitFrom 296 677 0 0 36 36 
-09/05/26-18:38:17 DEBUG blitFrom 384 677 0 0 36 36 
-09/05/26-18:38:17 DEBUG blitFrom 472 677 0 0 36 36 
-09/05/26-18:38:17 DEBUG painting widget: table: 0x75d42eaa1300 
-09/05/26-18:38:17 DEBUG blitFrom 15 7 0 0 36 36 
-09/05/26-18:38:17 DEBUG blitFrom 83 7 0 0 36 36 
-09/05/26-18:38:17 DEBUG blitFrom 151 7 0 0 36 36 
-09/05/26-18:38:17 DEBUG blitFrom 219 7 0 0 36 36 
-09/05/26-18:38:17 DEBUG blitFrom 287 7 0 0 36 36 
-09/05/26-18:38:17 DEBUG blitFrom 355 7 0 0 36 36 
-09/05/26-18:38:17 DEBUG blitFrom 489 7 0 0 36 36 
-09/05/26-18:38:17 DEBUG blitFrom 26 510 0 0 36 36 
-09/05/26-18:38:17 DEBUG _refresh: Enqueued ui update for region -12 545 564 175 dithering: false 
-09/05/26-18:38:17 DEBUG update_mode: Update refresh mode ui to flashui 
-09/05/26-18:38:17 DEBUG _refresh: Enqueued flashui update for region -12 0 564 720 dithering: false 
-09/05/26-18:38:17 DEBUG refresh on logical rectangle 540x720+0+0 
-09/05/26-18:38:18 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 18931.948292 
-09/05/26-18:38:18 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: 0, time: 18931.948292 
-09/05/26-18:38:18 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 234, time: 18931.948292 
-09/05/26-18:38:18 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 20, time: 18931.948292 
-09/05/26-18:38:18 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 18931.948292 
-09/05/26-18:38:18 DEBUG slot 0 in tap state... 
-09/05/26-18:38:18 DEBUG set up hold timer 
-09/05/26-18:38:18 DEBUG AutoSuspend: onInputEvent 
-09/05/26-18:38:18 DEBUG AutoTurn: onInputEvent 
-09/05/26-18:38:18 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 18931.952292 
-09/05/26-18:38:18 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: -1, time: 18931.952292 
-09/05/26-18:38:18 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 234, time: 18931.952292 
-09/05/26-18:38:18 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 20, time: 18931.952292 
-09/05/26-18:38:18 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 18931.952292 
-09/05/26-18:38:18 DEBUG slot 0 in tap state... 
-09/05/26-18:38:18 DEBUG Contact:handleDoubleTap: single tap detected @ 234 20 
-09/05/26-18:38:18 DEBUG AutoSuspend: onInputEvent 
-09/05/26-18:38:18 DEBUG AutoTurn: onInputEvent 
-09/05/26-18:38:18 DEBUG Explicit widgetInvert: table: 0x75d42e806220 @ 219 7 
-09/05/26-18:38:18 DEBUG _refresh: Enqueued fast update for region 204 7 66 36 dithering: false 
-09/05/26-18:38:18 DEBUG setDirty fast from widget nil w/ region 204 7 66 36 dithering: nil 
-09/05/26-18:38:18 DEBUG refresh on logical rectangle 66x36+204+7 
-09/05/26-18:38:18 DEBUG Explicit widgetInvert: table: 0x75d42e806220 @ 219 7 
-09/05/26-18:38:18 DEBUG close widget: ConfigDialog 
-09/05/26-18:38:18 DEBUG setDirty via a func from widget nil 
-09/05/26-18:38:18 DEBUG Lower widget ReaderUI covers the full screen 
-09/05/26-18:38:18 DEBUG setDirty nil from widget ReaderUI w/ NO region; dithering: nil 
-09/05/26-18:38:18 DEBUG setDirty nil from widget table: 0x75d42eaa1300 w/ NO region; dithering: nil 
-09/05/26-18:38:18 DEBUG FocusManager: Move focus position to: 4 , 1 
-09/05/26-18:38:18 DEBUG setDirty via a func from widget table: 0x75d42eaa1300 
-09/05/26-18:38:18 DEBUG _refresh: Enqueued fast update for region 204 7 66 36 dithering: false 
-09/05/26-18:38:18 DEBUG setDirty fast from widget nil w/ region 204 7 66 36 dithering: nil 
-09/05/26-18:38:18 DEBUG painting widget: ReaderUI 
-09/05/26-18:38:18 DEBUG CreDocument: goto page 1 flow 0 
-09/05/26-18:38:18 DEBUG painting widget: table: 0x75d42eaa1300 
-09/05/26-18:38:18 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.navigation.svg 36 36 
-09/05/26-18:38:18 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:18 DEBUG blitFrom 15 7 0 0 36 36 
-09/05/26-18:38:18 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.typeset.svg 36 36 
-09/05/26-18:38:18 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:18 DEBUG blitFrom 83 7 0 0 36 36 
-09/05/26-18:38:18 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.settings.svg 36 36 
-09/05/26-18:38:18 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:18 DEBUG blitFrom 151 7 0 0 36 36 
-09/05/26-18:38:18 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.tools.svg 36 36 
-09/05/26-18:38:18 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:18 DEBUG blitFrom 219 7 0 0 36 36 
-09/05/26-18:38:18 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.search.svg 36 36 
-09/05/26-18:38:18 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:18 DEBUG blitFrom 287 7 0 0 36 36 
-09/05/26-18:38:18 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.filebrowser.svg 36 36 
-09/05/26-18:38:18 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:18 DEBUG blitFrom 355 7 0 0 36 36 
-09/05/26-18:38:18 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.menu.svg 36 36 
-09/05/26-18:38:18 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:18 DEBUG blitFrom 489 7 0 0 36 36 
-09/05/26-18:38:18 DEBUG ImageWidget: _render'ing resources/icons/mdlight/chevron.up.svg 36 36 
-09/05/26-18:38:18 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:18 DEBUG blitFrom 26 510 0 0 36 36 
-09/05/26-18:38:18 DEBUG ImageWidget: _render'ing resources/icons/mdlight/chevron.left.svg 36 36 
-09/05/26-18:38:18 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:18 DEBUG blitFrom 185 510 0 0 36 36 
-09/05/26-18:38:18 DEBUG ImageWidget: _render'ing resources/icons/mdlight/chevron.right.svg 36 36 
-09/05/26-18:38:18 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:18 DEBUG blitFrom 319 510 0 0 36 36 
-09/05/26-18:38:18 DEBUG _refresh: Enqueued partial update for region -12 545 564 175 dithering: false 
-09/05/26-18:38:18 DEBUG update_mode: Update refresh mode fast to ui 
-09/05/26-18:38:18 DEBUG _refresh: Enqueued partial update for region -12 0 564 720 dithering: false 
-09/05/26-18:38:18 DEBUG refresh on logical rectangle 540x720+0+0 
-09/05/26-18:38:19 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 18933.136359 
-09/05/26-18:38:19 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: 0, time: 18933.136359 
-09/05/26-18:38:19 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 348, time: 18933.136359 
-09/05/26-18:38:19 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 528, time: 18933.136359 
-09/05/26-18:38:19 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 18933.136359 
-09/05/26-18:38:19 DEBUG slot 0 in tap state... 
-09/05/26-18:38:19 DEBUG set up hold timer 
-09/05/26-18:38:19 DEBUG AutoSuspend: onInputEvent 
-09/05/26-18:38:19 DEBUG AutoTurn: onInputEvent 
-09/05/26-18:38:19 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 18933.140359 
-09/05/26-18:38:19 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: -1, time: 18933.140359 
-09/05/26-18:38:19 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 348, time: 18933.140359 
-09/05/26-18:38:19 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 528, time: 18933.140359 
-09/05/26-18:38:19 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 18933.140359 
-09/05/26-18:38:19 DEBUG slot 0 in tap state... 
-09/05/26-18:38:19 DEBUG Contact:handleDoubleTap: single tap detected @ 348 528 
-09/05/26-18:38:19 DEBUG AutoSuspend: onInputEvent 
-09/05/26-18:38:19 DEBUG AutoTurn: onInputEvent 
-09/05/26-18:38:19 DEBUG Explicit widgetInvert: table: 0x75d42e900458 @ 317 508 
-09/05/26-18:38:19 DEBUG _refresh: Enqueued fast update for region 317 508 40 40 dithering: false 
-09/05/26-18:38:19 DEBUG setDirty fast from widget nil w/ region 317 508 40 40 dithering: nil 
-09/05/26-18:38:19 DEBUG refresh on logical rectangle 40x40+317+508 
-09/05/26-18:38:19 DEBUG Explicit widgetInvert: table: 0x75d42e900458 @ 317 508 
-09/05/26-18:38:19 DEBUG _refresh: Enqueued fast update for region 317 508 40 40 dithering: false 
-09/05/26-18:38:19 DEBUG setDirty fast from widget nil w/ region 317 508 40 40 dithering: nil 
-09/05/26-18:38:19 DEBUG FocusManager: Move focus position to: 4 , 1 
-09/05/26-18:38:19 DEBUG setDirty via a func from widget all 
-09/05/26-18:38:19 DEBUG painting widget: ReaderUI 
-09/05/26-18:38:19 DEBUG CreDocument: goto page 1 flow 0 
-09/05/26-18:38:19 DEBUG painting widget: table: 0x75d42eaa1300 
-09/05/26-18:38:19 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.navigation.svg 36 36 
-09/05/26-18:38:19 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:19 DEBUG blitFrom 15 7 0 0 36 36 
-09/05/26-18:38:19 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.typeset.svg 36 36 
-09/05/26-18:38:19 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:19 DEBUG blitFrom 83 7 0 0 36 36 
-09/05/26-18:38:19 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.settings.svg 36 36 
-09/05/26-18:38:19 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:19 DEBUG blitFrom 151 7 0 0 36 36 
-09/05/26-18:38:19 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.tools.svg 36 36 
-09/05/26-18:38:19 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:19 DEBUG blitFrom 219 7 0 0 36 36 
-09/05/26-18:38:19 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.search.svg 36 36 
-09/05/26-18:38:19 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:19 DEBUG blitFrom 287 7 0 0 36 36 
-09/05/26-18:38:19 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.filebrowser.svg 36 36 
-09/05/26-18:38:19 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:19 DEBUG blitFrom 355 7 0 0 36 36 
-09/05/26-18:38:19 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.menu.svg 36 36 
-09/05/26-18:38:19 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:19 DEBUG blitFrom 489 7 0 0 36 36 
-09/05/26-18:38:19 DEBUG ImageWidget: _render'ing resources/icons/mdlight/chevron.up.svg 36 36 
-09/05/26-18:38:19 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:19 DEBUG blitFrom 26 188 0 0 36 36 
-09/05/26-18:38:19 DEBUG ImageWidget: _render'ing resources/icons/mdlight/chevron.left.svg 36 36 
-09/05/26-18:38:19 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:19 DEBUG blitFrom 185 188 0 0 36 36 
-09/05/26-18:38:19 DEBUG ImageWidget: _render'ing resources/icons/mdlight/chevron.right.svg 36 36 
-09/05/26-18:38:19 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:19 DEBUG blitFrom 319 188 0 0 36 36 
-09/05/26-18:38:19 DEBUG update_mode: Update refresh mode fast to ui 
-09/05/26-18:38:19 DEBUG _refresh: Enqueued ui update for region 0 0 540 554 dithering: false 
-09/05/26-18:38:19 DEBUG refresh on logical rectangle 540x554+0+0 
-09/05/26-18:38:20 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 18934.332426 
-09/05/26-18:38:20 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: 0, time: 18934.332426 
-09/05/26-18:38:20 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 82, time: 18934.332426 
-09/05/26-18:38:20 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 161, time: 18934.332426 
-09/05/26-18:38:20 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 18934.332426 
-09/05/26-18:38:20 DEBUG slot 0 in tap state... 
-09/05/26-18:38:20 DEBUG set up hold timer 
-09/05/26-18:38:20 DEBUG AutoSuspend: onInputEvent 
-09/05/26-18:38:20 DEBUG AutoTurn: onInputEvent 
-09/05/26-18:38:20 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 18934.336426 
-09/05/26-18:38:20 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: -1, time: 18934.336426 
-09/05/26-18:38:20 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 82, time: 18934.336426 
-09/05/26-18:38:20 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 161, time: 18934.336426 
-09/05/26-18:38:20 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 18934.336426 
-09/05/26-18:38:20 DEBUG slot 0 in tap state... 
-09/05/26-18:38:20 DEBUG Contact:handleDoubleTap: single tap detected @ 82 161 
-09/05/26-18:38:20 DEBUG AutoSuspend: onInputEvent 
-09/05/26-18:38:20 DEBUG AutoTurn: onInputEvent 
-09/05/26-18:38:20 DEBUG Explicit widgetInvert: table: 0x75d42eb42a68 @ 5 141 
-09/05/26-18:38:20 DEBUG _refresh: Enqueued fast update for region 5 141 530 42 dithering: false 
-09/05/26-18:38:20 DEBUG setDirty fast from widget nil w/ region 5 141 530 42 dithering: nil 
-09/05/26-18:38:20 DEBUG refresh on logical rectangle 530x42+5+141 
-09/05/26-18:38:20 DEBUG FocusManager: Move focus position to: 4 , 1 
-09/05/26-18:38:20 DEBUG setDirty via a func from widget table: 0x75d42eaa1300 
-09/05/26-18:38:20 DEBUG painting widget: table: 0x75d42eaa1300 
-09/05/26-18:38:20 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.navigation.svg 36 36 
-09/05/26-18:38:20 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:20 DEBUG blitFrom 15 7 0 0 36 36 
-09/05/26-18:38:20 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.typeset.svg 36 36 
-09/05/26-18:38:20 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:20 DEBUG blitFrom 83 7 0 0 36 36 
-09/05/26-18:38:20 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.settings.svg 36 36 
-09/05/26-18:38:20 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:20 DEBUG blitFrom 151 7 0 0 36 36 
-09/05/26-18:38:20 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.tools.svg 36 36 
-09/05/26-18:38:20 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:20 DEBUG blitFrom 219 7 0 0 36 36 
-09/05/26-18:38:20 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.search.svg 36 36 
-09/05/26-18:38:20 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:20 DEBUG blitFrom 287 7 0 0 36 36 
-09/05/26-18:38:20 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.filebrowser.svg 36 36 
-09/05/26-18:38:20 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:20 DEBUG blitFrom 355 7 0 0 36 36 
-09/05/26-18:38:20 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.menu.svg 36 36 
-09/05/26-18:38:20 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:20 DEBUG blitFrom 489 7 0 0 36 36 
-09/05/26-18:38:20 DEBUG ImageWidget: _render'ing resources/icons/mdlight/chevron.up.svg 36 36 
-09/05/26-18:38:20 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:20 DEBUG blitFrom 26 418 0 0 36 36 
-09/05/26-18:38:20 DEBUG ImageWidget: _render'ing resources/icons/mdlight/chevron.left.svg 36 36 
-09/05/26-18:38:20 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:20 DEBUG ImageWidget: _render'ing resources/icons/mdlight/chevron.right.svg 36 36 
-09/05/26-18:38:20 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:20 DEBUG _refresh: Enqueued ui update for region 0 0 540 462 dithering: false 
-09/05/26-18:38:20 DEBUG refresh on logical rectangle 540x462+0+0 
-09/05/26-18:38:21 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 18935.516493 
-09/05/26-18:38:21 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: 0, time: 18935.516493 
-09/05/26-18:38:21 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 55, time: 18935.516493 
-09/05/26-18:38:21 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 391, time: 18935.516493 
-09/05/26-18:38:21 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 18935.516493 
-09/05/26-18:38:21 DEBUG slot 0 in tap state... 
-09/05/26-18:38:21 DEBUG set up hold timer 
-09/05/26-18:38:21 DEBUG AutoSuspend: onInputEvent 
-09/05/26-18:38:21 DEBUG AutoTurn: onInputEvent 
-09/05/26-18:38:21 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 18935.520493 
-09/05/26-18:38:21 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: -1, time: 18935.520493 
-09/05/26-18:38:21 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 55, time: 18935.520493 
-09/05/26-18:38:21 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 391, time: 18935.520493 
-09/05/26-18:38:21 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 18935.520493 
-09/05/26-18:38:21 DEBUG slot 0 in tap state... 
-09/05/26-18:38:21 DEBUG Contact:handleDoubleTap: single tap detected @ 55 391 
-09/05/26-18:38:21 DEBUG AutoSuspend: onInputEvent 
-09/05/26-18:38:21 DEBUG AutoTurn: onInputEvent 
-09/05/26-18:38:21 DEBUG Explicit widgetInvert: table: 0x75d42fdab740 @ 5 371 
-09/05/26-18:38:21 DEBUG _refresh: Enqueued fast update for region 5 371 530 42 dithering: false 
-09/05/26-18:38:21 DEBUG setDirty fast from widget nil w/ region 5 371 530 42 dithering: nil 
-09/05/26-18:38:21 DEBUG refresh on logical rectangle 530x42+5+371 
-09/05/26-18:38:21 DEBUG ImageWidget: _render'ing resources/icons/mdlight/close.svg 22 22 
-09/05/26-18:38:21 DEBUG renderSVG resources/icons/mdlight/close.svg 0.91666666666667 24 24 > 22 22 0 0 
-09/05/26-18:38:21 DEBUG cache image|resources/icons/mdlight/close.svg|22|22|flat 
-09/05/26-18:38:21 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:21 DEBUG ImageWidget: _render'ing resources/icons/mdlight/chevron.left.svg 36 36 
-09/05/26-18:38:21 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:21 DEBUG ImageWidget: _render'ing resources/icons/mdlight/chevron.right.svg 36 36 
-09/05/26-18:38:21 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:21 DEBUG ImageWidget: _render'ing resources/icons/mdlight/chevron.first.svg 36 36 
-09/05/26-18:38:21 DEBUG renderSVG resources/icons/mdlight/chevron.first.svg 0.75 48 48 > 36 36 0 0 
-09/05/26-18:38:21 DEBUG cache image|resources/icons/mdlight/chevron.first.svg|36|36|flat 
-09/05/26-18:38:21 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:21 DEBUG ImageWidget: _render'ing resources/icons/mdlight/chevron.last.svg 36 36 
-09/05/26-18:38:21 DEBUG renderSVG resources/icons/mdlight/chevron.last.svg 0.75 48 48 > 36 36 0 0 
-09/05/26-18:38:21 DEBUG cache image|resources/icons/mdlight/chevron.last.svg|36|36|flat 
-09/05/26-18:38:21 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:21 DEBUG ImageWidget: _render'ing resources/icons/mdlight/back.top.svg 36 36 
-09/05/26-18:38:21 DEBUG renderSVG resources/icons/mdlight/back.top.svg 0.75 48 48 > 36 36 0 0 
-09/05/26-18:38:21 DEBUG cache image|resources/icons/mdlight/back.top.svg|36|36|flat 
-09/05/26-18:38:21 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:21 DEBUG Found font: DroidSansMono.ttf in ./fonts/droid/DroidSansMono.ttf 
-09/05/26-18:38:21 DEBUG FocusManager: Move focus position to: 1 , 1 
-09/05/26-18:38:21 DEBUG Menu:mergeTitleBarIntoLayout: Adjusted focus position to account for added titlebar rows: 1 , 2 
-09/05/26-18:38:21 DEBUG setDirty via a func from widget table: 0x75d42feda8b8 
-09/05/26-18:38:21 DEBUG show widget: table: 0x75d42feda8b8 
-09/05/26-18:38:21 DEBUG setDirty nil from widget table: 0x75d42feda8b8 w/ NO region; dithering: nil 
-09/05/26-18:38:21 DEBUG close widget: table: 0x75d42eaa1300 
-09/05/26-18:38:21 DEBUG _refresh: Enqueued flashui update for region 0 0 540 720 dithering: false 
-09/05/26-18:38:21 DEBUG setDirty flashui from widget nil w/ NO region; dithering: nil 
-09/05/26-18:38:21 DEBUG Lower widget ReaderUI covers the full screen 
-09/05/26-18:38:21 DEBUG setDirty nil from widget ReaderUI w/ NO region; dithering: nil 
-09/05/26-18:38:21 DEBUG setDirty nil from widget table: 0x75d42feda8b8 w/ NO region; dithering: nil 
-09/05/26-18:38:21 DEBUG painting widget: ReaderUI 
-09/05/26-18:38:21 DEBUG CreDocument: goto page 1 flow 0 
-09/05/26-18:38:21 DEBUG painting widget: table: 0x75d42feda8b8 
-09/05/26-18:38:21 DEBUG blitFrom 508 10 0 0 22 22 
-09/05/26-18:38:21 DEBUG blitFrom 85 682 0 0 36 36 
-09/05/26-18:38:21 DEBUG blitFrom 154 682 0 0 36 36 
-09/05/26-18:38:21 DEBUG blitFrom 350 682 0 0 36 36 
-09/05/26-18:38:21 DEBUG blitFrom 419 682 0 0 36 36 
-09/05/26-18:38:21 DEBUG _refresh: Enqueued flashui update for region 0 0 540 720 dithering: false 
-09/05/26-18:38:21 DEBUG refresh on logical rectangle 540x720+0+0 
-09/05/26-18:38:22 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 18936.696559 
-09/05/26-18:38:22 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: 0, time: 18936.696559 
-09/05/26-18:38:22 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 271, time: 18936.696559 
-09/05/26-18:38:22 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 58, time: 18936.696559 
-09/05/26-18:38:22 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 18936.696559 
-09/05/26-18:38:22 DEBUG slot 0 in tap state... 
-09/05/26-18:38:22 DEBUG set up hold timer 
-09/05/26-18:38:22 DEBUG AutoSuspend: onInputEvent 
-09/05/26-18:38:22 DEBUG AutoTurn: onInputEvent 
-09/05/26-18:38:22 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 18936.700560 
-09/05/26-18:38:22 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: -1, time: 18936.700560 
-09/05/26-18:38:22 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 271, time: 18936.700560 
-09/05/26-18:38:22 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 58, time: 18936.700560 
-09/05/26-18:38:22 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 18936.700560 
-09/05/26-18:38:22 DEBUG slot 0 in tap state... 
-09/05/26-18:38:22 DEBUG Contact:handleDoubleTap: single tap detected @ 271 58 
-09/05/26-18:38:22 DEBUG AutoSuspend: onInputEvent 
-09/05/26-18:38:22 DEBUG AutoTurn: onInputEvent 
-09/05/26-18:38:22 DEBUG Explicit widgetInvert: table: 0x75d42fdb67a0 @ 0 44 
-09/05/26-18:38:22 DEBUG _refresh: Enqueued fast update for region 0 44 540 46 dithering: false 
-09/05/26-18:38:22 DEBUG setDirty fast from widget nil w/ region 0 44 540 46 dithering: nil 
-09/05/26-18:38:22 DEBUG refresh on logical rectangle 540x46+0+44 
-09/05/26-18:38:22 DEBUG Explicit widgetInvert: table: 0x75d42fdb67a0 @ 0 44 
-09/05/26-18:38:22 DEBUG _refresh: Enqueued ui update for region 0 44 540 46 dithering: false 
-09/05/26-18:38:22 DEBUG setDirty ui from widget nil w/ region 0 44 540 46 dithering: nil 
-09/05/26-18:38:22 DEBUG close widget: table: 0x75d42feda8b8 
-09/05/26-18:38:22 DEBUG _refresh: Enqueued ui update for region 0 0 540 720 dithering: false 
-09/05/26-18:38:22 DEBUG setDirty ui from widget nil w/ NO region; dithering: nil 
-09/05/26-18:38:22 DEBUG Lower widget ReaderUI covers the full screen 
-09/05/26-18:38:22 DEBUG setDirty nil from widget ReaderUI w/ NO region; dithering: nil 
-09/05/26-18:38:22 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.menu.svg 22 22 
-09/05/26-18:38:22 DEBUG renderSVG resources/icons/mdlight/appbar.menu.svg 0.45833333333333 48 48 > 22 22 0 0 
-09/05/26-18:38:22 DEBUG cache image|resources/icons/mdlight/appbar.menu.svg|22|22|flat 
-09/05/26-18:38:22 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:22 DEBUG ImageWidget: _render'ing resources/icons/mdlight/close.svg 22 22 
-09/05/26-18:38:22 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:22 DEBUG Found font: NotoSans-Bold.ttf in ./fonts/noto/NotoSans-Bold.ttf 
-09/05/26-18:38:22 DEBUG FocusManager: Move focus position to: 1 , 1 
-09/05/26-18:38:22 DEBUG FocusManager: Move focus position to: 1 , 1 
-09/05/26-18:38:22 DEBUG setDirty via a func from widget table: 0x75d42ead8b08 
-09/05/26-18:38:22 DEBUG show widget: table: 0x75d42ead8b08 
-09/05/26-18:38:22 DEBUG setDirty nil from widget table: 0x75d42ead8b08 w/ NO region; dithering: nil 
-09/05/26-18:38:22 DEBUG setDirty via a func from widget table: 0x75d42ead8b08 
-09/05/26-18:38:22 DEBUG painting widget: ReaderUI 
-09/05/26-18:38:22 DEBUG CreDocument: goto page 1 flow 0 
-09/05/26-18:38:22 DEBUG painting widget: table: 0x75d42ead8b08 
-09/05/26-18:38:22 DEBUG blitFrom 23 22 0 0 22 22 
-09/05/26-18:38:22 DEBUG blitFrom 494 22 0 0 22 22 
-09/05/26-18:38:22 DEBUG _refresh: Enqueued ui update for region 0 0 540 720 dithering: false 
-09/05/26-18:38:22 DEBUG update_mode: Update refresh mode ui to partial 
-09/05/26-18:38:22 DEBUG _refresh: Enqueued partial update for region 0 0 540 720 dithering: false 
-09/05/26-18:38:22 DEBUG refresh on logical rectangle 540x720+0+0 
-09/05/26-18:38:24 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 18937.884627 
-09/05/26-18:38:24 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: 0, time: 18937.884627 
-09/05/26-18:38:24 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 271, time: 18937.884627 
-09/05/26-18:38:24 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 600, time: 18937.884627 
-09/05/26-18:38:24 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 18937.884627 
-09/05/26-18:38:24 DEBUG slot 0 in tap state... 
-09/05/26-18:38:24 DEBUG set up hold timer 
-09/05/26-18:38:24 DEBUG AutoSuspend: onInputEvent 
-09/05/26-18:38:24 DEBUG AutoTurn: onInputEvent 
-09/05/26-18:38:24 DEBUG MovableContainer:onMovableTouch {
-  ges = "touch",
-  pos = "0x0+271+600",
-  time = 18937884627
-} --[[table: 0x75d42fdfb718]] 
-09/05/26-18:38:24 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 18937.888627 
-09/05/26-18:38:24 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: -1, time: 18937.888627 
-09/05/26-18:38:24 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 271, time: 18937.888627 
-09/05/26-18:38:24 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 600, time: 18937.888627 
-09/05/26-18:38:24 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 18937.888627 
-09/05/26-18:38:24 DEBUG slot 0 in tap state... 
-09/05/26-18:38:24 DEBUG Contact:handleDoubleTap: single tap detected @ 271 600 
-09/05/26-18:38:24 DEBUG AutoSuspend: onInputEvent 
-09/05/26-18:38:24 DEBUG AutoTurn: onInputEvent 
-09/05/26-18:38:24 DEBUG Explicit widgetRepaint: table: 0x75d42ffe0b30 @ 18 584 
-09/05/26-18:38:24 DEBUG _refresh: Enqueued fast update for region 18 584 503 37 dithering: false 
-09/05/26-18:38:24 DEBUG setDirty fast from widget nil w/ region 18 584 503 37 dithering: nil 
-09/05/26-18:38:24 DEBUG refresh on logical rectangle 503x37+18+584 
-09/05/26-18:38:24 DEBUG Explicit widgetRepaint: table: 0x75d42ffe0b30 @ 18 584 
-09/05/26-18:38:24 DEBUG _refresh: Enqueued fast update for region 18 584 503 37 dithering: false 
-09/05/26-18:38:24 DEBUG setDirty fast from widget nil w/ region 18 584 503 37 dithering: nil 
-09/05/26-18:38:24 DEBUG close widget: table: 0x75d42ead8b08 
-09/05/26-18:38:24 DEBUG setDirty via a func from widget nil 
-09/05/26-18:38:24 DEBUG Lower widget ReaderUI covers the full screen 
-09/05/26-18:38:24 DEBUG setDirty nil from widget ReaderUI w/ NO region; dithering: nil 
-09/05/26-18:38:24 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.menu.svg 22 22 
-09/05/26-18:38:24 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:24 DEBUG ImageWidget: _render'ing resources/icons/mdlight/close.svg 22 22 
-09/05/26-18:38:24 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:24 DEBUG FocusManager: Move focus position to: 1 , 1 
-09/05/26-18:38:24 DEBUG FocusManager: Move focus position to: 1 , 1 
-09/05/26-18:38:24 DEBUG setDirty via a func from widget table: 0x75d42fe047c8 
-09/05/26-18:38:24 DEBUG show widget: table: 0x75d42fe047c8 
-09/05/26-18:38:24 DEBUG setDirty nil from widget table: 0x75d42fe047c8 w/ NO region; dithering: nil 
-09/05/26-18:38:24 DEBUG setDirty via a func from widget table: 0x75d42fe047c8 
-09/05/26-18:38:24 DEBUG painting widget: ReaderUI 
-09/05/26-18:38:24 DEBUG CreDocument: goto page 1 flow 0 
-09/05/26-18:38:24 DEBUG painting widget: table: 0x75d42fe047c8 
-09/05/26-18:38:24 DEBUG blitFrom 23 22 0 0 22 22 
-09/05/26-18:38:24 DEBUG blitFrom 494 22 0 0 22 22 
-09/05/26-18:38:24 DEBUG update_mode: Update refresh mode fast to partial 
-09/05/26-18:38:24 DEBUG _refresh: Enqueued partial update for region 11 10 517 699 dithering: false 
-09/05/26-18:38:24 DEBUG _refresh: Enqueued partial update for region 11 10 517 699 dithering: false 
-09/05/26-18:38:24 DEBUG _refresh: Enqueued partial update for region 11 10 517 699 dithering: false 
-09/05/26-18:38:24 DEBUG refresh on logical rectangle 517x699+11+10 
-09/05/26-18:38:25 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 18939.068693 
-09/05/26-18:38:25 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: 0, time: 18939.068693 
-09/05/26-18:38:25 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 271, time: 18939.068693 
-09/05/26-18:38:25 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 600, time: 18939.068693 
-09/05/26-18:38:25 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 18939.068693 
-09/05/26-18:38:25 DEBUG slot 0 in tap state... 
-09/05/26-18:38:25 DEBUG set up hold timer 
-09/05/26-18:38:25 DEBUG AutoSuspend: onInputEvent 
-09/05/26-18:38:25 DEBUG AutoTurn: onInputEvent 
-09/05/26-18:38:25 DEBUG MovableContainer:onMovableTouch {
-  ges = "touch",
-  pos = "0x0+271+600",
-  time = 18939068693
-} --[[table: 0x75d42eaf4b78]] 
-09/05/26-18:38:25 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 18939.076694 
-09/05/26-18:38:25 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: -1, time: 18939.076694 
-09/05/26-18:38:25 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 271, time: 18939.076694 
-09/05/26-18:38:25 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 600, time: 18939.076694 
-09/05/26-18:38:25 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 18939.076694 
-09/05/26-18:38:25 DEBUG slot 0 in tap state... 
-09/05/26-18:38:25 DEBUG Contact:handleDoubleTap: single tap detected @ 271 600 
-09/05/26-18:38:25 DEBUG AutoSuspend: onInputEvent 
-09/05/26-18:38:25 DEBUG AutoTurn: onInputEvent 
-09/05/26-18:38:25 DEBUG Explicit widgetRepaint: table: 0x75d42fe0da88 @ 18 584 
-09/05/26-18:38:25 DEBUG _refresh: Enqueued fast update for region 18 584 503 37 dithering: false 
-09/05/26-18:38:25 DEBUG setDirty fast from widget nil w/ region 18 584 503 37 dithering: nil 
-09/05/26-18:38:25 DEBUG refresh on logical rectangle 503x37+18+584 
-09/05/26-18:38:25 DEBUG Explicit widgetRepaint: table: 0x75d42fe0da88 @ 18 584 
-09/05/26-18:38:25 DEBUG _refresh: Enqueued fast update for region 18 584 503 37 dithering: false 
-09/05/26-18:38:25 DEBUG setDirty fast from widget nil w/ region 18 584 503 37 dithering: nil 
-09/05/26-18:38:25 DEBUG close widget: table: 0x75d42fe047c8 
-09/05/26-18:38:25 DEBUG setDirty via a func from widget nil 
-09/05/26-18:38:25 DEBUG Lower widget ReaderUI covers the full screen 
-09/05/26-18:38:25 DEBUG setDirty nil from widget ReaderUI w/ NO region; dithering: nil 
-09/05/26-18:38:25 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.menu.svg 22 22 
-09/05/26-18:38:25 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:25 DEBUG ImageWidget: _render'ing resources/icons/mdlight/close.svg 22 22 
-09/05/26-18:38:25 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:25 DEBUG FocusManager: Move focus position to: 1 , 1 
-09/05/26-18:38:25 DEBUG FocusManager: Move focus position to: 1 , 1 
-09/05/26-18:38:25 DEBUG setDirty via a func from widget table: 0x75d42eafe9c0 
-09/05/26-18:38:25 DEBUG show widget: table: 0x75d42eafe9c0 
-09/05/26-18:38:25 DEBUG setDirty nil from widget table: 0x75d42eafe9c0 w/ NO region; dithering: nil 
-09/05/26-18:38:25 DEBUG setDirty via a func from widget table: 0x75d42eafe9c0 
-09/05/26-18:38:25 DEBUG painting widget: ReaderUI 
-09/05/26-18:38:25 DEBUG CreDocument: goto page 1 flow 0 
-09/05/26-18:38:25 DEBUG painting widget: table: 0x75d42eafe9c0 
-09/05/26-18:38:25 DEBUG blitFrom 23 22 0 0 22 22 
-09/05/26-18:38:25 DEBUG blitFrom 494 22 0 0 22 22 
-09/05/26-18:38:25 DEBUG update_mode: Update refresh mode fast to partial 
-09/05/26-18:38:25 DEBUG _refresh: Enqueued partial update for region 11 10 517 699 dithering: false 
-09/05/26-18:38:25 DEBUG _refresh: Enqueued partial update for region 11 10 517 699 dithering: false 
-09/05/26-18:38:25 DEBUG _refresh: Enqueued partial update for region 11 10 517 699 dithering: false 
-09/05/26-18:38:25 DEBUG refresh on logical rectangle 517x699+11+10 
-09/05/26-18:38:26 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 18940.256760 
-09/05/26-18:38:26 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: 0, time: 18940.256760 
-09/05/26-18:38:26 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 271, time: 18940.256760 
-09/05/26-18:38:26 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 643, time: 18940.256760 
-09/05/26-18:38:26 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 18940.256760 
-09/05/26-18:38:26 DEBUG slot 0 in tap state... 
-09/05/26-18:38:26 DEBUG set up hold timer 
-09/05/26-18:38:26 DEBUG AutoSuspend: onInputEvent 
-09/05/26-18:38:26 DEBUG AutoTurn: onInputEvent 
-09/05/26-18:38:26 DEBUG MovableContainer:onMovableTouch {
-  ges = "touch",
-  pos = "0x0+271+643",
-  time = 18940256760
-} --[[table: 0x75d42ebdb1b0]] 
-09/05/26-18:38:26 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 18940.260761 
-09/05/26-18:38:26 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: -1, time: 18940.260761 
-09/05/26-18:38:26 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 271, time: 18940.260761 
-09/05/26-18:38:26 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 643, time: 18940.260761 
-09/05/26-18:38:26 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 18940.260761 
-09/05/26-18:38:26 DEBUG slot 0 in tap state... 
-09/05/26-18:38:26 DEBUG Contact:handleDoubleTap: single tap detected @ 271 643 
-09/05/26-18:38:26 DEBUG AutoSuspend: onInputEvent 
-09/05/26-18:38:26 DEBUG AutoTurn: onInputEvent 
-09/05/26-18:38:26 DEBUG Explicit widgetRepaint: table: 0x75d444021e68 @ 18 626 
-09/05/26-18:38:26 DEBUG _refresh: Enqueued fast update for region 18 626 503 37 dithering: false 
-09/05/26-18:38:26 DEBUG setDirty fast from widget nil w/ region 18 626 503 37 dithering: nil 
-09/05/26-18:38:26 DEBUG refresh on logical rectangle 503x37+18+626 
-09/05/26-18:38:26 DEBUG Explicit widgetRepaint: table: 0x75d444021e68 @ 18 626 
-09/05/26-18:38:26 DEBUG _refresh: Enqueued fast update for region 18 626 503 37 dithering: false 
-09/05/26-18:38:26 DEBUG setDirty fast from widget nil w/ region 18 626 503 37 dithering: nil 
-09/05/26-18:38:26 DEBUG close widget: table: 0x75d42eafe9c0 
-09/05/26-18:38:26 DEBUG setDirty via a func from widget nil 
-09/05/26-18:38:26 DEBUG Lower widget ReaderUI covers the full screen 
-09/05/26-18:38:26 DEBUG setDirty nil from widget ReaderUI w/ NO region; dithering: nil 
-09/05/26-18:38:26 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.menu.svg 22 22 
-09/05/26-18:38:26 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:26 DEBUG ImageWidget: _render'ing resources/icons/mdlight/close.svg 22 22 
-09/05/26-18:38:26 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:26 DEBUG FocusManager: Move focus position to: 1 , 1 
-09/05/26-18:38:26 DEBUG FocusManager: Move focus position to: 1 , 1 
-09/05/26-18:38:26 DEBUG setDirty via a func from widget table: 0x75d42eb877b0 
-09/05/26-18:38:26 DEBUG show widget: table: 0x75d42eb877b0 
-09/05/26-18:38:26 DEBUG setDirty nil from widget table: 0x75d42eb877b0 w/ NO region; dithering: nil 
-09/05/26-18:38:26 DEBUG setDirty via a func from widget table: 0x75d42eb877b0 
-09/05/26-18:38:26 DEBUG painting widget: ReaderUI 
-09/05/26-18:38:26 DEBUG CreDocument: goto page 1 flow 0 
-09/05/26-18:38:26 DEBUG painting widget: table: 0x75d42eb877b0 
-09/05/26-18:38:26 DEBUG blitFrom 23 22 0 0 22 22 
-09/05/26-18:38:26 DEBUG blitFrom 494 22 0 0 22 22 
-09/05/26-18:38:26 DEBUG _refresh: promote refresh to flashui 
-09/05/26-18:38:26 DEBUG update_mode: Update refresh mode fast to flashui 
-09/05/26-18:38:26 DEBUG _refresh: Enqueued flashui update for region 11 10 517 699 dithering: false 
-09/05/26-18:38:26 DEBUG _refresh: Enqueued flashui update for region 11 10 517 699 dithering: false 
-09/05/26-18:38:26 DEBUG _refresh: Enqueued flashui update for region 11 10 517 699 dithering: false 
-09/05/26-18:38:26 DEBUG refresh on logical rectangle 517x699+11+10 
-09/05/26-18:38:27 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 18941.444820 
-09/05/26-18:38:27 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: 0, time: 18941.444820 
-09/05/26-18:38:27 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 271, time: 18941.444820 
-09/05/26-18:38:27 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 600, time: 18941.444820 
-09/05/26-18:38:27 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 18941.444820 
-09/05/26-18:38:27 DEBUG slot 0 in tap state... 
-09/05/26-18:38:27 DEBUG set up hold timer 
-09/05/26-18:38:27 DEBUG AutoSuspend: onInputEvent 
-09/05/26-18:38:27 DEBUG AutoTurn: onInputEvent 
-09/05/26-18:38:27 DEBUG MovableContainer:onMovableTouch {
-  ges = "touch",
-  pos = "0x0+271+600",
-  time = 18941444820
-} --[[table: 0x75d42ff03008]] 
-09/05/26-18:38:27 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 18941.448820 
-09/05/26-18:38:27 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: -1, time: 18941.448820 
-09/05/26-18:38:27 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 271, time: 18941.448820 
-09/05/26-18:38:27 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 600, time: 18941.448820 
-09/05/26-18:38:27 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 18941.448820 
-09/05/26-18:38:27 DEBUG slot 0 in tap state... 
-09/05/26-18:38:27 DEBUG Contact:handleDoubleTap: single tap detected @ 271 600 
-09/05/26-18:38:27 DEBUG AutoSuspend: onInputEvent 
-09/05/26-18:38:27 DEBUG AutoTurn: onInputEvent 
-09/05/26-18:38:27 DEBUG Explicit widgetRepaint: table: 0x75d42eb92270 @ 18 584 
-09/05/26-18:38:27 DEBUG _refresh: Enqueued fast update for region 18 584 503 37 dithering: false 
-09/05/26-18:38:27 DEBUG setDirty fast from widget nil w/ region 18 584 503 37 dithering: nil 
-09/05/26-18:38:27 DEBUG refresh on logical rectangle 503x37+18+584 
-09/05/26-18:38:27 DEBUG Explicit widgetRepaint: table: 0x75d42eb92270 @ 18 584 
-09/05/26-18:38:27 DEBUG _refresh: Enqueued fast update for region 18 584 503 37 dithering: false 
-09/05/26-18:38:27 DEBUG setDirty fast from widget nil w/ region 18 584 503 37 dithering: nil 
-09/05/26-18:38:27 DEBUG close widget: table: 0x75d42eb877b0 
-09/05/26-18:38:27 DEBUG setDirty via a func from widget nil 
-09/05/26-18:38:27 DEBUG Lower widget ReaderUI covers the full screen 
-09/05/26-18:38:27 DEBUG setDirty nil from widget ReaderUI w/ NO region; dithering: nil 
-09/05/26-18:38:27 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.menu.svg 22 22 
-09/05/26-18:38:27 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:27 DEBUG ImageWidget: _render'ing resources/icons/mdlight/close.svg 22 22 
-09/05/26-18:38:27 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:27 DEBUG FocusManager: Move focus position to: 1 , 1 
-09/05/26-18:38:27 DEBUG FocusManager: Move focus position to: 1 , 1 
-09/05/26-18:38:27 DEBUG setDirty via a func from widget table: 0x75d42ff0b648 
-09/05/26-18:38:27 DEBUG show widget: table: 0x75d42ff0b648 
-09/05/26-18:38:27 DEBUG setDirty nil from widget table: 0x75d42ff0b648 w/ NO region; dithering: nil 
-09/05/26-18:38:27 DEBUG setDirty via a func from widget table: 0x75d42ff0b648 
-09/05/26-18:38:27 DEBUG painting widget: ReaderUI 
-09/05/26-18:38:27 DEBUG CreDocument: goto page 1 flow 0 
-09/05/26-18:38:27 DEBUG painting widget: table: 0x75d42ff0b648 
-09/05/26-18:38:27 DEBUG blitFrom 23 22 0 0 22 22 
-09/05/26-18:38:27 DEBUG blitFrom 494 22 0 0 22 22 
-09/05/26-18:38:27 DEBUG update_mode: Update refresh mode fast to partial 
-09/05/26-18:38:27 DEBUG _refresh: Enqueued partial update for region 11 10 517 699 dithering: false 
-09/05/26-18:38:27 DEBUG _refresh: Enqueued partial update for region 11 10 517 699 dithering: false 
-09/05/26-18:38:27 DEBUG _refresh: Enqueued partial update for region 11 10 517 699 dithering: false 
-09/05/26-18:38:27 DEBUG refresh on logical rectangle 517x699+11+10 
-09/05/26-18:38:28 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 18942.632858 
-09/05/26-18:38:28 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: 0, time: 18942.632858 
-09/05/26-18:38:28 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 271, time: 18942.632858 
-09/05/26-18:38:28 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 686, time: 18942.632858 
-09/05/26-18:38:28 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 18942.632858 
-09/05/26-18:38:28 DEBUG slot 0 in tap state... 
-09/05/26-18:38:28 DEBUG set up hold timer 
-09/05/26-18:38:28 DEBUG AutoSuspend: onInputEvent 
-09/05/26-18:38:28 DEBUG AutoTurn: onInputEvent 
-09/05/26-18:38:28 DEBUG MovableContainer:onMovableTouch {
-  ges = "touch",
-  pos = "0x0+271+686",
-  time = 18942632858
-} --[[table: 0x75d42ff1e1d8]] 
-09/05/26-18:38:28 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 18942.636858 
-09/05/26-18:38:28 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: -1, time: 18942.636858 
-09/05/26-18:38:28 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 271, time: 18942.636858 
-09/05/26-18:38:28 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 686, time: 18942.636858 
-09/05/26-18:38:28 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 18942.636858 
-09/05/26-18:38:28 DEBUG slot 0 in tap state... 
-09/05/26-18:38:28 DEBUG Contact:handleDoubleTap: single tap detected @ 271 686 
-09/05/26-18:38:28 DEBUG AutoSuspend: onInputEvent 
-09/05/26-18:38:28 DEBUG AutoTurn: onInputEvent 
-09/05/26-18:38:28 DEBUG Explicit widgetRepaint: table: 0x75d42fdd8fa0 @ 18 668 
-09/05/26-18:38:28 DEBUG _refresh: Enqueued fast update for region 18 668 503 37 dithering: false 
-09/05/26-18:38:28 DEBUG setDirty fast from widget nil w/ region 18 668 503 37 dithering: nil 
-09/05/26-18:38:28 DEBUG refresh on logical rectangle 503x37+18+668 
-09/05/26-18:38:28 DEBUG Explicit widgetRepaint: table: 0x75d42fdd8fa0 @ 18 668 
-09/05/26-18:38:28 DEBUG _refresh: Enqueued fast update for region 18 668 503 37 dithering: false 
-09/05/26-18:38:28 DEBUG setDirty fast from widget nil w/ region 18 668 503 37 dithering: nil 
-09/05/26-18:38:28 DEBUG close widget: table: 0x75d42ff0b648 
-09/05/26-18:38:28 DEBUG setDirty via a func from widget nil 
-09/05/26-18:38:28 DEBUG Lower widget ReaderUI covers the full screen 
-09/05/26-18:38:28 DEBUG setDirty nil from widget ReaderUI w/ NO region; dithering: nil 
-09/05/26-18:38:28 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.menu.svg 22 22 
-09/05/26-18:38:28 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:28 DEBUG ImageWidget: _render'ing resources/icons/mdlight/close.svg 22 22 
-09/05/26-18:38:28 DEBUG ImageWidget: initial offsets 0 0 
-09/05/26-18:38:28 DEBUG FocusManager: Move focus position to: 1 , 1 
-09/05/26-18:38:28 DEBUG FocusManager: Move focus position to: 1 , 1 
-09/05/26-18:38:28 DEBUG setDirty via a func from widget table: 0x75d42ff264e0 
-09/05/26-18:38:28 DEBUG show widget: table: 0x75d42ff264e0 
-09/05/26-18:38:28 DEBUG setDirty nil from widget table: 0x75d42ff264e0 w/ NO region; dithering: nil 
-09/05/26-18:38:28 DEBUG setDirty via a func from widget table: 0x75d42ff264e0 
-09/05/26-18:38:28 DEBUG painting widget: ReaderUI 
-09/05/26-18:38:28 DEBUG CreDocument: goto page 1 flow 0 
-09/05/26-18:38:28 DEBUG painting widget: table: 0x75d42ff264e0 
-09/05/26-18:38:28 DEBUG blitFrom 23 22 0 0 22 22 
-09/05/26-18:38:28 DEBUG blitFrom 494 22 0 0 22 22 
-09/05/26-18:38:28 DEBUG update_mode: Update refresh mode fast to partial 
-09/05/26-18:38:28 DEBUG _refresh: Enqueued partial update for region 11 10 517 699 dithering: false 
-09/05/26-18:38:28 DEBUG _refresh: Enqueued partial update for region 11 10 517 699 dithering: false 
-09/05/26-18:38:28 DEBUG _refresh: Enqueued partial update for region 11 10 517 699 dithering: false 
-09/05/26-18:38:28 DEBUG refresh on logical rectangle 517x699+11+10 
+  time = 44123444
+} --[[table: 0x7c90707be9f8]] 
+09/07/26-08:14:24 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 44.127445 
+09/07/26-08:14:24 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: -1, time: 44.127445 
+09/07/26-08:14:24 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 486, time: 44.127445 
+09/07/26-08:14:24 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 248, time: 44.127445 
+09/07/26-08:14:24 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 44.127445 
+09/07/26-08:14:24 DEBUG slot 0 in tap state... 
+09/07/26-08:14:24 DEBUG Contact:handleDoubleTap: single tap detected @ 486 248 
+09/07/26-08:14:24 DEBUG AutoSuspend: onInputEvent 
+09/07/26-08:14:24 DEBUG AutoTurn: onInputEvent 
+09/07/26-08:14:24 DEBUG close widget: table: 0x7c9053369e70 
+09/07/26-08:14:24 DEBUG setDirty via a func from widget nil 
+09/07/26-08:14:24 DEBUG Lower widget ReaderUI covers the full screen 
+09/07/26-08:14:24 DEBUG setDirty nil from widget ReaderUI w/ NO region; dithering: nil 
+09/07/26-08:14:24 DEBUG painting widget: ReaderUI 
+09/07/26-08:14:24 DEBUG CreDocument: goto page 1 flow 0 
+09/07/26-08:14:24 DEBUG _refresh: Enqueued ui update for region 60 265 419 189 dithering: false 
+09/07/26-08:14:24 DEBUG refresh on logical rectangle 419x189+60+265 
+09/07/26-08:14:26 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 45.359509 
+09/07/26-08:14:26 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: 0, time: 45.359509 
+09/07/26-08:14:26 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 271, time: 45.359509 
+09/07/26-08:14:26 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 38, time: 45.359509 
+09/07/26-08:14:26 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 45.359509 
+09/07/26-08:14:26 DEBUG slot 0 in tap state... 
+09/07/26-08:14:26 DEBUG set up hold timer 
+09/07/26-08:14:26 DEBUG AutoSuspend: onInputEvent 
+09/07/26-08:14:26 DEBUG AutoTurn: onInputEvent 
+09/07/26-08:14:26 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 45.363509 
+09/07/26-08:14:26 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: -1, time: 45.363509 
+09/07/26-08:14:26 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 271, time: 45.363509 
+09/07/26-08:14:26 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 38, time: 45.363509 
+09/07/26-08:14:26 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 45.363509 
+09/07/26-08:14:26 DEBUG slot 0 in tap state... 
+09/07/26-08:14:26 DEBUG Contact:handleDoubleTap: single tap detected @ 271 38 
+09/07/26-08:14:26 DEBUG AutoSuspend: onInputEvent 
+09/07/26-08:14:26 DEBUG AutoTurn: onInputEvent 
+09/07/26-08:14:26 DEBUG ReaderLink:getLinkFromPosition @ 271 38 from a_xpointer: nil to link_xpointer:  
+09/07/26-08:14:26 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.rotation.svg 36 36 
+09/07/26-08:14:26 DEBUG renderSVG resources/icons/mdlight/appbar.rotation.svg 0.75 48 48 > 36 36 0 0 
+09/07/26-08:14:26 DEBUG cache image|resources/icons/mdlight/appbar.rotation.svg|36|36|flat 
+09/07/26-08:14:26 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:26 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.crop.svg 36 36 
+09/07/26-08:14:26 DEBUG renderSVG resources/icons/mdlight/appbar.crop.svg 0.75 48 48 > 36 36 0 0 
+09/07/26-08:14:26 DEBUG cache image|resources/icons/mdlight/appbar.crop.svg|36|36|flat 
+09/07/26-08:14:26 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:26 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.pageview.svg 36 36 
+09/07/26-08:14:26 DEBUG renderSVG resources/icons/mdlight/appbar.pageview.svg 0.75 48 48 > 36 36 0 0 
+09/07/26-08:14:26 DEBUG cache image|resources/icons/mdlight/appbar.pageview.svg|36|36|flat 
+09/07/26-08:14:26 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:26 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.textsize.svg 36 36 
+09/07/26-08:14:26 DEBUG renderSVG resources/icons/mdlight/appbar.textsize.svg 0.75 48 48 > 36 36 0 0 
+09/07/26-08:14:26 DEBUG cache image|resources/icons/mdlight/appbar.textsize.svg|36|36|flat 
+09/07/26-08:14:26 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:26 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.contrast.svg 36 36 
+09/07/26-08:14:26 DEBUG renderSVG resources/icons/mdlight/appbar.contrast.svg 0.75 48 48 > 36 36 0 0 
+09/07/26-08:14:26 DEBUG cache image|resources/icons/mdlight/appbar.contrast.svg|36|36|flat 
+09/07/26-08:14:26 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:26 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.settings.svg 36 36 
+09/07/26-08:14:26 DEBUG renderSVG resources/icons/mdlight/appbar.settings.svg 0.75 48 48 > 36 36 0 0 
+09/07/26-08:14:26 DEBUG cache image|resources/icons/mdlight/appbar.settings.svg|36|36|flat 
+09/07/26-08:14:26 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:26 DEBUG ImageWidget: _render'ing resources/icons/mdlight/rotation.P.90CCW.svg 36 36 
+09/07/26-08:14:26 DEBUG renderSVG resources/icons/mdlight/rotation.P.90CCW.svg 0.75 48 48 > 36 36 0 0 
+09/07/26-08:14:26 DEBUG cache image|resources/icons/mdlight/rotation.P.90CCW.svg|36|36|flat 
+09/07/26-08:14:26 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:26 DEBUG ImageWidget: _render'ing resources/icons/mdlight/rotation.P.0UR.svg 36 36 
+09/07/26-08:14:26 DEBUG renderSVG resources/icons/mdlight/rotation.P.0UR.svg 0.75 48 48 > 36 36 0 0 
+09/07/26-08:14:26 DEBUG cache image|resources/icons/mdlight/rotation.P.0UR.svg|36|36|flat 
+09/07/26-08:14:26 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:26 DEBUG ImageWidget: _render'ing resources/icons/mdlight/rotation.P.90CW.svg 36 36 
+09/07/26-08:14:26 DEBUG renderSVG resources/icons/mdlight/rotation.P.90CW.svg 0.75 48 48 > 36 36 0 0 
+09/07/26-08:14:26 DEBUG cache image|resources/icons/mdlight/rotation.P.90CW.svg|36|36|flat 
+09/07/26-08:14:26 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:26 DEBUG ImageWidget: _render'ing resources/icons/mdlight/rotation.P.180UD.svg 36 36 
+09/07/26-08:14:26 DEBUG renderSVG resources/icons/mdlight/rotation.P.180UD.svg 0.75 48 48 > 36 36 0 0 
+09/07/26-08:14:26 DEBUG cache image|resources/icons/mdlight/rotation.P.180UD.svg|36|36|flat 
+09/07/26-08:14:26 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:26 DEBUG Found font: NotoSans-Regular.ttf in ./fonts/noto/NotoSans-Regular.ttf 
+09/07/26-08:14:26 DEBUG FocusManager: Move focus position to: 1 , 3 
+09/07/26-08:14:26 DEBUG FocusManager: Move focus position to: 1 , 1 
+09/07/26-08:14:26 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.rotation.svg 36 36 
+09/07/26-08:14:26 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:26 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.crop.svg 36 36 
+09/07/26-08:14:26 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:26 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.pageview.svg 36 36 
+09/07/26-08:14:26 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:26 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.textsize.svg 36 36 
+09/07/26-08:14:26 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:26 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.contrast.svg 36 36 
+09/07/26-08:14:26 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:26 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.settings.svg 36 36 
+09/07/26-08:14:26 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:26 DEBUG ImageWidget: _render'ing resources/icons/mdlight/rotation.P.90CCW.svg 36 36 
+09/07/26-08:14:26 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:26 DEBUG ImageWidget: _render'ing resources/icons/mdlight/rotation.P.0UR.svg 36 36 
+09/07/26-08:14:26 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:26 DEBUG ImageWidget: _render'ing resources/icons/mdlight/rotation.P.90CW.svg 36 36 
+09/07/26-08:14:26 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:26 DEBUG ImageWidget: _render'ing resources/icons/mdlight/rotation.P.180UD.svg 36 36 
+09/07/26-08:14:26 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:26 DEBUG FocusManager: Move focus position to: 1 , 3 
+09/07/26-08:14:26 DEBUG setDirty via a func from widget ConfigDialog 
+09/07/26-08:14:26 DEBUG show widget: ConfigDialog 
+09/07/26-08:14:26 DEBUG setDirty nil from widget ConfigDialog w/ NO region; dithering: nil 
+09/07/26-08:14:26 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.navigation.svg 36 36 
+09/07/26-08:14:26 DEBUG renderSVG resources/icons/mdlight/appbar.navigation.svg 0.75 48 48 > 36 36 0 0 
+09/07/26-08:14:26 DEBUG cache image|resources/icons/mdlight/appbar.navigation.svg|36|36|flat 
+09/07/26-08:14:26 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:26 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.typeset.svg 36 36 
+09/07/26-08:14:26 DEBUG renderSVG resources/icons/mdlight/appbar.typeset.svg 0.75 48 48 > 36 36 0 0 
+09/07/26-08:14:26 DEBUG cache image|resources/icons/mdlight/appbar.typeset.svg|36|36|flat 
+09/07/26-08:14:26 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:26 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.settings.svg 36 36 
+09/07/26-08:14:26 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:26 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.tools.svg 36 36 
+09/07/26-08:14:26 DEBUG renderSVG resources/icons/mdlight/appbar.tools.svg 0.75 48 48 > 36 36 0 0 
+09/07/26-08:14:26 DEBUG cache image|resources/icons/mdlight/appbar.tools.svg|36|36|flat 
+09/07/26-08:14:26 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:26 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.search.svg 36 36 
+09/07/26-08:14:26 DEBUG renderSVG resources/icons/mdlight/appbar.search.svg 0.75 48 48 > 36 36 0 0 
+09/07/26-08:14:26 DEBUG cache image|resources/icons/mdlight/appbar.search.svg|36|36|flat 
+09/07/26-08:14:26 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:26 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.filebrowser.svg 36 36 
+09/07/26-08:14:26 DEBUG renderSVG resources/icons/mdlight/appbar.filebrowser.svg 0.75 48 48 > 36 36 0 0 
+09/07/26-08:14:26 DEBUG cache image|resources/icons/mdlight/appbar.filebrowser.svg|36|36|flat 
+09/07/26-08:14:26 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:26 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.menu.svg 36 36 
+09/07/26-08:14:26 DEBUG renderSVG resources/icons/mdlight/appbar.menu.svg 0.75 48 48 > 36 36 0 0 
+09/07/26-08:14:26 DEBUG cache image|resources/icons/mdlight/appbar.menu.svg|36|36|flat 
+09/07/26-08:14:26 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:26 DEBUG ImageWidget: _render'ing resources/icons/mdlight/chevron.left.svg 36 36 
+09/07/26-08:14:26 DEBUG renderSVG resources/icons/mdlight/chevron.left.svg 0.75 48 48 > 36 36 0 0 
+09/07/26-08:14:26 DEBUG cache image|resources/icons/mdlight/chevron.left.svg|36|36|flat 
+09/07/26-08:14:26 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:26 DEBUG ImageWidget: _render'ing resources/icons/mdlight/chevron.right.svg 36 36 
+09/07/26-08:14:26 DEBUG renderSVG resources/icons/mdlight/chevron.right.svg 0.75 48 48 > 36 36 0 0 
+09/07/26-08:14:26 DEBUG cache image|resources/icons/mdlight/chevron.right.svg|36|36|flat 
+09/07/26-08:14:26 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:26 DEBUG ImageWidget: _render'ing resources/icons/mdlight/chevron.up.svg 36 36 
+09/07/26-08:14:26 DEBUG renderSVG resources/icons/mdlight/chevron.up.svg 0.75 48 48 > 36 36 0 0 
+09/07/26-08:14:26 DEBUG cache image|resources/icons/mdlight/chevron.up.svg|36|36|flat 
+09/07/26-08:14:26 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:26 DEBUG Found font: NotoSansCJKsc-Regular.otf in ./fonts/noto/NotoSansCJKsc-Regular.otf 
+09/07/26-08:14:26 DEBUG Found font: NotoSansArabicUI-Regular.ttf in ./fonts/noto/NotoSansArabicUI-Regular.ttf 
+09/07/26-08:14:26 DEBUG Found font: NotoSansDevanagariUI-Regular.ttf in ./fonts/noto/NotoSansDevanagariUI-Regular.ttf 
+09/07/26-08:14:26 DEBUG Found font: NotoSansBengaliUI-Regular.ttf in ./fonts/noto/NotoSansBengaliUI-Regular.ttf 
+09/07/26-08:14:26 DEBUG Found font: NotoSansCJKsc-Regular.otf in ./fonts/noto/NotoSansCJKsc-Regular.otf 
+09/07/26-08:14:26 DEBUG Found font: NotoSansArabicUI-Regular.ttf in ./fonts/noto/NotoSansArabicUI-Regular.ttf 
+09/07/26-08:14:26 DEBUG Found font: NotoSansDevanagariUI-Regular.ttf in ./fonts/noto/NotoSansDevanagariUI-Regular.ttf 
+09/07/26-08:14:26 DEBUG Found font: NotoSansBengaliUI-Regular.ttf in ./fonts/noto/NotoSansBengaliUI-Regular.ttf 
+09/07/26-08:14:26 DEBUG FocusManager: Move focus position to: 1 , 1 
+09/07/26-08:14:26 DEBUG setDirty via a func from widget table: 0x7c90524b01d0 
+09/07/26-08:14:26 DEBUG show widget: table: 0x7c90524b01d0 
+09/07/26-08:14:26 DEBUG setDirty nil from widget table: 0x7c90524b01d0 w/ NO region; dithering: nil 
+09/07/26-08:14:26 DEBUG painting widget: ConfigDialog 
+09/07/26-08:14:26 DEBUG blitFrom 211 570 0 0 36 36 
+09/07/26-08:14:26 DEBUG blitFrom 283 570 0 0 36 36 
+09/07/26-08:14:26 DEBUG blitFrom 355 570 0 0 36 36 
+09/07/26-08:14:26 DEBUG blitFrom 427 570 0 0 36 36 
+09/07/26-08:14:26 DEBUG Found font: NotoSans-Bold.ttf in ./fonts/noto/NotoSans-Bold.ttf 
+09/07/26-08:14:26 DEBUG Found font: NotoSansCJKsc-Regular.otf in ./fonts/noto/NotoSansCJKsc-Regular.otf 
+09/07/26-08:14:26 DEBUG blitFrom 32 677 0 0 36 36 
+09/07/26-08:14:26 DEBUG blitFrom 120 677 0 0 36 36 
+09/07/26-08:14:26 DEBUG blitFrom 208 677 0 0 36 36 
+09/07/26-08:14:26 DEBUG blitFrom 296 677 0 0 36 36 
+09/07/26-08:14:26 DEBUG blitFrom 384 677 0 0 36 36 
+09/07/26-08:14:26 DEBUG blitFrom 472 677 0 0 36 36 
+09/07/26-08:14:26 DEBUG painting widget: table: 0x7c90524b01d0 
+09/07/26-08:14:26 DEBUG blitFrom 15 7 0 0 36 36 
+09/07/26-08:14:26 DEBUG blitFrom 83 7 0 0 36 36 
+09/07/26-08:14:26 DEBUG blitFrom 151 7 0 0 36 36 
+09/07/26-08:14:26 DEBUG blitFrom 219 7 0 0 36 36 
+09/07/26-08:14:26 DEBUG blitFrom 287 7 0 0 36 36 
+09/07/26-08:14:26 DEBUG blitFrom 355 7 0 0 36 36 
+09/07/26-08:14:26 DEBUG blitFrom 489 7 0 0 36 36 
+09/07/26-08:14:26 DEBUG blitFrom 26 510 0 0 36 36 
+09/07/26-08:14:26 DEBUG _refresh: Enqueued ui update for region -12 545 564 175 dithering: false 
+09/07/26-08:14:26 DEBUG update_mode: Update refresh mode ui to flashui 
+09/07/26-08:14:26 DEBUG _refresh: Enqueued flashui update for region -12 0 564 720 dithering: false 
+09/07/26-08:14:26 DEBUG refresh on logical rectangle 540x720+0+0 
+09/07/26-08:14:27 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 46.587574 
+09/07/26-08:14:27 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: 0, time: 46.587574 
+09/07/26-08:14:27 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 234, time: 46.587574 
+09/07/26-08:14:27 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 20, time: 46.587574 
+09/07/26-08:14:27 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 46.587574 
+09/07/26-08:14:27 DEBUG slot 0 in tap state... 
+09/07/26-08:14:27 DEBUG set up hold timer 
+09/07/26-08:14:27 DEBUG AutoSuspend: onInputEvent 
+09/07/26-08:14:27 DEBUG AutoTurn: onInputEvent 
+09/07/26-08:14:27 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 46.595574 
+09/07/26-08:14:27 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: -1, time: 46.595574 
+09/07/26-08:14:27 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 234, time: 46.595574 
+09/07/26-08:14:27 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 20, time: 46.595574 
+09/07/26-08:14:27 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 46.595574 
+09/07/26-08:14:27 DEBUG slot 0 in tap state... 
+09/07/26-08:14:27 DEBUG Contact:handleDoubleTap: single tap detected @ 234 20 
+09/07/26-08:14:27 DEBUG AutoSuspend: onInputEvent 
+09/07/26-08:14:27 DEBUG AutoTurn: onInputEvent 
+09/07/26-08:14:27 DEBUG Explicit widgetInvert: table: 0x7c90707ec820 @ 219 7 
+09/07/26-08:14:27 DEBUG _refresh: Enqueued fast update for region 204 7 66 36 dithering: false 
+09/07/26-08:14:27 DEBUG setDirty fast from widget nil w/ region 204 7 66 36 dithering: nil 
+09/07/26-08:14:27 DEBUG refresh on logical rectangle 66x36+204+7 
+09/07/26-08:14:27 DEBUG Explicit widgetInvert: table: 0x7c90707ec820 @ 219 7 
+09/07/26-08:14:27 DEBUG close widget: ConfigDialog 
+09/07/26-08:14:27 DEBUG setDirty via a func from widget nil 
+09/07/26-08:14:27 DEBUG Lower widget ReaderUI covers the full screen 
+09/07/26-08:14:27 DEBUG setDirty nil from widget ReaderUI w/ NO region; dithering: nil 
+09/07/26-08:14:27 DEBUG setDirty nil from widget table: 0x7c90524b01d0 w/ NO region; dithering: nil 
+09/07/26-08:14:27 DEBUG FocusManager: Move focus position to: 4 , 1 
+09/07/26-08:14:27 DEBUG setDirty via a func from widget table: 0x7c90524b01d0 
+09/07/26-08:14:27 DEBUG _refresh: Enqueued fast update for region 204 7 66 36 dithering: false 
+09/07/26-08:14:27 DEBUG setDirty fast from widget nil w/ region 204 7 66 36 dithering: nil 
+09/07/26-08:14:27 DEBUG painting widget: ReaderUI 
+09/07/26-08:14:27 DEBUG CreDocument: goto page 1 flow 0 
+09/07/26-08:14:27 DEBUG painting widget: table: 0x7c90524b01d0 
+09/07/26-08:14:27 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.navigation.svg 36 36 
+09/07/26-08:14:27 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:27 DEBUG blitFrom 15 7 0 0 36 36 
+09/07/26-08:14:27 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.typeset.svg 36 36 
+09/07/26-08:14:27 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:27 DEBUG blitFrom 83 7 0 0 36 36 
+09/07/26-08:14:27 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.settings.svg 36 36 
+09/07/26-08:14:27 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:27 DEBUG blitFrom 151 7 0 0 36 36 
+09/07/26-08:14:27 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.tools.svg 36 36 
+09/07/26-08:14:27 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:27 DEBUG blitFrom 219 7 0 0 36 36 
+09/07/26-08:14:27 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.search.svg 36 36 
+09/07/26-08:14:27 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:27 DEBUG blitFrom 287 7 0 0 36 36 
+09/07/26-08:14:27 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.filebrowser.svg 36 36 
+09/07/26-08:14:27 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:27 DEBUG blitFrom 355 7 0 0 36 36 
+09/07/26-08:14:27 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.menu.svg 36 36 
+09/07/26-08:14:27 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:27 DEBUG blitFrom 489 7 0 0 36 36 
+09/07/26-08:14:27 DEBUG ImageWidget: _render'ing resources/icons/mdlight/chevron.up.svg 36 36 
+09/07/26-08:14:27 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:27 DEBUG blitFrom 26 510 0 0 36 36 
+09/07/26-08:14:27 DEBUG ImageWidget: _render'ing resources/icons/mdlight/chevron.left.svg 36 36 
+09/07/26-08:14:27 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:27 DEBUG blitFrom 185 510 0 0 36 36 
+09/07/26-08:14:27 DEBUG ImageWidget: _render'ing resources/icons/mdlight/chevron.right.svg 36 36 
+09/07/26-08:14:27 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:27 DEBUG blitFrom 319 510 0 0 36 36 
+09/07/26-08:14:27 DEBUG _refresh: Enqueued partial update for region -12 545 564 175 dithering: false 
+09/07/26-08:14:27 DEBUG update_mode: Update refresh mode fast to ui 
+09/07/26-08:14:27 DEBUG _refresh: Enqueued partial update for region -12 0 564 720 dithering: false 
+09/07/26-08:14:27 DEBUG refresh on logical rectangle 540x720+0+0 
+09/07/26-08:14:28 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 47.795637 
+09/07/26-08:14:28 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: 0, time: 47.795637 
+09/07/26-08:14:28 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 348, time: 47.795637 
+09/07/26-08:14:28 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 528, time: 47.795637 
+09/07/26-08:14:28 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 47.795637 
+09/07/26-08:14:28 DEBUG slot 0 in tap state... 
+09/07/26-08:14:28 DEBUG set up hold timer 
+09/07/26-08:14:28 DEBUG AutoSuspend: onInputEvent 
+09/07/26-08:14:28 DEBUG AutoTurn: onInputEvent 
+09/07/26-08:14:28 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 47.799637 
+09/07/26-08:14:28 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: -1, time: 47.799637 
+09/07/26-08:14:28 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 348, time: 47.799637 
+09/07/26-08:14:28 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 528, time: 47.799637 
+09/07/26-08:14:28 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 47.799637 
+09/07/26-08:14:28 DEBUG slot 0 in tap state... 
+09/07/26-08:14:28 DEBUG Contact:handleDoubleTap: single tap detected @ 348 528 
+09/07/26-08:14:28 DEBUG AutoSuspend: onInputEvent 
+09/07/26-08:14:28 DEBUG AutoTurn: onInputEvent 
+09/07/26-08:14:28 DEBUG Explicit widgetInvert: table: 0x7c905101cc38 @ 317 508 
+09/07/26-08:14:28 DEBUG _refresh: Enqueued fast update for region 317 508 40 40 dithering: false 
+09/07/26-08:14:28 DEBUG setDirty fast from widget nil w/ region 317 508 40 40 dithering: nil 
+09/07/26-08:14:28 DEBUG refresh on logical rectangle 40x40+317+508 
+09/07/26-08:14:28 DEBUG Explicit widgetInvert: table: 0x7c905101cc38 @ 317 508 
+09/07/26-08:14:28 DEBUG _refresh: Enqueued fast update for region 317 508 40 40 dithering: false 
+09/07/26-08:14:28 DEBUG setDirty fast from widget nil w/ region 317 508 40 40 dithering: nil 
+09/07/26-08:14:28 DEBUG FocusManager: Move focus position to: 4 , 1 
+09/07/26-08:14:28 DEBUG setDirty via a func from widget all 
+09/07/26-08:14:28 DEBUG painting widget: ReaderUI 
+09/07/26-08:14:28 DEBUG CreDocument: goto page 1 flow 0 
+09/07/26-08:14:28 DEBUG painting widget: table: 0x7c90524b01d0 
+09/07/26-08:14:28 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.navigation.svg 36 36 
+09/07/26-08:14:28 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:28 DEBUG blitFrom 15 7 0 0 36 36 
+09/07/26-08:14:28 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.typeset.svg 36 36 
+09/07/26-08:14:28 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:28 DEBUG blitFrom 83 7 0 0 36 36 
+09/07/26-08:14:28 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.settings.svg 36 36 
+09/07/26-08:14:28 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:28 DEBUG blitFrom 151 7 0 0 36 36 
+09/07/26-08:14:28 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.tools.svg 36 36 
+09/07/26-08:14:28 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:28 DEBUG blitFrom 219 7 0 0 36 36 
+09/07/26-08:14:28 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.search.svg 36 36 
+09/07/26-08:14:28 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:28 DEBUG blitFrom 287 7 0 0 36 36 
+09/07/26-08:14:28 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.filebrowser.svg 36 36 
+09/07/26-08:14:28 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:28 DEBUG blitFrom 355 7 0 0 36 36 
+09/07/26-08:14:28 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.menu.svg 36 36 
+09/07/26-08:14:28 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:28 DEBUG blitFrom 489 7 0 0 36 36 
+09/07/26-08:14:28 DEBUG ImageWidget: _render'ing resources/icons/mdlight/chevron.up.svg 36 36 
+09/07/26-08:14:28 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:28 DEBUG blitFrom 26 188 0 0 36 36 
+09/07/26-08:14:28 DEBUG ImageWidget: _render'ing resources/icons/mdlight/chevron.left.svg 36 36 
+09/07/26-08:14:28 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:28 DEBUG blitFrom 185 188 0 0 36 36 
+09/07/26-08:14:28 DEBUG ImageWidget: _render'ing resources/icons/mdlight/chevron.right.svg 36 36 
+09/07/26-08:14:28 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:28 DEBUG blitFrom 319 188 0 0 36 36 
+09/07/26-08:14:28 DEBUG update_mode: Update refresh mode fast to ui 
+09/07/26-08:14:28 DEBUG _refresh: Enqueued ui update for region 0 0 540 554 dithering: false 
+09/07/26-08:14:28 DEBUG refresh on logical rectangle 540x554+0+0 
+09/07/26-08:14:29 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 49.011689 
+09/07/26-08:14:29 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: 0, time: 49.011689 
+09/07/26-08:14:29 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 82, time: 49.011689 
+09/07/26-08:14:29 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 161, time: 49.011689 
+09/07/26-08:14:29 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 49.011689 
+09/07/26-08:14:29 DEBUG slot 0 in tap state... 
+09/07/26-08:14:29 DEBUG set up hold timer 
+09/07/26-08:14:29 DEBUG AutoSuspend: onInputEvent 
+09/07/26-08:14:29 DEBUG AutoTurn: onInputEvent 
+09/07/26-08:14:29 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 49.015689 
+09/07/26-08:14:29 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: -1, time: 49.015689 
+09/07/26-08:14:29 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 82, time: 49.015689 
+09/07/26-08:14:29 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 161, time: 49.015689 
+09/07/26-08:14:29 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 49.015689 
+09/07/26-08:14:29 DEBUG slot 0 in tap state... 
+09/07/26-08:14:29 DEBUG Contact:handleDoubleTap: single tap detected @ 82 161 
+09/07/26-08:14:29 DEBUG AutoSuspend: onInputEvent 
+09/07/26-08:14:29 DEBUG AutoTurn: onInputEvent 
+09/07/26-08:14:29 DEBUG Explicit widgetInvert: table: 0x7c9052772238 @ 5 141 
+09/07/26-08:14:29 DEBUG _refresh: Enqueued fast update for region 5 141 530 42 dithering: false 
+09/07/26-08:14:29 DEBUG setDirty fast from widget nil w/ region 5 141 530 42 dithering: nil 
+09/07/26-08:14:29 DEBUG refresh on logical rectangle 530x42+5+141 
+09/07/26-08:14:29 DEBUG FocusManager: Move focus position to: 4 , 1 
+09/07/26-08:14:29 DEBUG setDirty via a func from widget table: 0x7c90524b01d0 
+09/07/26-08:14:29 DEBUG painting widget: table: 0x7c90524b01d0 
+09/07/26-08:14:29 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.navigation.svg 36 36 
+09/07/26-08:14:29 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:29 DEBUG blitFrom 15 7 0 0 36 36 
+09/07/26-08:14:29 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.typeset.svg 36 36 
+09/07/26-08:14:29 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:29 DEBUG blitFrom 83 7 0 0 36 36 
+09/07/26-08:14:29 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.settings.svg 36 36 
+09/07/26-08:14:29 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:29 DEBUG blitFrom 151 7 0 0 36 36 
+09/07/26-08:14:29 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.tools.svg 36 36 
+09/07/26-08:14:29 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:29 DEBUG blitFrom 219 7 0 0 36 36 
+09/07/26-08:14:29 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.search.svg 36 36 
+09/07/26-08:14:29 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:29 DEBUG blitFrom 287 7 0 0 36 36 
+09/07/26-08:14:29 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.filebrowser.svg 36 36 
+09/07/26-08:14:29 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:29 DEBUG blitFrom 355 7 0 0 36 36 
+09/07/26-08:14:29 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.menu.svg 36 36 
+09/07/26-08:14:29 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:29 DEBUG blitFrom 489 7 0 0 36 36 
+09/07/26-08:14:29 DEBUG ImageWidget: _render'ing resources/icons/mdlight/chevron.up.svg 36 36 
+09/07/26-08:14:29 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:29 DEBUG blitFrom 26 418 0 0 36 36 
+09/07/26-08:14:29 DEBUG ImageWidget: _render'ing resources/icons/mdlight/chevron.left.svg 36 36 
+09/07/26-08:14:29 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:29 DEBUG ImageWidget: _render'ing resources/icons/mdlight/chevron.right.svg 36 36 
+09/07/26-08:14:29 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:29 DEBUG _refresh: Enqueued ui update for region 0 0 540 462 dithering: false 
+09/07/26-08:14:29 DEBUG refresh on logical rectangle 540x462+0+0 
+09/07/26-08:14:31 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 50.235788 
+09/07/26-08:14:31 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: 0, time: 50.235788 
+09/07/26-08:14:31 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 55, time: 50.235788 
+09/07/26-08:14:31 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 391, time: 50.235788 
+09/07/26-08:14:31 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 50.235788 
+09/07/26-08:14:31 DEBUG slot 0 in tap state... 
+09/07/26-08:14:31 DEBUG set up hold timer 
+09/07/26-08:14:31 DEBUG AutoSuspend: onInputEvent 
+09/07/26-08:14:31 DEBUG AutoTurn: onInputEvent 
+09/07/26-08:14:31 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 50.235788 
+09/07/26-08:14:31 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: -1, time: 50.235788 
+09/07/26-08:14:31 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 55, time: 50.235788 
+09/07/26-08:14:31 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 391, time: 50.235788 
+09/07/26-08:14:31 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 50.235788 
+09/07/26-08:14:31 DEBUG slot 0 in tap state... 
+09/07/26-08:14:31 DEBUG Contact:handleDoubleTap: single tap detected @ 55 391 
+09/07/26-08:14:31 DEBUG AutoSuspend: onInputEvent 
+09/07/26-08:14:31 DEBUG AutoTurn: onInputEvent 
+09/07/26-08:14:31 DEBUG Explicit widgetInvert: table: 0x7c90513546d8 @ 5 371 
+09/07/26-08:14:31 DEBUG _refresh: Enqueued fast update for region 5 371 530 42 dithering: false 
+09/07/26-08:14:31 DEBUG setDirty fast from widget nil w/ region 5 371 530 42 dithering: nil 
+09/07/26-08:14:31 DEBUG refresh on logical rectangle 530x42+5+371 
+09/07/26-08:14:31 DEBUG FocusManager: Move focus position to: 4 , 1 
+09/07/26-08:14:31 DEBUG setDirty via a func from widget all 
+09/07/26-08:14:31 DEBUG painting widget: ReaderUI 
+09/07/26-08:14:31 DEBUG CreDocument: goto page 1 flow 0 
+09/07/26-08:14:31 DEBUG painting widget: table: 0x7c90524b01d0 
+09/07/26-08:14:31 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.navigation.svg 36 36 
+09/07/26-08:14:31 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:31 DEBUG blitFrom 15 7 0 0 36 36 
+09/07/26-08:14:31 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.typeset.svg 36 36 
+09/07/26-08:14:31 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:31 DEBUG blitFrom 83 7 0 0 36 36 
+09/07/26-08:14:31 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.settings.svg 36 36 
+09/07/26-08:14:31 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:31 DEBUG blitFrom 151 7 0 0 36 36 
+09/07/26-08:14:31 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.tools.svg 36 36 
+09/07/26-08:14:31 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:31 DEBUG blitFrom 219 7 0 0 36 36 
+09/07/26-08:14:31 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.search.svg 36 36 
+09/07/26-08:14:31 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:31 DEBUG blitFrom 287 7 0 0 36 36 
+09/07/26-08:14:31 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.filebrowser.svg 36 36 
+09/07/26-08:14:31 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:31 DEBUG blitFrom 355 7 0 0 36 36 
+09/07/26-08:14:31 DEBUG ImageWidget: _render'ing resources/icons/mdlight/appbar.menu.svg 36 36 
+09/07/26-08:14:31 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:31 DEBUG blitFrom 489 7 0 0 36 36 
+09/07/26-08:14:31 DEBUG ImageWidget: _render'ing resources/icons/mdlight/chevron.up.svg 36 36 
+09/07/26-08:14:31 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:31 DEBUG blitFrom 26 142 0 0 36 36 
+09/07/26-08:14:31 DEBUG ImageWidget: _render'ing resources/icons/mdlight/chevron.left.svg 36 36 
+09/07/26-08:14:31 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:31 DEBUG ImageWidget: _render'ing resources/icons/mdlight/chevron.right.svg 36 36 
+09/07/26-08:14:31 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:31 DEBUG _refresh: Enqueued ui update for region 0 0 540 462 dithering: false 
+09/07/26-08:14:31 DEBUG refresh on logical rectangle 540x462+0+0 
+09/07/26-08:14:32 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 51.427900 
+09/07/26-08:14:32 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: 0, time: 51.427900 
+09/07/26-08:14:32 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 271, time: 51.427900 
+09/07/26-08:14:32 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 98, time: 51.427900 
+09/07/26-08:14:32 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 51.427900 
+09/07/26-08:14:32 DEBUG slot 0 in tap state... 
+09/07/26-08:14:32 DEBUG set up hold timer 
+09/07/26-08:14:32 DEBUG AutoSuspend: onInputEvent 
+09/07/26-08:14:32 DEBUG AutoTurn: onInputEvent 
+09/07/26-08:14:32 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 51.431901 
+09/07/26-08:14:32 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: -1, time: 51.431901 
+09/07/26-08:14:32 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 271, time: 51.431901 
+09/07/26-08:14:32 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 98, time: 51.431901 
+09/07/26-08:14:32 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 51.431901 
+09/07/26-08:14:32 DEBUG slot 0 in tap state... 
+09/07/26-08:14:32 DEBUG Contact:handleDoubleTap: single tap detected @ 271 98 
+09/07/26-08:14:32 DEBUG AutoSuspend: onInputEvent 
+09/07/26-08:14:32 DEBUG AutoTurn: onInputEvent 
+09/07/26-08:14:32 DEBUG Explicit widgetInvert: table: 0x7c90513c8830 @ 5 95 
+09/07/26-08:14:32 DEBUG _refresh: Enqueued fast update for region 5 95 530 42 dithering: false 
+09/07/26-08:14:32 DEBUG setDirty fast from widget nil w/ region 5 95 530 42 dithering: nil 
+09/07/26-08:14:32 DEBUG refresh on logical rectangle 530x42+5+95 
+09/07/26-08:14:32 DEBUG ImageWidget: _render'ing resources/icons/mdlight/close.svg 22 22 
+09/07/26-08:14:32 DEBUG renderSVG resources/icons/mdlight/close.svg 0.91666666666667 24 24 > 22 22 0 0 
+09/07/26-08:14:32 DEBUG cache image|resources/icons/mdlight/close.svg|22|22|flat 
+09/07/26-08:14:32 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:32 DEBUG ImageWidget: _render'ing resources/icons/mdlight/chevron.left.svg 36 36 
+09/07/26-08:14:32 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:32 DEBUG ImageWidget: _render'ing resources/icons/mdlight/chevron.right.svg 36 36 
+09/07/26-08:14:32 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:32 DEBUG ImageWidget: _render'ing resources/icons/mdlight/chevron.first.svg 36 36 
+09/07/26-08:14:32 DEBUG renderSVG resources/icons/mdlight/chevron.first.svg 0.75 48 48 > 36 36 0 0 
+09/07/26-08:14:32 DEBUG cache image|resources/icons/mdlight/chevron.first.svg|36|36|flat 
+09/07/26-08:14:32 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:32 DEBUG ImageWidget: _render'ing resources/icons/mdlight/chevron.last.svg 36 36 
+09/07/26-08:14:32 DEBUG renderSVG resources/icons/mdlight/chevron.last.svg 0.75 48 48 > 36 36 0 0 
+09/07/26-08:14:32 DEBUG cache image|resources/icons/mdlight/chevron.last.svg|36|36|flat 
+09/07/26-08:14:32 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:32 DEBUG ImageWidget: _render'ing resources/icons/mdlight/back.top.svg 36 36 
+09/07/26-08:14:32 DEBUG renderSVG resources/icons/mdlight/back.top.svg 0.75 48 48 > 36 36 0 0 
+09/07/26-08:14:32 DEBUG cache image|resources/icons/mdlight/back.top.svg|36|36|flat 
+09/07/26-08:14:32 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:32 DEBUG Found font: DroidSansMono.ttf in ./fonts/droid/DroidSansMono.ttf 
+09/07/26-08:14:32 DEBUG FocusManager: Move focus position to: 1 , 1 
+09/07/26-08:14:32 DEBUG Menu:mergeTitleBarIntoLayout: Adjusted focus position to account for added titlebar rows: 1 , 2 
+09/07/26-08:14:32 DEBUG setDirty via a func from widget table: 0x7c90525d1f28 
+09/07/26-08:14:32 DEBUG show widget: table: 0x7c90525d1f28 
+09/07/26-08:14:32 DEBUG setDirty nil from widget table: 0x7c90525d1f28 w/ NO region; dithering: nil 
+09/07/26-08:14:32 DEBUG close widget: table: 0x7c90524b01d0 
+09/07/26-08:14:32 DEBUG _refresh: Enqueued flashui update for region 0 0 540 720 dithering: false 
+09/07/26-08:14:32 DEBUG setDirty flashui from widget nil w/ NO region; dithering: nil 
+09/07/26-08:14:32 DEBUG Lower widget ReaderUI covers the full screen 
+09/07/26-08:14:32 DEBUG setDirty nil from widget ReaderUI w/ NO region; dithering: nil 
+09/07/26-08:14:32 DEBUG setDirty nil from widget table: 0x7c90525d1f28 w/ NO region; dithering: nil 
+09/07/26-08:14:32 DEBUG painting widget: ReaderUI 
+09/07/26-08:14:32 DEBUG CreDocument: goto page 1 flow 0 
+09/07/26-08:14:32 DEBUG painting widget: table: 0x7c90525d1f28 
+09/07/26-08:14:32 DEBUG blitFrom 508 10 0 0 22 22 
+09/07/26-08:14:32 DEBUG blitFrom 85 682 0 0 36 36 
+09/07/26-08:14:32 DEBUG blitFrom 154 682 0 0 36 36 
+09/07/26-08:14:32 DEBUG blitFrom 350 682 0 0 36 36 
+09/07/26-08:14:32 DEBUG blitFrom 419 682 0 0 36 36 
+09/07/26-08:14:32 DEBUG _refresh: Enqueued flashui update for region 0 0 540 720 dithering: false 
+09/07/26-08:14:32 DEBUG refresh on logical rectangle 540x720+0+0 
+09/07/26-08:14:33 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 52.616013 
+09/07/26-08:14:33 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: 0, time: 52.616013 
+09/07/26-08:14:33 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 271, time: 52.616013 
+09/07/26-08:14:33 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 58, time: 52.616013 
+09/07/26-08:14:33 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 52.616013 
+09/07/26-08:14:33 DEBUG slot 0 in tap state... 
+09/07/26-08:14:33 DEBUG set up hold timer 
+09/07/26-08:14:33 DEBUG AutoSuspend: onInputEvent 
+09/07/26-08:14:33 DEBUG AutoTurn: onInputEvent 
+09/07/26-08:14:33 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 52.620013 
+09/07/26-08:14:33 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: -1, time: 52.620013 
+09/07/26-08:14:33 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 271, time: 52.620013 
+09/07/26-08:14:33 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 58, time: 52.620013 
+09/07/26-08:14:33 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 52.620013 
+09/07/26-08:14:33 DEBUG slot 0 in tap state... 
+09/07/26-08:14:33 DEBUG Contact:handleDoubleTap: single tap detected @ 271 58 
+09/07/26-08:14:33 DEBUG AutoSuspend: onInputEvent 
+09/07/26-08:14:33 DEBUG AutoTurn: onInputEvent 
+09/07/26-08:14:33 DEBUG Explicit widgetInvert: table: 0x7c905273b6a0 @ 0 44 
+09/07/26-08:14:33 DEBUG _refresh: Enqueued fast update for region 0 44 540 46 dithering: false 
+09/07/26-08:14:33 DEBUG setDirty fast from widget nil w/ region 0 44 540 46 dithering: nil 
+09/07/26-08:14:33 DEBUG refresh on logical rectangle 540x46+0+44 
+09/07/26-08:14:33 DEBUG Explicit widgetInvert: table: 0x7c905273b6a0 @ 0 44 
+09/07/26-08:14:33 DEBUG _refresh: Enqueued ui update for region 0 44 540 46 dithering: false 
+09/07/26-08:14:33 DEBUG setDirty ui from widget nil w/ region 0 44 540 46 dithering: nil 
+09/07/26-08:14:33 DEBUG close widget: table: 0x7c90525d1f28 
+09/07/26-08:14:33 DEBUG _refresh: Enqueued ui update for region 0 0 540 720 dithering: false 
+09/07/26-08:14:33 DEBUG setDirty ui from widget nil w/ NO region; dithering: nil 
+09/07/26-08:14:33 DEBUG Lower widget ReaderUI covers the full screen 
+09/07/26-08:14:33 DEBUG setDirty nil from widget ReaderUI w/ NO region; dithering: nil 
+09/07/26-08:14:33 DEBUG ImageWidget: _render'ing resources/icons/mdlight/close.svg 22 22 
+09/07/26-08:14:33 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:33 DEBUG ImageWidget: _render'ing resources/icons/mdlight/chevron.left.svg 36 36 
+09/07/26-08:14:33 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:33 DEBUG ImageWidget: _render'ing resources/icons/mdlight/chevron.right.svg 36 36 
+09/07/26-08:14:33 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:33 DEBUG ImageWidget: _render'ing resources/icons/mdlight/chevron.first.svg 36 36 
+09/07/26-08:14:33 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:33 DEBUG ImageWidget: _render'ing resources/icons/mdlight/chevron.last.svg 36 36 
+09/07/26-08:14:33 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:33 DEBUG ImageWidget: _render'ing resources/icons/mdlight/back.top.svg 36 36 
+09/07/26-08:14:33 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:33 DEBUG FocusManager: Move focus position to: 1 , 1 
+09/07/26-08:14:33 DEBUG Menu:mergeTitleBarIntoLayout: Adjusted focus position to account for added titlebar rows: 1 , 2 
+09/07/26-08:14:33 DEBUG setDirty via a func from widget table: 0x7c90525efb60 
+09/07/26-08:14:33 DEBUG show widget: table: 0x7c90525efb60 
+09/07/26-08:14:33 DEBUG setDirty nil from widget table: 0x7c90525efb60 w/ NO region; dithering: nil 
+09/07/26-08:14:33 DEBUG painting widget: ReaderUI 
+09/07/26-08:14:33 DEBUG CreDocument: goto page 1 flow 0 
+09/07/26-08:14:33 DEBUG painting widget: table: 0x7c90525efb60 
+09/07/26-08:14:33 DEBUG blitFrom 508 10 0 0 22 22 
+09/07/26-08:14:33 DEBUG blitFrom 85 682 0 0 36 36 
+09/07/26-08:14:33 DEBUG blitFrom 154 682 0 0 36 36 
+09/07/26-08:14:33 DEBUG blitFrom 350 682 0 0 36 36 
+09/07/26-08:14:33 DEBUG blitFrom 419 682 0 0 36 36 
+09/07/26-08:14:33 DEBUG _refresh: Enqueued ui update for region 0 0 540 720 dithering: false 
+09/07/26-08:14:33 DEBUG refresh on logical rectangle 540x720+0+0 
+09/07/26-08:14:34 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 53.800117 
+09/07/26-08:14:34 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: 0, time: 53.800117 
+09/07/26-08:14:34 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 271, time: 53.800117 
+09/07/26-08:14:34 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 98, time: 53.800117 
+09/07/26-08:14:34 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 53.800117 
+09/07/26-08:14:34 DEBUG slot 0 in tap state... 
+09/07/26-08:14:34 DEBUG set up hold timer 
+09/07/26-08:14:34 DEBUG AutoSuspend: onInputEvent 
+09/07/26-08:14:34 DEBUG AutoTurn: onInputEvent 
+09/07/26-08:14:34 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 53.804117 
+09/07/26-08:14:34 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: -1, time: 53.804117 
+09/07/26-08:14:34 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 271, time: 53.804117 
+09/07/26-08:14:34 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 98, time: 53.804117 
+09/07/26-08:14:34 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 53.804117 
+09/07/26-08:14:34 DEBUG slot 0 in tap state... 
+09/07/26-08:14:34 DEBUG Contact:handleDoubleTap: single tap detected @ 271 98 
+09/07/26-08:14:34 DEBUG AutoSuspend: onInputEvent 
+09/07/26-08:14:34 DEBUG AutoTurn: onInputEvent 
+09/07/26-08:14:34 DEBUG Explicit widgetInvert: table: 0x7c9052694ee8 @ 0 89 
+09/07/26-08:14:34 DEBUG _refresh: Enqueued fast update for region 0 89 540 46 dithering: false 
+09/07/26-08:14:34 DEBUG setDirty fast from widget nil w/ region 0 89 540 46 dithering: nil 
+09/07/26-08:14:34 DEBUG refresh on logical rectangle 540x46+0+89 
+09/07/26-08:14:34 DEBUG Explicit widgetInvert: table: 0x7c9052694ee8 @ 0 89 
+09/07/26-08:14:34 DEBUG _refresh: Enqueued ui update for region 0 89 540 46 dithering: false 
+09/07/26-08:14:34 DEBUG setDirty ui from widget nil w/ region 0 89 540 46 dithering: nil 
+09/07/26-08:14:34 DEBUG close widget: table: 0x7c90525efb60 
+09/07/26-08:14:34 DEBUG _refresh: Enqueued ui update for region 0 0 540 720 dithering: false 
+09/07/26-08:14:34 DEBUG setDirty ui from widget nil w/ NO region; dithering: nil 
+09/07/26-08:14:34 DEBUG Lower widget ReaderUI covers the full screen 
+09/07/26-08:14:34 DEBUG setDirty nil from widget ReaderUI w/ NO region; dithering: nil 
+09/07/26-08:14:34 DEBUG ImageWidget: _render'ing resources/icons/mdlight/close.svg 22 22 
+09/07/26-08:14:34 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:34 DEBUG ImageWidget: _render'ing resources/icons/mdlight/chevron.left.svg 36 36 
+09/07/26-08:14:34 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:34 DEBUG ImageWidget: _render'ing resources/icons/mdlight/chevron.right.svg 36 36 
+09/07/26-08:14:34 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:34 DEBUG ImageWidget: _render'ing resources/icons/mdlight/chevron.first.svg 36 36 
+09/07/26-08:14:34 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:34 DEBUG ImageWidget: _render'ing resources/icons/mdlight/chevron.last.svg 36 36 
+09/07/26-08:14:34 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:34 DEBUG ImageWidget: _render'ing resources/icons/mdlight/back.top.svg 36 36 
+09/07/26-08:14:34 DEBUG ImageWidget: initial offsets 0 0 
+09/07/26-08:14:34 DEBUG FocusManager: Move focus position to: 1 , 1 
+09/07/26-08:14:34 DEBUG Menu:mergeTitleBarIntoLayout: Adjusted focus position to account for added titlebar rows: 1 , 2 
+09/07/26-08:14:34 DEBUG setDirty via a func from widget table: 0x7c90512ee4f8 
+09/07/26-08:14:34 DEBUG show widget: table: 0x7c90512ee4f8 
+09/07/26-08:14:34 DEBUG setDirty nil from widget table: 0x7c90512ee4f8 w/ NO region; dithering: nil 
+09/07/26-08:14:34 DEBUG painting widget: ReaderUI 
+09/07/26-08:14:34 DEBUG CreDocument: goto page 1 flow 0 
+09/07/26-08:14:34 DEBUG painting widget: table: 0x7c90512ee4f8 
+09/07/26-08:14:34 DEBUG blitFrom 508 10 0 0 22 22 
+09/07/26-08:14:34 DEBUG blitFrom 85 682 0 0 36 36 
+09/07/26-08:14:34 DEBUG blitFrom 154 682 0 0 36 36 
+09/07/26-08:14:34 DEBUG blitFrom 350 682 0 0 36 36 
+09/07/26-08:14:34 DEBUG blitFrom 419 682 0 0 36 36 
+09/07/26-08:14:34 DEBUG _refresh: Enqueued ui update for region 0 0 540 720 dithering: false 
+09/07/26-08:14:34 DEBUG refresh on logical rectangle 540x720+0+0 
+09/07/26-08:14:35 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 54.988153 
+09/07/26-08:14:35 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: 0, time: 54.988153 
+09/07/26-08:14:35 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 271, time: 54.988153 
+09/07/26-08:14:35 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 138, time: 54.988153 
+09/07/26-08:14:35 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 54.988153 
+09/07/26-08:14:35 DEBUG slot 0 in tap state... 
+09/07/26-08:14:35 DEBUG set up hold timer 
+09/07/26-08:14:35 DEBUG AutoSuspend: onInputEvent 
+09/07/26-08:14:35 DEBUG AutoTurn: onInputEvent 
+09/07/26-08:14:35 DEBUG input event => type: 3 (EV_ABS), code: 47 (ABS_MT_SLOT), value: 0, time: 54.992153 
+09/07/26-08:14:35 DEBUG input event => type: 3 (EV_ABS), code: 57 (ABS_MT_TRACKING_ID), value: -1, time: 54.992153 
+09/07/26-08:14:35 DEBUG input event => type: 3 (EV_ABS), code: 53 (ABS_MT_POSITION_X), value: 271, time: 54.992153 
+09/07/26-08:14:35 DEBUG input event => type: 3 (EV_ABS), code: 54 (ABS_MT_POSITION_Y), value: 138, time: 54.992153 
+09/07/26-08:14:35 DEBUG input event => type: 0 (EV_SYN), code: 0 (SYN_REPORT), value: 0, time: 54.992153 
+09/07/26-08:14:35 DEBUG slot 0 in tap state... 
+09/07/26-08:14:35 DEBUG Contact:handleDoubleTap: single tap detected @ 271 138 
+09/07/26-08:14:35 DEBUG AutoSuspend: onInputEvent 
+09/07/26-08:14:35 DEBUG AutoTurn: onInputEvent 
+09/07/26-08:14:35 DEBUG Explicit widgetInvert: table: 0x7c905268cfe8 @ 0 134 
+09/07/26-08:14:35 DEBUG _refresh: Enqueued fast update for region 0 134 540 46 dithering: false 
+09/07/26-08:14:35 DEBUG setDirty fast from widget nil w/ region 0 134 540 46 dithering: nil 
+09/07/26-08:14:35 DEBUG refresh on logical rectangle 540x46+0+134 
+09/07/26-08:14:35 DEBUG Explicit widgetInvert: table: 0x7c905268cfe8 @ 0 134 
+09/07/26-08:14:35 DEBUG _refresh: Enqueued ui update for region 0 134 540 46 dithering: false 
+09/07/26-08:14:35 DEBUG setDirty ui from widget nil w/ region 0 134 540 46 dithering: nil 
+09/07/26-08:14:35 DEBUG close widget: table: 0x7c90512ee4f8 
+09/07/26-08:14:35 DEBUG _refresh: Enqueued ui update for region 0 0 540 720 dithering: false 
+09/07/26-08:14:35 DEBUG setDirty ui from widget nil w/ NO region; dithering: nil 
+09/07/26-08:14:35 DEBUG Lower widget ReaderUI covers the full screen 
+09/07/26-08:14:35 DEBUG setDirty nil from widget ReaderUI w/ NO region; dithering: nil 
+09/07/26-08:14:35 DEBUG Found font: NotoSans-Bold.ttf in ./fonts/noto/NotoSans-Bold.ttf 
+09/07/26-08:14:35 DEBUG FocusManager: Move focus position to: 1 , 1 
+09/07/26-08:14:35 DEBUG Found font: DroidSansMono.ttf in ./fonts/droid/DroidSansMono.ttf 
+09/07/26-08:14:35 DEBUG setDirty via a func from widget table: 0x7c90512f3d18 
+09/07/26-08:14:35 DEBUG setDirty via a func from widget table: 0x7c90512f3d18 
+09/07/26-08:14:35 DEBUG setDirty via a func from widget table: 0x7c90512f3d18 
+09/07/26-08:14:35 DEBUG FocusManager: Move focus position to: 1 , 1 
+09/07/26-08:14:35 DEBUG show widget: table: 0x7c90512f3d18 
+09/07/26-08:14:35 DEBUG setDirty nil from widget table: 0x7c90512f3d18 w/ NO region; dithering: nil 
+09/07/26-08:14:35 DEBUG setDirty via a func from widget table: 0x7c90512f3d18 
+09/07/26-08:14:35 DEBUG painting widget: ReaderUI 
+09/07/26-08:14:35 DEBUG CreDocument: goto page 1 flow 0 
+09/07/26-08:14:35 DEBUG painting widget: table: 0x7c90512f3d18 
+09/07/26-08:14:35 DEBUG _refresh: Enqueued ui update for region 0 0 540 720 dithering: false 
+09/07/26-08:14:35 DEBUG _refresh: Enqueued ui update for region 0 0 540 720 dithering: false 
+09/07/26-08:14:35 DEBUG _refresh: Enqueued ui update for region 0 0 540 720 dithering: false 
+09/07/26-08:14:35 DEBUG _refresh: Enqueued ui update for region 0 0 540 720 dithering: false 
+09/07/26-08:14:35 DEBUG refresh on logical rectangle 540x720+0+0 
 X connection to :99 broken (explicit kill or server shutdown).

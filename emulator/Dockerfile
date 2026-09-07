@@ -79,6 +79,20 @@ RUN cd /home/ko/vendor && (python3 -m http.server 8765 >/tmp/vendor-http.log 2>&
 # not baked into the image, so editing the plugin on your host shows up
 # on the next `docker compose run` without rebuilding the image.
 
+# docker-compose.yml also bind-mounts a host ./saves directory onto
+# inkRPG's own save-file path (.../settings/inkrpg) so state persists
+# across separate `docker compose run` invocations -- see that file's
+# comments. That path doesn't exist yet at this point in the image
+# (KOReader only creates its settings/ dir on first run), and if it's
+# left missing, Docker creates the whole missing parent chain itself
+# as root right before the "ko" user's entrypoint starts -- which left
+# settings/ root-owned and broke sibling plugins (vocabbuilder,
+# coverbrowser, statistics) trying to create their own sqlite files
+# there ("cantopen", observed in koreader-stdout.log the first time the
+# save volume was used). Pre-creating it here, as ko, means the mount
+# later overlays an already-correctly-owned directory instead.
+RUN mkdir -p /home/ko/koreader/koreader-emulator-x86_64-linux-gnu-debug/koreader/settings/inkrpg
+
 COPY --chown=ko:ko screenshot.sh /home/ko/screenshot.sh
 USER root
 RUN chmod +x /home/ko/screenshot.sh

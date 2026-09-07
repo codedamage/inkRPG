@@ -20,6 +20,7 @@ local _ = require("gettext")
 
 local GameLoader = require("inkrpg_game_loader")
 local PlayScreen = require("inkrpg_play_screen")
+local SettingsScreen = require("inkrpg_settings_screen")
 
 local InkRPG = WidgetContainer:extend{
     name = "inkrpg",
@@ -44,9 +45,20 @@ function InkRPG:addToMainMenu(menu_items)
     menu_items.inkrpg = {
         text = _("inkRPG"),
         sorting_hint = "more_tools",
-        callback = function()
-            self:openGamePicker()
-        end,
+        sub_item_table = {
+            {
+                text = _("Play"),
+                callback = function()
+                    self:openGamePicker()
+                end,
+            },
+            {
+                text = _("AI provider settings"),
+                callback = function()
+                    SettingsScreen:show()
+                end,
+            },
+        },
     }
 end
 

@@ -2,13 +2,20 @@
 AI provider client: one OpenAI-compatible chat-completion request shape,
 reused for every backend that speaks it (OpenAI itself, a local Ollama
 server, DeepSeek, Groq, OpenRouter, and most proxies) by pointing
-base_url/model/api_key at a different entry in configuration.lua.
+base_url/model/api_key at whichever provider is configured.
 
 Modeled on the working pattern from omer-faruq/assistant.koplugin; the
 HTTP call itself follows the same socket.http + ltn12 + socketutil shape
 used by KOReader's own wallabag.koplugin.
 
-configuration.lua (copy from configuration.sample.lua, keep out of git):
+Configuration is per-user, not part of this codebase: the primary path
+is Tools > More tools > inkRPG > AI provider settings (see
+inkrpg_settings.lua / inkrpg_settings_screen.lua), which writes to
+KOReader's own settings directory on the device -- nothing to create or
+hand-edit in this plugin's own folder, and nothing that ends up in a git
+checkout. configuration.lua (copy from configuration.sample.lua, still
+gitignored) is kept as a power-user/scripting override and is only
+consulted if nothing has been saved through the settings screen:
 
     return {
         provider = "openai",
@@ -35,17 +42,38 @@ local socketutil = require("socketutil")
 local JSON = require("json")
 local logger = require("logger")
 
+local Settings = require("inkrpg_settings")
+
 local AIProvider = {}
 
 local REQUEST_BLOCK_TIMEOUT = 10
 local REQUEST_TOTAL_TIMEOUT = 60
 
+-- Prefers whatever was saved through the in-app settings screen; falls
+-- back to configuration.lua (a file in this plugin's own folder, kept
+-- for power users) only if nothing has been configured through the UI
+-- yet. Either path returns the same shape: { provider = "...",
+-- provider_settings = { [provider] = { model, base_url, api_key } } }.
 local function loadConfig()
+    local settings = Settings.read()
+    if settings and settings.preset and settings.api_key and settings.api_key ~= "" then
+        return {
+            provider = settings.preset,
+            provider_settings = {
+                [settings.preset] = {
+                    model = settings.model,
+                    base_url = settings.base_url,
+                    api_key = settings.api_key,
+                },
+            },
+        }
+    end
+
     local _plugin_dir = debug.getinfo(1, "S").source:match("@(.+)/[^/]+$") or "."
     local config_path = _plugin_dir .. "/configuration.lua"
     local chunk = loadfile(config_path)
     if not chunk then
-        return nil, "No configuration.lua found -- copy configuration.sample.lua and add your API key."
+        return nil, "No AI provider configured -- open Tools > More tools > inkRPG > AI provider settings to add one."
     end
     local ok, config = pcall(chunk)
     if not ok or type(config) ~= "table" then
