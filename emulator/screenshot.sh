@@ -279,6 +279,104 @@
 # sequence is unchanged, so this run should reach "Test connection" for
 # real this time and show its actual result (success or a clean failure
 # message) in 10/11 instead of the API key dialog again.
+#
+# ROUND 13 (07 Sep 2026) -- goal: get an actual real-model reply through
+# AIProvider.requestStructured(), not just confirm the settings UI. Round
+# 12 confirmed "Test connection" fails cleanly against "Local Ollama"
+# with no API key set (expected -- an empty key is treated as
+# unconfigured even though Ollama itself ignores it). Two real blockers
+# stood between that and a live reply, checked directly rather than
+# guessed at:
+#   1. Container -> Windows-host networking: confirmed host.docker.internal
+#      DOES resolve to the host's real IP from inside this environment,
+#      but Ollama's default bind (127.0.0.1 only) refuses the connection
+#      regardless of DNS working -- confirmed via a direct curl, not
+#      assumed. docker-compose.yml now sets extra_hosts for
+#      host.docker.internal reliability, but the actual fix has to happen
+#      on the Windows side: Ollama needs to be started with
+#      OLLAMA_HOST=0.0.0.0 (restart the Ollama app/service after setting
+#      that env var) so it accepts connections from outside 127.0.0.1,
+#      the container included. This script can't do that part -- it's a
+#      host-machine config change, done before running this round.
+#   2. Typing a real credential into the emulator: not attempted, on
+#      purpose -- entering API keys/credentials isn't something this
+#      assistant does even at the user's request. Ollama's OpenAI-compat
+#      endpoint ignores the key entirely, so this round uses "ollama" as
+#      the API key value -- a non-secret placeholder already documented
+#      in configuration.sample.lua for exactly this case, not a real
+#      credential.
+#
+# This round switches the picked preset from "Local Ollama" (whose
+# base_url is hardcoded to http://localhost:11434/... -- localhost
+# *inside the container*, unreachable no matter what) to "Custom", which
+# exposes an editable Base URL row, and types
+# http://host.docker.internal:11434/v1/chat/completions into it. It also
+# types a model name ("llama3.1", this project's existing default guess
+# everywhere else -- adjust and re-run if a different model is actually
+# pulled) since "Custom" has no default_model to auto-fill.
+#
+# New mechanism, not used anywhere earlier in this script: typing actual
+# text into an InputDialog via `xdotool type`, rather than only taps.
+# Untested until this round confirms it -- KOReader's InputDialog calls
+# :onShowKeyboard() which may rely on tapping its own on-screen keyboard
+# rather than accepting raw X11 key events, in which case `xdotool type`
+# will silently do nothing and the field will stay empty. Screenshotting
+# after each typed field (not just at the end) so that failure mode is
+# caught at the first field, not discovered three fields later.
+#
+# Row/button geometry for the 5-row "Custom" settings menu (Provider /
+# Model / Base URL / API key / Test connection) and the Save button on
+# each InputDialog are extrapolated from the confirmed 4-row spacing
+# (SETTINGS_ROW1_Y=210 confirmed correct, SETTINGS_ROW3_Y=346 confirmed
+# correct -- both round 12 results -- giving ~45px/row) and from the
+# general InputDialog layout glimpsed in round 11's accidental API-key
+# dialog screenshot (title bar, input box, buttons row). Marked as
+# guesses below; this round's screenshots will confirm or correct them.
+#
+# ROUND 14 (07 Sep 2026) -- round 13 confirmed the two real unknowns
+# (picking "Custom" reveals the Base URL row exactly as coded; `xdotool
+# type` DOES reach KOReader's InputDialog and typed "llama3.1" correctly)
+# but the Save button's y was off by ~20px, so the Model dialog never
+# closed and every step after that landed on the wrong screen (see the
+# DIALOG_BUTTONS_Y comment above for the measured fix). Log stayed
+# completely clean throughout -- this was a tap-coordinate miss, not a
+# code bug. Step sequence is otherwise unchanged; this round should now
+# get all the way through Model -> Base URL -> API key -> Test connection
+# for real.
+#
+# ROUND 15 (07 Sep 2026) -- changed vector before round 14 ever ran: the
+# user got a real Gemini API key specifically to test the live AI path,
+# and asked to test it. This assistant does not type API keys/credentials
+# into anything itself -- not the emulator, not a config file -- even
+# when the user supplies the value and asks directly; that's a hard rule,
+# not a judgment call made per-request. So the Ollama/Custom-preset/
+# settings-screen-typing path rounds 13-14 were building is shelved for
+# now (the mechanism it proved -- `xdotool type` reaching an InputDialog
+# -- carries forward to this round instead).
+#
+# The much simpler alternative: configuration.lua (inkrpg_ai_provider.lua's
+# power-user fallback, see its header comment) lives inside
+# inkrpg.koplugin/, which is already bind-mounted whole into the
+# container by docker-compose.yml. So if the user creates that file
+# THEMSELVES, on their own machine, with their own key pasted in by their
+# own hand, it's simply *there* the next time this script runs -- no
+# typing-into-the-emulator step needed at all, and this assistant never
+# touches the actual secret. Confirmed via ai.google.dev/gemini-api/docs/openai
+# before suggesting it: Gemini's OpenAI-compatible endpoint
+# (https://generativelanguage.googleapis.com/v1beta/openai/chat/completions,
+# Bearer-token auth) matches inkrpg_ai_provider.lua's existing OpenAI-style
+# request shape exactly, so no native Gemini handler is needed for this
+# test -- configuration.lua just needs provider="gemini" pointed at that
+# base_url or the same via the "Custom" preset in the settings screen).
+#
+# This round replaces the settings-screen walk (steps 07+) with the
+# actually-intended payoff: More tools > inkRPG > Play (not "AI provider
+# settings") > the demo game > "...Something else" > type a free action >
+# see whether a real model's reply survives extract_json() and
+# AIProvider.requestStructured()'s parsing, same as canned lupa fixtures
+# tested but a live model never has. Reuses the `xdotool type` mechanism
+# round 13 already proved works, and the ROW3_Y button-row geometry
+# rounds 7-10 already confirmed for cave_mouth's "...Something else".
 set -e
 
 mkdir -p /home/ko/screenshots
@@ -336,6 +434,47 @@ SETTINGS_ROW1_Y=$((CONTENT_TOP + 60))
 SETTINGS_ROW3_Y=346
 PICKER_ROW2_Y=$((CONTENT_TOP + 60 + 40))
 
+# Round 13: "Custom" is the picker's 6th (last) entry -- same ~45px
+# spacing as the other 5 confirmed entries, extrapolated from
+# PICKER_ROW2_Y (Local Ollama, row 2) + 4 more rows.
+PICKER_ROW_SPACING=45
+PICKER_ROW6_Y=$((PICKER_ROW2_Y + 4 * PICKER_ROW_SPACING))
+
+# Round 13: the settings menu grows a "Base URL" row once "Custom" is
+# picked, inserted between Model and API key -- 5 rows total instead of
+# 4. Extrapolated from the same confirmed ~45px spacing (SETTINGS_ROW1_Y
+# and SETTINGS_ROW3_Y above are real, round-12-confirmed anchors).
+SETTINGS5_ROW_SPACING=45
+SETTINGS5_PROVIDER_Y=$SETTINGS_ROW1_Y
+SETTINGS5_MODEL_Y=$((SETTINGS_ROW1_Y + SETTINGS5_ROW_SPACING))
+SETTINGS5_BASEURL_Y=$((SETTINGS_ROW1_Y + 2 * SETTINGS5_ROW_SPACING))
+SETTINGS5_APIKEY_Y=$((SETTINGS_ROW1_Y + 3 * SETTINGS5_ROW_SPACING))
+SETTINGS5_TESTCONN_Y=$((SETTINGS_ROW1_Y + 4 * SETTINGS5_ROW_SPACING))
+
+# Round 13 result: DIALOG_BUTTONS_Y=540 was too high -- it landed on
+# (or just above) the divider line between the input box and the button
+# row, not the "Save" button itself, so the Model dialog never actually
+# closed. Everything after that step cascaded into the wrong screen: with
+# the dialog still open but not covering the full display, later taps
+# meant for Base URL / API key / Test connection landed on the reader
+# document underneath instead (KOReader's own tap zones -- one of them
+# opened the Table of Contents), and the run never recovered. `xdotool
+# type` itself worked exactly as hoped (11-model-typed.png showed
+# "llama3.1" landing in the field character-for-character) -- only the
+# button coordinate was wrong. Corrected below from a real 2x crop of
+# round 13's 11-model-typed.png: the button row's divider line sits at
+# x=385 (so Cancel center=277, Save center=492 -- both close to the
+# original guesses), and the row itself spans y=540-580, center ~562 --
+# not 540, which was right at its top edge. DIALOG_BUTTONS_Y_WITH_CHECKBOX
+# extrapolated the same +40px the checkbox row added elsewhere = 602.
+DIALOG_SAVE_X=492
+DIALOG_BUTTONS_Y=562
+DIALOG_BUTTONS_Y_WITH_CHECKBOX=602
+
+OLLAMA_MODEL="llama3.1"
+OLLAMA_URL="http://host.docker.internal:11434/v1/chat/completions"
+OLLAMA_PLACEHOLDER_KEY="ollama"
+
 echo "Starting Xvfb..."
 Xvfb :99 -screen 0 768x1024x24 &
 XVFB_PID=$!
@@ -390,48 +529,60 @@ sleep 1
 import -window root /home/ko/screenshots/06-inkrpg-submenu.png
 echo "Wrote 06-inkrpg-submenu.png (tapped $INKRPG_X,$INKRPG_Y -- should now show a 2-item 'Play' / 'AI provider settings' submenu, not the old game picker)"
 
-# Tap the submenu's 2nd row ("AI provider settings") -- SUBMENU_ROW2_Y
-# is an unmeasured guess, see ROUND 11 comment above.
-xdotool mousemove "$CONTENT_CENTER_X" "$SUBMENU_ROW2_Y" click 1
+# ROUND 15: changed vector -- tap the submenu's 1ST row ("Play") instead
+# of "AI provider settings". A real Gemini key is going into
+# configuration.lua directly (by the user, on their own machine -- see
+# ROUND 15 notes above), which inkrpg_ai_provider.lua's loadConfig()
+# falls back to automatically since nothing is saved in the settings
+# store this run. That sidesteps the whole settings-screen typing flow
+# rounds 13-14 were building -- this round goes straight for the actual
+# payoff (a live AI turn) via the game itself.
+xdotool mousemove "$CONTENT_CENTER_X" "$SUBMENU_ROW1_Y" click 1
 sleep 1
-import -window root /home/ko/screenshots/07-ai-settings.png
-echo "Wrote 07-ai-settings.png (tapped submenu row 2 at y=$SUBMENU_ROW2_Y -- should show inkrpg_settings_screen.lua's menu: Provider/Model/API key rows not set, plus Test connection)"
+import -window root /home/ko/screenshots/07-play-tapped.png
+echo "Wrote 07-play-tapped.png (tapped submenu row 1 'Play' at y=$SUBMENU_ROW1_Y -- should show the game picker with 'The Whispering Cave', same as the old flat-menu flow rounds 6-10 confirmed)"
 
-# Tap the settings menu's 1st row ("Provider: not set") to open the
-# provider picker.
-xdotool mousemove "$CONTENT_CENTER_X" "$SETTINGS_ROW1_Y" click 1
+# Select the one demo game -- same GAME_ENTRY_Y guess that landed
+# correctly back in round 6/7.
+GAME_ENTRY_Y=$((CONTENT_TOP + 60))
+xdotool mousemove "$CONTENT_CENTER_X" "$GAME_ENTRY_Y" click 1
 sleep 1
-import -window root /home/ko/screenshots/08-provider-picker.png
-echo "Wrote 08-provider-picker.png (tapped settings row 1 at y=$SETTINGS_ROW1_Y -- should show the provider picker: OpenAI / Local Ollama / DeepSeek / Groq / OpenRouter / Custom)"
+import -window root /home/ko/screenshots/08-cave-mouth.png
+echo "Wrote 08-cave-mouth.png (should show cave_mouth's opening narration and its 3 rows: 2 authored choices + '...Something else')"
 
-# Pick "Local Ollama" (picker's 2nd entry) -- chosen specifically
-# because Ollama is already running locally, so Test connection below
-# has a real chance of succeeding without spending API credits.
-xdotool mousemove "$CONTENT_CENTER_X" "$PICKER_ROW2_Y" click 1
+# Tap "...Something else" -- always the LAST button row per
+# inkrpg_play_screen.lua (added after the scene's own choices), so for
+# cave_mouth's 2-choice layout that's ROW3_Y (838, confirmed geometry
+# from rounds 7-10).
+xdotool mousemove "$CONTENT_CENTER_X" "$ROW3_Y" click 1
 sleep 1
-import -window root /home/ko/screenshots/09-provider-picked.png
-echo "Wrote 09-provider-picked.png (tapped picker row 2 at y=$PICKER_ROW2_Y -- should return to the settings menu now showing 'Provider: Local Ollama' and 'Model: llama3.1')"
+import -window root /home/ko/screenshots/09-free-action-dialog.png
+echo "Wrote 09-free-action-dialog.png (tapped row 3 at y=$ROW3_Y -- should show promptFreeAction()'s 'What do you do?' InputDialog)"
 
-# Tap "Test connection" -- 3rd row of the settings menu (no Base URL
-# row appears for a non-custom preset). Expect a blocking HTTP call to
-# http://localhost:11434/... from INSIDE the container, which almost
-# certainly can't reach the Windows host's Ollama as-is (container
-# localhost != host localhost) -- a clean failure InfoMessage is an
-# acceptable, even expected, outcome here. What actually matters is
-# confirming the screen and the button's flow render without a Lua
-# error, and that KOReader's UI thread isn't left stuck.
-xdotool mousemove "$CONTENT_CENTER_X" "$SETTINGS_ROW3_Y" click 1
+# Type a free action. Same InputDialog widget as the settings screen's
+# Model/Base URL dialogs (single-line input, no checkbox), so the same
+# button-row geometry applies: Cancel/Go at DIALOG_BUTTONS_Y=562, "Go" on
+# the right at DIALOG_SAVE_X=492 (button position, not button label --
+# both dialogs share the same 2-button-row layout).
+FREE_ACTION="I look around carefully for anything unusual before going further."
+xdotool type --delay 50 "$FREE_ACTION"
 sleep 1
-import -window root /home/ko/screenshots/10-test-connection-waiting.png
-echo "Wrote 10-test-connection-waiting.png (tapped settings row 3 at y=$SETTINGS_ROW3_Y -- may still show the blocking request in flight)"
+import -window root /home/ko/screenshots/10-free-action-typed.png
+echo "Wrote 10-free-action-typed.png (typed the free action into the input field)"
 
-# The HTTP request itself has its own ~10s block / 60s total timeout
-# (see REQUEST_BLOCK_TIMEOUT/REQUEST_TOTAL_TIMEOUT in
-# inkrpg_ai_provider.lua) -- give it real time to resolve one way or
-# another before the final screenshot.
-sleep 8
-import -window root /home/ko/screenshots/11-test-connection-result.png
-echo "Wrote 11-test-connection-result.png (should show either a 'Connection OK' or 'Connection failed' InfoMessage, then back to the settings menu)"
+xdotool mousemove "$DIALOG_SAVE_X" "$DIALOG_BUTTONS_Y" click 1
+sleep 1
+import -window root /home/ko/screenshots/11-ai-request-sent.png
+echo "Wrote 11-ai-request-sent.png (tapped 'Go' -- this triggers PlayScreen:sendAiAction(), a BLOCKING call to AIProvider.requestStructured() -- may still be in flight here)"
+
+# The HTTP request has its own ~10s block / 60s total timeout (see
+# REQUEST_BLOCK_TIMEOUT/REQUEST_TOTAL_TIMEOUT in inkrpg_ai_provider.lua).
+# Gemini's OpenAI-compat endpoint over a real network round-trip needs
+# real time, not the ~1s sleeps used for local/instant UI transitions
+# elsewhere in this script.
+sleep 15
+import -window root /home/ko/screenshots/12-ai-result.png
+echo "Wrote 12-ai-result.png (should show either PlayScreen:renderAiScene()'s output -- real Gemini narration + choices, structured JSON successfully parsed -- or a specific error InfoMessage if the request/parsing failed; either is useful information)"
 
 kill "$KO_PID" 2>/dev/null || true
 kill "$XVFB_PID" 2>/dev/null || true

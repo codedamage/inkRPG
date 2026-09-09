@@ -14,7 +14,22 @@
 # the story, run it again, and selecting "The Whispering Cave" from the
 # picker should resume at the LAST saved scene instead of restarting at
 # cave_mouth. Delete the contents of ./saves to reset back to a fresh
-# save state.
+# save state. Note: inkrpg_settings.lua (the new AI provider settings
+# store) is NOT under this mount -- it lives one level up, directly in
+# .../koreader/settings/, so an AI provider picked through the in-app
+# settings screen does NOT currently persist across separate
+# `docker compose run` invocations the way game saves do. Not fixed yet
+# -- a second mount for that one file would do it, if testing that
+# specifically ever matters.
+#
+# extra_hosts below adds host.docker.internal as a reliable way for the
+# container to reach services running on the Windows host (e.g. a local
+# Ollama server) -- needed to test the AI provider path against a real
+# model without a hosted API key. Ollama's default bind (127.0.0.1 only)
+# will still refuse the connection even with this in place -- it needs
+# to be started with OLLAMA_HOST=0.0.0.0 (or a specific non-loopback
+# address) for anything outside the Windows host itself, container
+# included, to reach it. See README.md's AI provider settings section.
 
 services:
   inkrpg-emulator:
@@ -26,4 +41,6 @@ services:
       - ./saves:/home/ko/koreader/koreader-emulator-x86_64-linux-gnu-debug/koreader/settings/inkrpg
     environment:
       - DISPLAY=:99
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     shm_size: "1gb"
