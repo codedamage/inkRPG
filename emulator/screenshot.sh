@@ -575,12 +575,18 @@ sleep 1
 import -window root /home/ko/screenshots/11-ai-request-sent.png
 echo "Wrote 11-ai-request-sent.png (tapped 'Go' -- this triggers PlayScreen:sendAiAction(), a BLOCKING call to AIProvider.requestStructured() -- may still be in flight here)"
 
-# The HTTP request has its own ~10s block / 60s total timeout (see
-# REQUEST_BLOCK_TIMEOUT/REQUEST_TOTAL_TIMEOUT in inkrpg_ai_provider.lua).
-# Gemini's OpenAI-compat endpoint over a real network round-trip needs
-# real time, not the ~1s sleeps used for local/instant UI transitions
-# elsewhere in this script.
-sleep 15
+# ROUND 17 result: the previous run got a real HTTP 404 back almost
+# instantly (fast rejection, no generation involved) -- confirming
+# network/config were fine -- but after fixing the model name, the next
+# run hit a "wantread" failure landing at EXACTLY 10s after the request,
+# matching REQUEST_BLOCK_TIMEOUT's old value: a real model actually
+# composing a full structured-JSON reply took longer than that one
+# socket-read timeout allowed (not the 60s total cap -- see
+# inkrpg_ai_provider.lua, now raised to 30s). Bumped this sleep to match
+# -- long enough to cover a real generation call finishing within the new
+# 30s block / 60s total ceiling, not just the near-instant error cases
+# tested so far.
+sleep 35
 import -window root /home/ko/screenshots/12-ai-result.png
 echo "Wrote 12-ai-result.png (should show either PlayScreen:renderAiScene()'s output -- real Gemini narration + choices, structured JSON successfully parsed -- or a specific error InfoMessage if the request/parsing failed; either is useful information)"
 

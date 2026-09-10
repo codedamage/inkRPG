@@ -46,7 +46,16 @@ local Settings = require("inkrpg_settings")
 
 local AIProvider = {}
 
-local REQUEST_BLOCK_TIMEOUT = 10
+-- BLOCK_TIMEOUT is the max wait for a single socket read to produce more
+-- data, not the whole request -- 10s worked fine against a fast-failing
+-- 404 (rejected instantly, no generation involved) but was too tight
+-- against a real model actually composing a full structured-JSON reply:
+-- confirmed in the emulator as a "wantread" failure landing at exactly
+-- 10s after the request went out (LuaSec's non-blocking-read status
+-- surfacing as an error once socketutil's timeout fires mid-handshake/
+-- mid-read), not a real connection problem. Raised to give inference
+-- time to actually complete; TOTAL_TIMEOUT is the overall cap.
+local REQUEST_BLOCK_TIMEOUT = 30
 local REQUEST_TOTAL_TIMEOUT = 60
 
 -- Prefers whatever was saved through the in-app settings screen; falls
@@ -83,8 +92,18 @@ local function loadConfig()
 end
 
 -- messages: array of { role = "system"|"user"|"assistant", content = "..." }
+-- opts (optional): { response_format = {...} } -- passed straight through
+-- to the request body when given. Confirmed live (emulator, round 18):
+-- against a real model, the STRUCTURED_INSTRUCTIONS prompt alone wasn't
+-- reliably followed -- Gemini answered with plain narrative prose instead
+-- of JSON despite being told not to. response_format = {type =
+-- "json_object"} is the standard OpenAI-compatible-API way to force
+-- strict JSON output rather than relying on prompt wording alone; only
+-- requestStructured() below sets it -- the plain request() callers
+-- (Test connection's "reply with exactly OK" check) don't want their
+-- response constrained to JSON.
 -- Returns (ok, text_or_error)
-function AIProvider.request(messages)
+function AIProvider.request(messages, opts)
     local config, cfg_err = loadConfig()
     if not config then
         return false, cfg_err
@@ -95,10 +114,14 @@ function AIProvider.request(messages)
         return false, "No API key configured for provider '" .. tostring(config.provider) .. "'"
     end
 
-    local body = JSON.encode({
+    local payload = {
         model = provider.model,
         messages = messages,
-    })
+    }
+    if opts and opts.response_format then
+        payload.response_format = opts.response_format
+    end
+    local body = JSON.encode(payload)
 
     local sink = {}
     local request = {
@@ -190,7 +213,7 @@ function AIProvider.requestStructured(messages)
         table.insert(wrapped, m)
     end
 
-    local ok, reply = AIProvider.request(wrapped)
+    local ok, reply = AIProvider.request(wrapped, { response_format = { type = "json_object" } })
     if not ok then
         return false, reply
     end
