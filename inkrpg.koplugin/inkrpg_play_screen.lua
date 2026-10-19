@@ -212,7 +212,8 @@ function PlayScreen:render()
         table.insert(buttons_table, { {
             text = _("...Something else"),
             callback = function()
-                UIManager:close(self.viewer)
+                -- Keep the scene on screen under the input dialog; it is
+                -- only replaced once the AI's reply arrives.
                 self:promptFreeAction()
             end,
         } })
@@ -237,7 +238,6 @@ function PlayScreen:renderAiScene()
         table.insert(buttons_table, { {
             text = choice.label,
             callback = function()
-                UIManager:close(self.viewer)
                 self:sendAiAction(choice.label)
             end,
         } })
@@ -255,7 +255,8 @@ function PlayScreen:renderAiScene()
         table.insert(buttons_table, { {
             text = _("...Something else"),
             callback = function()
-                UIManager:close(self.viewer)
+                -- Keep the scene on screen under the input dialog; it is
+                -- only replaced once the AI's reply arrives.
                 self:promptFreeAction()
             end,
         } })
@@ -278,8 +279,8 @@ function PlayScreen:promptFreeAction()
             {
                 text = _("Cancel"),
                 callback = function()
+                    -- The scene is still showing underneath, nothing to redraw.
                     UIManager:close(dialog)
-                    self:render()
                 end,
             },
             {
@@ -304,15 +305,23 @@ end
 -- until they restart.
 function PlayScreen:sendAiAction(action)
     local AIProvider = require("inkrpg_ai_provider")
+    -- requestStructured blocks until the model replies (tens of seconds on
+    -- a local model), so paint a status message over the current scene
+    -- first instead of leaving the screen silently frozen.
+    local thinking = InfoMessage:new{ text = _("The dungeon master is thinking…") }
+    UIManager:show(thinking)
+    UIManager:forceRePaint()
     local ok, result = AIProvider.requestStructured({
         { role = "system", content = self:buildContext() },
         { role = "user", content = action },
     })
+    UIManager:close(thinking)
     if not ok then
+        -- The current scene is still on screen, so the player just
+        -- dismisses the error and picks again.
         UIManager:show(InfoMessage:new{
             text = _("Free-form actions need an AI provider configured -- copy configuration.sample.lua to configuration.lua and add a key.\n\n") .. tostring(result),
         })
-        self:render()
         return
     end
 
@@ -322,6 +331,7 @@ function PlayScreen:sendAiAction(action)
         choices = result.choices,
     }
     self:save()
+    UIManager:close(self.viewer)
     self:render()
 end
 

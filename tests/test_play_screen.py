@@ -195,3 +195,101 @@ def test_send_ai_action_failure_shows_error_and_stays_on_current_scene(env):
     # Falls back to re-rendering the authored scene -- ai_scene must stay nil.
     assert PlayScreen["ai_scene"] is None
     assert PlayScreen["scene_id"] == "start_scene"
+
+
+# -- "...Something else": the free-action dialog ----------------------------
+
+def _contains(env, lua_list, widget):
+    # Compare inside Lua: lupa hands out a fresh Python wrapper per access,
+    # so Python identity can't tell whether two wrappers are the same table.
+    contains = env.lua.eval(
+        "function(list, w) for i = 1, #list do if list[i] == w then return true end end return false end")
+    return contains(lua_list, widget)
+
+
+def _something_else_button(viewer):
+    rows = viewer["buttons_table"]
+    last_row = rows[len(rows)]
+    assert last_row[1]["text"] == "...Something else"
+    return last_row[1]
+
+
+def _last_shown(UIManager):
+    shown = UIManager["_shown"]
+    return shown[len(shown)]
+
+
+def test_something_else_keeps_the_scene_under_the_dialog(env):
+    PlayScreen = _fresh(env)
+    UIManager = env.require("ui/uimanager")
+    PlayScreen.render(PlayScreen)
+    viewer = PlayScreen["viewer"]
+
+    _something_else_button(viewer)["callback"]()
+
+    assert not _contains(env, UIManager["_closed"], viewer)
+    assert _last_shown(UIManager)["title"] == "What do you do?"
+
+
+def test_cancel_closes_only_the_dialog_without_redrawing_the_scene(env):
+    PlayScreen = _fresh(env)
+    UIManager = env.require("ui/uimanager")
+    PlayScreen.render(PlayScreen)
+    viewer = PlayScreen["viewer"]
+    _something_else_button(viewer)["callback"]()
+    dialog = _last_shown(UIManager)
+    shown_before = len(UIManager["_shown"])
+
+    dialog["buttons"][1][1]["callback"]()  # Cancel
+
+    assert _contains(env, UIManager["_closed"], dialog)
+    assert not _contains(env, UIManager["_closed"], viewer)
+    assert len(UIManager["_shown"]) == shown_before
+    assert env.lua.eval("function(a, b) return a == b end")(PlayScreen["viewer"], viewer)
+
+
+def test_go_keeps_the_scene_and_shows_thinking_until_the_reply_replaces_it(env):
+    PlayScreen = _fresh(env)
+    UIManager = env.require("ui/uimanager")
+    AIProvider = env.require("inkrpg_ai_provider")
+    PlayScreen.render(PlayScreen)
+    viewer = PlayScreen["viewer"]
+    _something_else_button(viewer)["callback"]()
+    dialog = _last_shown(UIManager)
+    dialog["_test_input"] = "look around"
+
+    seen_during_request = {}
+
+    def fake_request(messages):
+        seen_during_request["top"] = _last_shown(UIManager)
+        seen_during_request["scene_closed"] = _contains(env, UIManager["_closed"], viewer)
+        return (True, env.lua.eval('{ narration = "A door creaks open.", '
+                                   'choices = { { label = "Enter" } } }'))
+
+    AIProvider["requestStructured"] = fake_request
+
+    dialog["buttons"][1][2]["callback"]()  # Go
+
+    assert not seen_during_request["scene_closed"]
+    assert _contains(env, UIManager["_closed"], viewer)
+    thinking = seen_during_request["top"]
+    assert "thinking" in thinking["text"]
+    assert _contains(env, UIManager["_closed"], thinking)
+    assert PlayScreen["ai_scene"]["narration"] == "A door creaks open."
+
+
+def test_ai_failure_leaves_the_current_scene_on_screen(env):
+    PlayScreen = _fresh(env)
+    UIManager = env.require("ui/uimanager")
+    AIProvider = env.require("inkrpg_ai_provider")
+    AIProvider["requestStructured"] = lambda messages: (False, "connection refused")
+    PlayScreen.render(PlayScreen)
+    viewer = PlayScreen["viewer"]
+    shown_before = len(UIManager["_shown"])
+
+    PlayScreen.sendAiAction(PlayScreen, "look around")
+
+    assert not _contains(env, UIManager["_closed"], viewer)
+    # thinking message + error message, and no second copy of the scene
+    assert len(UIManager["_shown"]) == shown_before + 2
+    assert "connection refused" in _last_shown(UIManager)["text"]

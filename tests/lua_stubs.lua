@@ -303,13 +303,16 @@ end
 
 preload["ui/uimanager"] = function()
     local shown = {}
+    local closed = {}
     return {
         show = function(self, widget) table.insert(shown, widget) end,
-        close = function(self, widget) end,
+        close = function(self, widget) table.insert(closed, widget) end,
+        forceRePaint = function(self) end,
         -- Real UIManager:scheduleIn defers to the next event-loop tick;
         -- tests are synchronous so it just runs the callback right away.
         scheduleIn = function(self, delay, fn) fn() end,
         _shown = shown,
+        _closed = closed,
     }
 end
 

@@ -34,6 +34,7 @@ E-ink is a great surface for interactive fiction: short paragraphs, no notificat
 
 - A playable, hand-authored demo adventure: **The Whispering Cave**.
 - Save and resume per game, including the middle of an AI-improvised scene.
+- The scene stays on screen while you type and while the AI is thinking; a failed request shows an error and leaves you where you were.
 - In-app AI settings screen with:
   - provider presets: OpenAI, local **Ollama**, DeepSeek, Groq, OpenRouter, Custom;
   - model, masked API key and a **Test connection** button.
@@ -96,7 +97,7 @@ Every scene that isn't an ending gets a **"…Something else"** button automatic
 
 ## Development
 
-**Unit tests (no KOReader needed).** 63 tests run the real plugin Lua inside Python through [lupa](https://github.com/scoder/lupa), with KOReader's UI modules stubbed. They cover:
+**Unit tests (no KOReader needed).** 67 tests run the real plugin Lua inside Python through [lupa](https://github.com/scoder/lupa), with KOReader's UI modules stubbed. They cover:
 - dice;
 - the game loader;
 - save state and settings;
