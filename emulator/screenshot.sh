@@ -586,7 +586,7 @@ echo "Wrote 11-ai-request-sent.png (tapped 'Go' -- this triggers PlayScreen:send
 # -- long enough to cover a real generation call finishing within the new
 # 30s block / 60s total ceiling, not just the near-instant error cases
 # tested so far.
-sleep 35
+sleep 90
 import -window root /home/ko/screenshots/12-ai-result.png
 echo "Wrote 12-ai-result.png (should show either PlayScreen:renderAiScene()'s output -- real Gemini narration + choices, structured JSON successfully parsed -- or a specific error InfoMessage if the request/parsing failed; either is useful information)"
 
